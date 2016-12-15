@@ -1,6 +1,6 @@
 ---
 title: Starting Out with Jekyll
-date: 2016-12-15 02:03:37
+date: 2016-12-15 02:04:37 -0500
 layout: blog
 ---
 

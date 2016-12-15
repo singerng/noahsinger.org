@@ -6,6 +6,8 @@
 
 * {
     font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 155%;
 }
 
 h1, h2, h3 {
@@ -14,20 +16,50 @@ h1, h2, h3 {
     padding-right: 2em;
 }
 
-body {
-    margin-top: 2em;
+h1 {
+    font-size: 5rem;
 }
 
-#content {
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+body {
+    margin-top: 2rem;
+}
+
+div#content {
     width: 80%;
     margin: 0 auto;
 }
 
-.post-link, .post-link:active {
+a, a:visited {
+    color: #0b9;
+}
+
+a.post-link, a.post-link:active {
     text-decoration: none;
     color: inherit;
 }
 
-.muted {
+.date {
     color: #aaa;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+a#prev {
+    float: left;
+}
+
+a#next {
+    float: right;
 }
