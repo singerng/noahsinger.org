@@ -10,7 +10,8 @@ layout: default
 {% for post in site.posts %}
 <div>
     <a href="{{ post.url }}" class="nav-link">
-        <h3 class="post-header">{{ post.title }}</h3> <div class="date">{{ post.date |  date: "%B %d, %Y, %l:%M %p" }}</div>
+        <h3 class="post-header">{{ post.title }}</h3>
+        <div class="date">{{ post.date |  date: "%B %d, %Y, %l:%M %p" }}</div>
 
         <p>
             {{ post.excerpt | strip_html }}

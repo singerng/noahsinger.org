@@ -13,10 +13,8 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
     display: inline;
-}
-
-.post-header {
-    padding-right: 2em;
+    padding-right: 3rem;
+    vertical-align: middle;
 }
 
 h1 {
@@ -62,8 +60,6 @@ a.nav-link, a.nav-link:active {
 
 .date {
     color: #aaa;
-    vertical-align: middle;
-    display: inline-block;
 }
 
 a#prev {

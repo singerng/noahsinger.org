@@ -1,0 +1,55 @@
+- name: angstromctf
+  title: ångstromCTF
+  source: https://github.com/angstromctf/angstromctf
+  site: https://angstromctf.com
+  author: Noah Singer and MBHS Cybersecurity Team
+  description: >
+    &aring;ngstromCTF is an online cybersecurity competition for high school
+    students. Competitors log in to the competition platform, form teams, and
+    work together to answer questions in cryptography, binary exploitation, web
+    exploitation, digital forensics, reverse engineering, and more. I wrote the
+    website frontend in Angular 2.
+
+- name: djangoctf
+  title: djangoctf
+  source: https://github.com/angstromctf/djangoctf
+  author: Noah Singer
+  description: >
+    djangoctf is an open-source CTF backend that tracks users and teams and
+    allows competitors to securely access problems and submit flags. It exposes
+    a RESTful API that client-side frontends can connect to. Although it was
+    designed for &aring;ngstromCTF, its flexible nature allows it to be easily
+    adapted for other competitions as well.
+
+- name: darkside
+  title: Darkside OS
+  source: https://github.com/darksideos/darkside-kernel
+  author: Noah Singer and George Klees
+  description: >
+    Darkside OS is an operating system written entirely from scratch with a
+    focus on modern architecture, flexibility, portability, and speed. It
+    includes a custom bootloader and features such as multithreading,
+    a virtual filesystem (VFS), memory management, device management,
+    and executable loading.
+
+
+- name: algviz
+  title: AlgViz
+  source: https://github.com/singerng/algviz
+  author: Noah Singer
+  description: >
+    AlgViz is a HTML5/Javascript framework for visualizing the execution
+    of computer algorithms and data structures. Currently it supports several
+    different sorting algorithms and expansion is planned for graph algorithms
+    and automata.
+
+- name: vivid
+  title: Vivid
+  source: https://github.com/nsquared/vivid
+  author: Noah Singer and Noah Kim
+  description: >
+    Vivid is a music player and visualizer written in Javascript/HTML5. It
+    uses WebAudio's built-in Fast Fourier Transform API to extract frequency
+    data from an audio file and then displays it in a set of dynamic views.
+    Vivid is open source and allows for customization through its modular
+    visualizer system.

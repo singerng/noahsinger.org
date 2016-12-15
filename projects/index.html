@@ -1,0 +1,27 @@
+---
+title: Projects
+permalink: /projects/
+layout: default
+---
+
+{% assign projects = site.data.projects %}
+{% for project in projects %}
+<div>
+    <h3>{{ project.title }}</h3>
+    <br/>
+
+    By: {{ project.author }}
+    <br/>
+
+    {% if project.source %}
+    <a href="{{ project.source }}">Source</a>
+        {% if project.site %}
+        | <a href="| {{ project.site }}">Site</a>
+        {% endif %}
+    {% endif %}
+    <br/>
+    <div class="description">
+        {{ project.description | markdownify }}
+    </div>
+</div>
+{% endfor %}
