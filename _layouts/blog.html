@@ -5,8 +5,9 @@ layout: default
 <h2>{{ page.title }}</h2>
 
 <span class="date">{{ page.date |  date: "%A, %B %d, %Y, %l:%M %p %Z" }}</span>
+{% assign tags = page.tags | sort %}
 <ul class="tags">
-{% for tag in page.tags %}
+{% for tag in tags %}
     <li class="tag"><a href="/tags/#{{ tag }}" class="nav-link"><i class="fa fa-tag"></i> {{ tag }}</a></li>
 {% endfor %}
 </ul>

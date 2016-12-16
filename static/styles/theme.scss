@@ -7,8 +7,9 @@
 
 $primary-darker-color: #0d0221;
 $primary-color: #26408b;
+$primary-light-color: #a6cfd5;
 $primary-lighter-color: #c2e7d9;
-$accent-color: #e28a39;
+$accent-color: #ff9c0e;
 
 * {
     font-family: "Open Sans", sans-serif;
@@ -58,6 +59,10 @@ div#header, div#footer {
     background-color: $primary-color;
     padding: 1rem;
     color: $primary-lighter-color;
+
+    :hover {
+        color: $primary-light-color;
+    }
 }
 
 div#header {
@@ -97,16 +102,16 @@ img#jekyll-logo {
 
 li.tag {
     display: inline;
-    background-color: $accent-color;
-    color: white;
+    border: 1px solid $accent-color;
+    color: $accent-color;
     padding: 0.3rem;
     border-radius: .5rem;
     margin-right: .2rem;
 }
 
 li.tag:hover {
-    background-color: $primary-darker-color;
-    color: $accent-color;
+    background-color: $accent-color;
+    color: white;
 }
 
 ul.tags {
