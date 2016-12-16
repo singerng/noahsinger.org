@@ -13,3 +13,5 @@ kramdown:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+timezone: America/New_York
