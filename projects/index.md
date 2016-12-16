@@ -4,19 +4,19 @@ permalink: /projects/
 layout: default
 ---
 
-{% assign projects = site.data.projects %}
-{% for project in projects %}
+## Projects
+
+{% for project in site.data.projects %}
 <div>
     <h3>{{ project.title }}</h3>
-    <br/>
 
     By: {{ project.author }}
     <br/>
 
     {% if project.source %}
-    <a href="{{ project.source }}">Source</a>
+    <a href="{{ project.source }}" target="_blank">Source</a>
         {% if project.site %}
-        | <a href="| {{ project.site }}">Site</a>
+        | <a href="{{ project.site }}" target="_blank">Site</a>
         {% endif %}
     {% endif %}
     <br/>

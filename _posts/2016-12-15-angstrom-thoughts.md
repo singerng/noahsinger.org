@@ -1,7 +1,8 @@
 ---
-title: First Thoughts on &aring;ngstromCTF
-date: 2016-12-15 02:10:14 -0500
+title: First Thoughts on ångstromCTF
+date: 2016-12-15 21:10:14 -0500
 layout: blog
+tags: [angstrom]
 ---
 
 One of the main things I'll be talking about on this site is this competition I'm running called [&aring;ngstromCTF](http://angstromctf.com). &aring;ngstromCTF is an online high-school cybersecurity competition with all sorts of problems, ranging from cryptography to binary exploitation to forensics and web hacking. So far this year I've worked to revamp our competition platform to be scalable and maintainable.

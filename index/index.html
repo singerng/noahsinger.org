@@ -4,14 +4,19 @@ permalink: /
 layout: default
 ---
 
-<h2>Latest Posts</h2>
-<br/><br/>
+<h2>Welcome!</h2>
 
 {% for post in site.posts %}
 <div>
     <a href="{{ post.url }}" class="nav-link">
-        <h3 class="post-header">{{ post.title }}</h3>
-        <div class="date">{{ post.date |  date: "%B %d, %Y, %l:%M %p" }}</div>
+        <h3 class="inline-header">{{ post.title }}</h3>
+
+        <span class="date">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</span>
+        <ul class="tags">
+        {% for tag in post.tags %}
+        	<li class="tag"><a href="/tags/#{{ tag }}" class="nav-link"><i class="fa fa-tag"></i> {{ tag }}</a></li>
+        {% endfor %}
+        </ul>
 
         <p>
             {{ post.excerpt | strip_html }}

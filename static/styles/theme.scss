@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import 'rouge';
 
 * {
     font-family: "Open Sans", sans-serif;
@@ -12,9 +13,14 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
-    display: inline;
-    padding-right: 3rem;
+    padding: 0;
+    margin: 0;
     vertical-align: middle;
+}
+
+.nav-header {
+    padding-right: 3rem;
+    display: inline;
 }
 
 h1 {
@@ -34,7 +40,8 @@ h4 {
 }
 
 body {
-    margin: 0 0 3rem 0;
+    margin: 0;
+    height: 100%;
 }
 
 div#content {
@@ -42,11 +49,19 @@ div#content {
     margin: 0 auto;
 }
 
-div#header {
-    background-color: #1236a9;
+div#header, div#footer {
+    background-color: #26408b;
     padding: 1rem;
-    color: #ccc;
+    color: #c2e7d9;
+}
+
+div#header {
     margin-bottom: 2rem;
+}
+
+div#footer {
+    margin-top: 4rem;
+    text-align: center;
 }
 
 a, a:visited {
@@ -58,8 +73,9 @@ a.nav-link, a.nav-link:active {
     color: inherit;
 }
 
-.date {
+span.date {
     color: #aaa;
+    margin-right: 1rem;
 }
 
 a#prev {
@@ -68,4 +84,27 @@ a#prev {
 
 a#next {
     float: right;
+}
+
+img#jekyll-logo {
+    height: 5rem;
+}
+
+li.tag {
+    display: inline;
+    background-color: #51a48c;
+    color: white;
+    padding: 0.3rem;
+    border-radius: .5rem;
+    margin-right: .2rem;
+}
+
+li.tag:hover {
+    background-color: #0d0221;
+    color: #51a48c;
+}
+
+ul.tags {
+    padding-left: 0;
+    display: inline;
 }

@@ -1,7 +1,7 @@
 - name: angstromctf
   title: ångstromCTF
   source: https://github.com/angstromctf/angstromctf
-  site: https://angstromctf.com
+  site: http://angstromctf.com/
   author: Noah Singer and MBHS Cybersecurity Team
   description: >
     &aring;ngstromCTF is an online cybersecurity competition for high school
@@ -9,17 +9,6 @@
     work together to answer questions in cryptography, binary exploitation, web
     exploitation, digital forensics, reverse engineering, and more. I wrote the
     website frontend in Angular 2.
-
-- name: djangoctf
-  title: djangoctf
-  source: https://github.com/angstromctf/djangoctf
-  author: Noah Singer
-  description: >
-    djangoctf is an open-source CTF backend that tracks users and teams and
-    allows competitors to securely access problems and submit flags. It exposes
-    a RESTful API that client-side frontends can connect to. Although it was
-    designed for &aring;ngstromCTF, its flexible nature allows it to be easily
-    adapted for other competitions as well.
 
 - name: darkside
   title: Darkside OS
@@ -32,6 +21,35 @@
     a virtual filesystem (VFS), memory management, device management,
     and executable loading.
 
+- name: kraken
+  title: Kraken
+  source: https://github.com/darksideos/kraken
+  author: Noah Singer
+  description: >
+    Kraken is a fully compiled programming language in development. I've used
+    it as an opportunity to implement my own lexer and parser generators
+    as well as learn more a lot about how compilers work.
+
+- name: djangoctf
+  title: djangoctf
+  source: https://github.com/angstromctf/djangoctf
+  author: Noah Singer
+  description: >
+    djangoctf is an open-source CTF backend that tracks users and teams and
+    allows competitors to securely access problems and submit flags. It exposes
+    a RESTful API that client-side frontends can connect to. Although it was
+    designed for &aring;ngstromCTF, its flexible nature allows it to be easily
+    adapted for other competitions as well.
+
+- name: angstrom-learn
+  title: ångstromCTF Learn
+  source: https://github.com/angstromctf/learn
+  author: Noah Singer
+  description: >
+    &aring;ngstromCTF also includes interactive learning materials for
+    students interested in cybersecurity, housed separately from the
+    competition. Individual modules teach students concepts and let
+    them try out techniques and ideas in real time.
 
 - name: algviz
   title: AlgViz

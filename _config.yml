@@ -1,0 +1,17 @@
+title: noahbkim
+description: The domain of noahbkim.
+
+email: noahbkim@gmail.com
+username: noahbkim
+url: https://noahbkim.com
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

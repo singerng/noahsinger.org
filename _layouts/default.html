@@ -14,17 +14,26 @@
           ga('create', 'UA-89049126-1', 'auto');
           ga('send', 'pageview');
         </script>
+
+        <script src="https://use.fontawesome.com/48e3852605.js"></script>
     </head>
 
     <body>
         <div id="header">
-            <a href="/" class="nav-link"><h1>singerng</h1></a>
-            <!-- <a href="/about" class="nav-link"><h4>about</h4></a> -->
-            <a href="/projects" class="nav-link"><h4>projects</h4></a>
+            <a href="/" class="nav-link"><h1 class="nav-header">singerng</h1></a>
+            <a href="/about" class="nav-link"><h4 class="nav-header">about</h4></a>
+            <a href="/projects" class="nav-link"><h4 class="nav-header">projects</h4></a>
         </div>
 
         <div id="content">
             {{ content }}
+        </div>
+
+        <div id="footer">
+            &copy; 2016 Noah Singer. Powered by:
+            <br/>
+
+            <a href="https://jekyllrb.com" target="_blank"><img src="/assets/img/jekyll-logo.png" id="jekyll-logo"></a>
         </div>
     </body>
 </html>
