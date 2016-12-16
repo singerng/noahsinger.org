@@ -1,17 +1,15 @@
-title: noahbkim
-description: The domain of noahbkim.
+title: singerng.github.io
+description: Noah Singer's personal website and blog.
 
-email: noahbkim@gmail.com
-username: noahbkim
-url: https://noahbkim.com
+email: singerng@gmail.com
+username: singerng
+url: https://singerng.github.io
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
