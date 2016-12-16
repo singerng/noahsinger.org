@@ -5,6 +5,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 @import 'rouge';
 
+$primary-darker-color: #0d0221;
+$primary-color: #26408b;
+$primary-lighter-color: #c2e7d9;
+$accent-color: #e28a39;
+
 * {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -50,9 +55,9 @@ div#content {
 }
 
 div#header, div#footer {
-    background-color: #26408b;
+    background-color: $primary-color;
     padding: 1rem;
-    color: #c2e7d9;
+    color: $primary-lighter-color;
 }
 
 div#header {
@@ -65,7 +70,7 @@ div#footer {
 }
 
 a, a:visited {
-    color: #0b9;
+    color: $accent-color;
 }
 
 a.nav-link, a.nav-link:active {
@@ -92,7 +97,7 @@ img#jekyll-logo {
 
 li.tag {
     display: inline;
-    background-color: #51a48c;
+    background-color: $accent-color;
     color: white;
     padding: 0.3rem;
     border-radius: .5rem;
@@ -100,8 +105,8 @@ li.tag {
 }
 
 li.tag:hover {
-    background-color: #0d0221;
-    color: #51a48c;
+    background-color: $primary-darker-color;
+    color: $accent-color;
 }
 
 ul.tags {
