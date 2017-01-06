@@ -1,0 +1,9 @@
+- title: Lambda calculus and functional programming
+  slides: lambda.pdf
+  date: 2017-01-05
+  venue: MBHS Computer Team
+  description: >
+    *λ-calculus* (lambda calculus) is a totally different way of thinking about computation that gives rise
+    to many important theoretical results, as well as many practical applications by providing the basis for
+    *functional programming*. In essence, functions and data are roughly equivalent, and the system operates
+    through operations on functions (abstraction and application).
