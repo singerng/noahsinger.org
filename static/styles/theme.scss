@@ -56,7 +56,7 @@ div#content {
 }
 
 div#header, div#footer {
-    background-color: $primary-color;
+    background-image: linear-gradient(120deg, $primary-color, #26908b);
     padding: 1rem;
     color: $primary-lighter-color;
 
