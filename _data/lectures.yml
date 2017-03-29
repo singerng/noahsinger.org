@@ -8,9 +8,9 @@
     *functional programming*. In essence, functions and data are roughly equivalent, and the system operates
     through operations on functions (abstraction and application).
 
-- title: Cryptography IV: Block ciphers
+
+- title: "Cryptography IV: Block ciphers"
   slides: crypto_block.pdf
   date: 2017-03-29
   venue: MBHS Cybersecurity Team
-  description: >
-    Block ciphers are cryptographic primitives that act as a pseudorandom permutation (PRP) on fixed-length blocks of bits.
+  description: Block ciphers are cryptographic primitives that act as a pseudorandom permutation (PRP) on fixed-length blocks of bits.
