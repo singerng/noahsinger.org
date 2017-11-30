@@ -1,3 +1,11 @@
+- title: "Computer Systems V: Networking"
+  slides: networking.pdf
+  date: 2017-11-30
+  venue: MBHS Computer Team
+  description: >
+    The Internet, and computer networks in general, are ubiquituous in our everyday lives. In this lecture, we explore
+    the fundamentals of computer networks and how they are structured, common Internet protocols, and how the World Wide Web works.
+
 - title: "Computer Systems IV: Computer Engineering"
   slides: computer_engineering.pdf
   date: 2017-10-12
@@ -33,3 +41,4 @@
   description: >
     Welcome to Computer Team! This year, I'll be publishing all the lecture slides on my website. Computers are
     complex and multifaceted systems, and we begin by discussing the basic parts of the computer.
+
