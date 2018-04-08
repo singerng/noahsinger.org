@@ -3,118 +3,59 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-@import 'rouge';
 
-$primary-darker-color: #0d0221;
-$primary-color: #26408b;
-$primary-light-color: #a6cfd5;
-$primary-lighter-color: #c2e7d9;
-$accent-color: #ff9c0e;
+@import "variables";
 
-* {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 155%;
+@import "bootstrap/mixins";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/grid";
+@import "bootstrap/code";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/utilities";
+@import "bootstrap/dropdown";
+@import "bootstrap/card";
+@import "bootstrap/buttons";
+
+@import "rouge";
+
+.bg-gradient {
+  background-image: linear-gradient(120deg, $back-primary, $back-secondary);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-    padding: 0;
-    margin: 0;
-    vertical-align: middle;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-.nav-header {
-    padding-right: 3rem;
-    display: inline;
-}
-
-h1 {
-    font-size: 5rem;
-}
-
-h2 {
-    font-size: 3.5rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
+$footer-height: 60px;
 
 body {
-    margin: 0;
-    height: 100%;
+  margin-bottom: $footer-height;
 }
 
-div#content {
-    width: 80%;
-    margin: 0 auto;
+main {
+  padding-bottom: 2.5rem;
 }
 
-div#header, div#footer {
-    background-image: linear-gradient(120deg, $primary-color, #26908b);
-    padding: 1rem;
-    color: $primary-lighter-color;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
-    :hover {
-        color: $primary-light-color;
-    }
+  height: $footer-height;
+  line-height: $footer-height;
 }
 
-div#header {
-    margin-bottom: 2rem;
-}
+.section {
+  padding: .5rem;
 
-div#footer {
-    margin-top: 4rem;
-    text-align: center;
-}
+  &:nth-child(even) {
+    background-color: white;
+  }
 
-a, a:visited {
-    color: $accent-color;
-}
-
-a.nav-link, a.nav-link:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-span.date {
-    color: #aaa;
-    margin-right: 1rem;
-}
-
-a#prev {
-    float: left;
-}
-
-a#next {
-    float: right;
-}
-
-img#jekyll-logo {
-    height: 5rem;
-}
-
-li.tag {
-    display: inline;
-    border: 1px solid $accent-color;
-    color: $accent-color;
-    padding: 0.3rem;
-    border-radius: .5rem;
-    margin-right: .2rem;
-}
-
-li.tag:hover {
-    background-color: $accent-color;
-    color: white;
-}
-
-ul.tags {
-    padding-left: 0;
-    display: inline;
+  &:nth-child(odd) {
+    background-color: lighten($back-primary, 55%);
+  }
 }

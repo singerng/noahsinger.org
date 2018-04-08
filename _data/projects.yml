@@ -2,69 +2,81 @@
   title: ångstromCTF
   source: https://github.com/angstromctf/angstromctf
   site: http://angstromctf.com/
-  author: Noah Singer and MBHS Cybersecurity Team
+  author: Noah Singer
+  software: Angular 2, Django, Ansible
   description: >
     &aring;ngstromCTF is an online cybersecurity competition for high school
-    students. Competitors log in to the competition platform, form teams, and
+    students. I direct the competition and wrote its RESTful website platform,
+    where competitors log in to the competition platform, form teams, and
     work together to answer questions in cryptography, binary exploitation, web
-    exploitation, digital forensics, reverse engineering, and more. I wrote the
-    website frontend in Angular 2.
+    exploitation, digital forensics, reverse engineering, and more.
 
 - name: darkside
   title: Darkside OS
   source: https://github.com/darksideos/darkside-kernel
-  author: Noah Singer and George Klees
+  author: Noah Singer, George Klees
+  software: C, Assembly, various CPU emulators
   description: >
-    Darkside OS is an operating system written entirely from scratch with a
+    Darkside OS is an operating system written entirely from scratch in C and Assembly with a
     focus on modern architecture, flexibility, portability, and speed. It
     includes a custom bootloader and features such as multithreading,
     a virtual filesystem (VFS), memory management, device management,
     and executable loading.
 
+- name: silverchips
+  title: SilverChips Online
+  source: https://github.com/mbhs/silverchips
+  site: https://scobeta.mbhs.edu/
+  author: Noah Singer, Noah Kim, Mark Jung
+  software: Bootstrap, Django
+  description: >
+    SilverChips Online is the online version of Montgomery Blair High School's
+    newspaper. I designed the system's overall architecture and implemented its much of the backend and frontend,
+    including displaying content (stories, photos, videos, polls, etc.), viewing
+    newspaper sections and top stories, collecting content together in galleries,
+    and allowing writers and editors to create and edit content.
+
+- name: algviz
+  title: AlgViz
+  source: https://github.com/singerng/algviz
+  author: Noah Singer
+  software: JavaScript
+  description: >
+    AlgViz is a web framework for visualizing the execution
+    of computer algorithms. Currently it supports several
+    different sorting algorithms and can simulate Turing machines and automata.
+    I developed it as an aid to use during lectures and talks I give on
+    topics in computer science.
+
 - name: kraken
   title: Kraken
   source: https://github.com/darksideos/kraken
   author: Noah Singer
+  software: C++
   description: >
     Kraken is a fully compiled programming language in development. I've used
     it as an opportunity to implement my own lexer and parser generators
-    as well as learn more a lot about how compilers work.
-
-- name: djangoctf
-  title: djangoctf
-  source: https://github.com/angstromctf/djangoctf
-  author: Noah Singer
-  description: >
-    djangoctf is an open-source CTF backend that tracks users and teams and
-    allows competitors to securely access problems and submit flags. It exposes
-    a RESTful API that client-side frontends can connect to. Although it was
-    designed for &aring;ngstromCTF, its flexible nature allows it to be easily
-    adapted for other competitions as well.
+    as well as learn more a lot about how compilers work. The algorithms
+    are mostly implementations of those described in the first edition of
+    <em>Compilers: Principles, Techniques, and Tools</em> (Aho et al., 1986).
 
 - name: angstrom-learn
   title: ångstromCTF Learn
   source: https://github.com/angstromctf/learn
+  site: https://learn.angstromctf.com
   author: Noah Singer
+  software: Jekyll, Ruby
   description: >
     &aring;ngstromCTF also includes interactive learning materials for
     students interested in cybersecurity, housed separately from the
     competition. Individual modules teach students concepts and let
     them try out techniques and ideas in real time.
 
-- name: algviz
-  title: AlgViz
-  source: https://github.com/singerng/algviz
-  author: Noah Singer
-  description: >
-    AlgViz is a HTML5/Javascript framework for visualizing the execution
-    of computer algorithms and data structures. Currently it supports several
-    different sorting algorithms and expansion is planned for graph algorithms
-    and automata.
-
 - name: vivid
   title: Vivid
   source: https://github.com/nsquared/vivid
-  author: Noah Singer and Noah Kim
+  author: Noah Singer, Noah Kim
+  software: JavaScript
   description: >
     Vivid is a music player and visualizer written in Javascript/HTML5. It
     uses WebAudio's built-in Fast Fourier Transform API to extract frequency

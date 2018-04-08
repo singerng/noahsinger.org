@@ -1,0 +1,31 @@
+---
+title: singerng
+permalink: /blog
+layout: default
+---
+
+<h2>Welcome!</h2>
+
+(This section is out-of-date but should be back soon!)
+
+{% for post in site.posts %}
+<div>
+    <a href="{{ post.url }}" class="nav-link">
+        <h3 class="inline-header">{{ post.title }}</h3>
+        <span class="date">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</span>
+    </a>
+
+    {% assign tags = post.tags | sort %}
+    <ul class="tags">
+    {% for tag in tags %}
+    	<li class="tag"><a href="/tags/#{{ tag }}" class="nav-link"><i class="fa fa-tag"></i> {{ tag }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <a href="{{ post.url }}" class="nav-link">
+        <p>
+            {{ post.excerpt | strip_html }}
+        </p>
+    </a>
+</div>
+{% endfor %}

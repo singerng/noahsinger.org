@@ -6,22 +6,24 @@ layout: default
 
 ## Lectures
 
+Here I've collected slides and papers/notes I've used for various presentations, talks,
+lectures and tutorials throughout high school and beyond.
+
 {% for lecture in site.data.lectures %}
-<div>
-    <h3>{{ lecture.title }}</h3>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ lecture.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted"><strong>{{ lecture.date |  date: "%A, %B %d, %Y" }}</strong> at <strong>{{ lecture.venue }}</strong></h6>
 
-    {{ lecture.date |  date: "%A, %B %d, %Y" }} at {{ lecture.venue }}
+      <p class="card-text">{{ lecture.description | markdownify }}</p>
 
-    <br/>
+      {% if lecture.slides %}
+        <a href="/lectures/slides/{{ lecture.slides }}" class="btn btn-primary"><i class="fas fa-file-alt"></i> Slides</a>
+      {% endif %}
 
-    <div class="description">
-        {{ lecture.description | markdownify }}
+      {% if lecture.notes %}
+        <a href="/lectures/slides/{{ lecture.notes }}" class="btn btn-primary"><i class="fas fa-file-alt"></i> Paper/Notes</a>
+      {% endif %}
     </div>
-
-    <a href="/lectures/slides/{{ lecture.slides }}" target="_blank">Slides</a>
-        {% if lecture.notes %}
-        | <a href="/lectures/notes/{{ lecture.notes }}" target="_blank">Notes</a>
-        {% endif %}
-    <br/>
-</div>
+  </div>
 {% endfor %}

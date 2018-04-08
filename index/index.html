@@ -1,29 +1,169 @@
 ---
-title: singerng
+title: Noah Singer
 permalink: /
 layout: default
 ---
 
-<h2>Welcome!</h2>
+<div class="row">
+  <div class="col-md-3">
+    <div class="card">
+      <img class="card-img-top" src="/static/images/noahsinger.jpg"/>
+      <div class="card-body">
+        <div class="card-text">
+          <i class="fas fa-user"></i> Noah Singer<br/>
+          <!-- <i class="fas fa-building"></i> Montgomery Blair High School<br/> -->
+          <i class="fab fa-github"></i> <a href="https://github.com/singerng" target="_blank">@singerng</a> <br/>
+          <i class="fab fa-twitter"></i> <a href="https://twitter.com/noahsinger314" target="_blank">@noahsinger314</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-{% for post in site.posts %}
-<div>
-    <a href="{{ post.url }}" class="nav-link">
-        <h3 class="inline-header">{{ post.title }}</h3>
-        <span class="date">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</span>
-    </a>
+  <div class="col-md-9">
+    <h1>Noah Singer</h1>
+    <p>Hey there! My name is Noah Singer and I'm interested in diverse areas of
+    computer science including theory of computation, signal processing,
+    machine learning, artificial intelligence, numerical optimization,
+    algorithms and data structures, systems, compilers and programming languages,
+    and cryptography. I am also fascinated by topics in mathematical logic
+    and am a software and web engineer.
 
-    {% assign tags = post.tags | sort %}
-    <ul class="tags">
-    {% for tag in tags %}
-    	<li class="tag"><a href="/tags/#{{ tag }}" class="nav-link"><i class="fa fa-tag"></i> {{ tag }}</a></li>
-    {% endfor %}
-    </ul>
+    I currently attend the Science, Math,
+    and Computer Science Magnet Program at Montgomery Blair High School in
+    Silver Spring, Maryland, and am really involved in the CS community
+    there; I help run the
+    Computer Team and Cybersecurity Team by giving weekly lectures and am passionate both about learning
+    computer science myself and spreading knowledge throughout my school.</p>
 
-    <a href="{{ post.url }}" class="nav-link">
-        <p>
-            {{ post.excerpt | strip_html }}
-        </p>
-    </a>
+    <p>On this site, you can see some of the <a href="/lectures/">lectures and
+      talks</a> I've given over the years and many of my
+      <a href="/projects/">major projects</a>. Scroll down to learn more about me.</p>
+  </div>
 </div>
-{% endfor %}
+
+<br/>
+
+<div>
+  <div class="row section">
+    <div class="col-md-3"><h2>Activities</h2></div>
+    <div class="col-md-9">
+      <p><strong>Research:</strong> I worked with <a href="https://www.cs.umd.edu/~tomg/" target="_blank">Tom Goldstein</a> at the
+      University of Maryland, College Park in Summer 2017 to implement a
+      <a href="https://github.com/phasepack/fasta-python" target="_blank">Python version</a> of his
+      algorithm <a href="https://www.cs.umd.edu/~tomg/projects/fasta/" target="_blank">FASTA</a> for
+      efficient, user-friendly first-order optimization of (possibly) nonsmooth
+      objectives using forward-backward splitting, the Barzilai-Borwein adaptive
+      heuristic, and FISTA-style acceleration. In Summer 2016, I worked with
+      <a href="http://people.cs.georgetown.edu/~clay/index.html" target="_blank">Clay Shields<a> at
+      Georgetown University, where I helped analyze and implement protocols to
+      slow down malicious database exfiltration in postgreSQL databases.</p>
+
+      <p><strong>Projects:</strong> I've worked on many software projects
+        for fun, education, and service to my school over the years, including
+        <a href="/projects/#darksideos">Darkside OS</a>, a full-fledged,
+        from-scratch operating system including a kernel,
+        bootloader, and drivers, with more than 30,000 lines of code (2012-present),
+        <a href="/projects/#kraken">Kraken</a>, an in-progress toy compiler with
+        homegrown implementations of lexing and parsing algorithms, and
+        <a href="/projects/#silverchips">SilverChips Online</a>, a new site
+        for my high school's newspaper.
+
+        For more details, see <a href="/projects/">here</a>.</p>
+
+      <p><strong>Leadership:</strong> I head the Computer Team at my high school
+        and give weekly <a href="/lectures/">lectures</a> on subjects as diverse as complexity theory,
+        CPU architecture, Fourier analysis, and neural networks. I also
+        direct <a href="https://angstromctf.com/">&aring;ngstromCTF</a>,
+        a free, online, worldwide cybersecurity competition for high
+        school students that drew more than 1500 teams in 2018.</p>
+    </div>
+  </div>
+
+  <div class="row section">
+    <div class="col-md-3"><h2>Education</h2></div>
+    <div class="col-md-9">
+      <p>At Blair, my relevant coursework includes:</p>
+      <ul>
+        <li>Mathematical Physics (2017-18)</li>
+        <li>Complex Analysis (Spring 2018)</li>
+        <li>Linear Algebra (Spring 2018)</li>
+        <li>Mathematical Logic (Spring 2017)</li>
+        <li>Analysis II [Multivariable Calculus/Differential Equations] (2016-17)</li>
+        <li>Analysis of Algorithms (Fall 2016)</li>
+        <li>Algorithms and Data Structures (2015-16)</li>
+        <li>Analysis I [Single-Variable Calculus] (2015-16)</li>
+      </ul>
+
+      <p>Additionally, I've enriched my education via a variety of online
+      courses on Coursera and other platforms, including:</p>
+      <ul>
+        <li>Linear Algebra, MIT (Summer 2017)</li>
+        <li>Audio Signal Processing, U. Pampeu Fabra (Fall 2016)</li>
+        <li>Digital Signal Processing, EPFL (Fall 2016)</li>
+        <li>Neural Networks, U. Toronto (Fall 2016)</li>
+        <li>Natural Language Processing, U. Michigan (Fall 2016)</li>
+        <li>Machine Learning, Stanford (Fall 2016 and Fall 2014)</li>
+        <li>Compilers, Princeton (Spring 2015)</li>
+        <li>Cryptography, Stanford (Fall 2014)</li>
+        <li>Algorithms, Part I / Part II, Princeton (Fall 2014)</li>
+      </ul>
+
+      <p>and studied a number of texts in computer science, including
+        Sedgewick's <em>Algorithms</em>, Cormen, Leiserson, Rivest, and Stein's
+        <em>Introduction to Algoriths</em>, Aho, Sethi, and Ullman's
+        <em>Compilers: Principles, Techniques, and Tools</em>, and Sipser's
+        <em>Introduction to the Theory of Computation</em>.
+    </div>
+  </div>
+
+  <div class="row section">
+    <div class="col-md-3"><h2>Skills</h2></div>
+    <div class="col-md-9">
+      <p>I have more than 8 years of experience in Python and Java, and am fluent in
+        C/C++, x86 assembly, MATLAB/Octave, R,
+        Haskell, LISP, SQL, JavaScript, Ruby and PHP. I'm also adept at using frameworks and software including numpy/scipy,
+        Django, Angular, Bootstrap, Jekyll (which I used to make this site!),
+        STELLA, LaTeX, Ansible, general UNIX, and git. I'm experienced
+        with systems and embedded programming, server configuration, and the implementation
+        of complex algorithms in areas from numerical computing to machine learning.
+      </p>
+    </div>
+  </div>
+
+  <div class="row section">
+    <div class="col-md-3"><h2>Selected Awards</h2></div>
+    <div class="col-md-9">
+      <p>I've participated in a number of computer science, cybersecurity (mostly
+      capture-the-flag, or CTF, events),
+      math, science, and other competitions throughout my high school years, and
+      won a number of awards, such as:</p>
+
+      <ul>
+        <li>1st place in finals of nationwide High School Forensics competition at NYU's Cybersecurity Awareness Week (CSAW) conference (2017)</li>
+        <li>1st place nationwide in MITRE Corporation's 2017 and 2016 high school CTFs</li>
+        <li>2nd place at the University of Maryland's High School Programming Contest (2018);
+          3rd place at similar events at the University of Pennsylvania and
+          Virginia Commonwealth University (2017)</li>
+        <li>8/15 score on the American Invitational Mathematics Exam (2017)</li>
+        <li>Platinum Division qualifier for the USA Computational Olympiad (2015)</li>
+        <li>Honorable Mention at the University of Maryland's High School
+          Mathematics Competition (2017) and Carnegie Mellon University's
+          Mathematics and Informatics Competition in the Algebra division</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row section">
+    <div class="col-md-3"><h2>Other Interests</h2></div>
+    <div class="col-md-9">
+      <p>I'm a huge fan of William Gibson and his novel <em>Neuromancer</em>; my
+        favorite short story is <a href="http://www.lib.ru/GIBSON/frag_rose.txt">Fragments of
+        a Hologram Rose</a>. I enjoy cyberpunk and science fiction in general,
+        and love watching <em>Altered Carbon</em>, <em>Stranger Things</em>,
+        <em>Black Mirror</em>, <em>Star Trek: The Next Generation</em>, and
+        <em>Game of Thrones</em>. My music tastes are diverse but tend
+        to favor electronica and alternative rock; my favorite groups are Daft
+        Punk, OVERWERK, Ratatat, Gorillaz, and The Strokes.</p>
+    </div>
+  </div>
+</div>

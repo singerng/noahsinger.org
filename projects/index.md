@@ -6,22 +6,26 @@ layout: default
 
 ## Projects
 
+Here's a (very incomplete) list of coding projects that I've worked on over time.
+
 {% for project in site.data.projects %}
-<div>
-    <h3>{{ project.title }}</h3>
+  <a id="{{ project.name }}"/>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">By: <strong>{{ project.author }}</strong></h6>
 
-    By: {{ project.author }}
-    <br/>
+      <p class="card-text">{{ project.description | markdownify }}</p>
 
-    {% if project.source %}
-    <a href="{{ project.source }}" target="_blank">Source</a>
-        {% if project.site %}
-        | <a href="{{ project.site }}" target="_blank">Site</a>
-        {% endif %}
-    {% endif %}
-    <br/>
-    <div class="description">
-        {{ project.description | markdownify }}
+      <p>Software: <em>{{ project.software }}</em></p>
+
+      {% if project.source %}
+        <a href="{{ project.source }}" class="btn btn-primary"><i class="fas fa-code"></i> Code</a>
+      {% endif %}
+
+      {% if project.site %}
+        <a href="{{ project.site }}" class="btn btn-primary"><i class="fas fa-globe"></i> Site</a>
+      {% endif %}
     </div>
-</div>
+  </div>
 {% endfor %}
