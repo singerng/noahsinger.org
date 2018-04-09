@@ -38,7 +38,7 @@
 
 - name: algviz
   title: AlgViz
-  source: https://github.com/singerng/algviz
+  source: https://github.com/singerng/alg-viz
   author: Noah Singer
   software: JavaScript
   description: >
