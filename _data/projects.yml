@@ -48,6 +48,42 @@
     I developed it as an aid to use during lectures and talks I give on
     topics in computer science.
 
+- name: mbmt
+  title: MBMT
+  source: https://github.com/mbhs/mbmt
+  site: http://mbmt.mbhs.edu
+  author: Noah Singer and Noah Kim
+  software: Django
+  description: >
+    The Montgomery Blair Math Tournament (MBMT) is an annual math competition
+    for middle school students in the local area that the Blair Math Team
+    has hosted for several years. This platform allows coaches to
+    register their teams and students, and competition staff to record attendance,
+    scores, and winners.
+
+- name: scibowl
+  title: Science Bowl
+  source: https://github.com/mbhs/scibowl
+  site: http://scibowl.mbhs.edu
+  author: Noah Singer
+  software: MongoDB, Express.js, Angular, node.js
+  description: >
+    Science Bowl is a nationwide science trivia competition hosted by the
+    Department of Energy that I participated in for 7 years in middle and
+    high school. On this website, students can read about and tryout for
+    Blair's Science Bowl team.
+
+- name: singerng
+  title: singerng.github.io
+  source: https://github.com/singerng/singerng.github.io
+  site: http://singerng.github.io
+  author: Noah Singer
+  software: Jekyll
+  description: >
+    Wow, this is meta! This site was written as a mix between a blog and extended
+    curriculum vitae and incorporates years of lectures and projects as well as
+    lots of information about me.
+
 - name: kraken
   title: Kraken
   source: https://github.com/darksideos/kraken

@@ -20,11 +20,11 @@ Here's a (very incomplete) list of coding projects that I've worked on over time
       <p>Software: <em>{{ project.software }}</em></p>
 
       {% if project.source %}
-        <a href="{{ project.source }}" class="btn btn-primary"><i class="fas fa-code"></i> Code</a>
+        <a href="{{ project.source }}" target="_blank" class="btn btn-primary"><i class="fas fa-code"></i> Code</a>
       {% endif %}
 
       {% if project.site %}
-        <a href="{{ project.site }}" class="btn btn-primary"><i class="fas fa-globe"></i> Site</a>
+        <a href="{{ project.site }}" target="_blank" class="btn btn-primary"><i class="fas fa-globe"></i> Site</a>
       {% endif %}
     </div>
   </div>

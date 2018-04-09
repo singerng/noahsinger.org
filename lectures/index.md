@@ -18,11 +18,11 @@ lectures and tutorials throughout high school and beyond.
       <p class="card-text">{{ lecture.description | markdownify }}</p>
 
       {% if lecture.slides %}
-        <a href="/lectures/slides/{{ lecture.slides }}" class="btn btn-primary"><i class="fas fa-file-alt"></i> Slides</a>
+        <a href="/lectures/slides/{{ lecture.slides }}" target="_blank" class="btn btn-primary"><i class="fas fa-file-alt"></i> Slides</a>
       {% endif %}
 
       {% if lecture.paper %}
-        <a href="/lectures/papers/{{ lecture.paper }}" class="btn btn-primary"><i class="fas fa-file-alt"></i> Paper/Notes</a>
+        <a href="/lectures/papers/{{ lecture.paper }}" target="_blank" class="btn btn-primary"><i class="fas fa-file-alt"></i> Paper/Notes</a>
       {% endif %}
     </div>
   </div>
