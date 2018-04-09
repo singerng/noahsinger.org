@@ -17,6 +17,7 @@
 @import "bootstrap/dropdown";
 @import "bootstrap/card";
 @import "bootstrap/buttons";
+@import "bootstrap/transitions";
 
 @import "rouge";
 
@@ -44,7 +45,7 @@ main {
   bottom: 0;
   width: 100%;
 
-  height: $footer-height;
+  min-height: $footer-height;
   line-height: $footer-height;
 }
 
