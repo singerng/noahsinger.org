@@ -1,3 +1,58 @@
+- title: "Quantum Computing"
+  paper: quantum_computing.pdf
+  date: 2018-3-21
+  venue: Mathematical Physics Class
+  description: >
+    Quantum algorithms are one of the most important areas in computer science,
+    in that if and when large-scale quantum computers are developed, they
+    will have massive impacts on the lives of almost every person on Earth.
+    This paper is a tutorial in the basics of quantum computation, examining
+    Grover's algorithm for database searching and Shor's algorithm for efficient
+    integer factorization.
+
+- title: "Post-G&ouml;del Logic and Unanswered Questions"
+  slides: post_godel.pdf
+  date: 2018-1-24
+  venue: Mathematical Logic Class
+  description: >
+    Since our instructor was out on paternity leave, I had the privilege of
+    preparing and delivering the final lecture for the 2017-18 Mathematical Logic class
+    at Blair. The topic was beginning to examine the state that math was left in after
+    G&ouml;del's Incompleteness Theorems and other early 20th-century developments in
+    set theory and logic, as well as the personal fates of Hilbert, Russell,
+    Turing, and G&ouml;del himself.
+
+- title: "Formal Language Theory and Automata"
+  paper: formal_languages.pdf
+  date: 2018-1-4
+  venue: MBHS Computer Team
+  description: >
+    This is a guided activity, which is a combination of lecture paper and exercises
+    that I helped Computer Team members work through to introduce them to the
+    fundamentals of the theory of computation: decision problems, languages, and
+    automata.
+
+- title: "Computer Systems VI: Compilers"
+  slides: compilers.pdf
+  date: 2017-12-7
+  venue: MBHS Computer Team
+  description: >
+    Compilers are the backbone of modern software, enabling programmers to write
+    efficient code at a highly-manageable level. This lecture is a introduction
+    to what compilers are and how they work.
+
+- title: "Ordinals"
+  slides: ordinals.pdf
+  date: 2017-12-6
+  venue: Mathematical Logic Class
+  description: >
+    Informally, ordinals are extensions of the natural numbers to and beyond
+    countable infinity. Formally, they are canonical representations of equivalence
+    classes of well-ordered sets, with deep implications for axiomatic set theory.
+    Here, with Dilhan Salgado, as one of Logic's student presentations,
+    I examined the intuition behind ordinals and
+    what makes them so vitally important in mathematical logic.
+
 - title: "Computer Systems V: Networking"
   slides: networking.pdf
   date: 2017-11-30
@@ -5,6 +60,18 @@
   description: >
     The Internet, and computer networks in general, are ubiquituous in our everyday lives. In this lecture, we explore
     the fundamentals of computer networks and how they are structured, common Internet protocols, and how the World Wide Web works.
+
+- title: "FASTA and FLOW: Adaptive and Accelerated Convex Optimization with a Sequential
+Paradigm for Iterative Numerical Algorithms"
+  paper: fasta_paper.pdf
+  slides: fasta_slides.pdf
+  date: 2017-11-15
+  venue: Senior Research Project
+  description: >
+    Every important problem in mathematics, computer science, engineering, and the
+    pure and applied science can be formulated in some way as an optimization problem.
+    I developed a readable, user-friendly Python implementation of Goldstein's
+    FASTA algorithm for optimization of nonsmooth convex objectives.
 
 - title: "Computer Systems IV: Computer Engineering"
   slides: computer_engineering.pdf
@@ -41,4 +108,3 @@
   description: >
     Welcome to Computer Team! This year, I'll be publishing all the lecture slides on my website. Computers are
     complex and multifaceted systems, and we begin by discussing the basic parts of the computer.
-

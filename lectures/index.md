@@ -13,7 +13,7 @@ lectures and tutorials throughout high school and beyond.
   <div class="card mb-3">
     <div class="card-body">
       <h5 class="card-title">{{ lecture.title }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted"><strong>{{ lecture.date |  date: "%A, %B %d, %Y" }}</strong> at <strong>{{ lecture.venue }}</strong></h6>
+      <h6 class="card-subtitle mb-2 text-muted"><strong>{{ lecture.date |  date: "%A, %B %d, %Y" }}</strong> for <strong>{{ lecture.venue }}</strong></h6>
 
       <p class="card-text">{{ lecture.description | markdownify }}</p>
 
@@ -21,8 +21,8 @@ lectures and tutorials throughout high school and beyond.
         <a href="/lectures/slides/{{ lecture.slides }}" class="btn btn-primary"><i class="fas fa-file-alt"></i> Slides</a>
       {% endif %}
 
-      {% if lecture.notes %}
-        <a href="/lectures/slides/{{ lecture.notes }}" class="btn btn-primary"><i class="fas fa-file-alt"></i> Paper/Notes</a>
+      {% if lecture.paper %}
+        <a href="/lectures/papers/{{ lecture.paper }}" class="btn btn-primary"><i class="fas fa-file-alt"></i> Paper/Notes</a>
       {% endif %}
     </div>
   </div>
