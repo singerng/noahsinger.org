@@ -4,6 +4,7 @@
   site: http://angstromctf.com/
   author: Noah Singer
   software: Angular 2, Django, Ansible
+  favorite: true
   description: >
     &aring;ngstromCTF is an online cybersecurity competition for high school
     students. I direct the competition and wrote its RESTful website platform,
@@ -16,6 +17,7 @@
   source: https://github.com/darksideos/darkside-kernel
   author: Noah Singer, George Klees
   software: C, Assembly, various CPU emulators
+  favorite: true
   description: >
     Darkside OS is an operating system written entirely from scratch in C and Assembly with a
     focus on modern architecture, flexibility, portability, and speed. It
@@ -29,6 +31,7 @@
   site: https://scobeta.mbhs.edu/
   author: Noah Singer, Noah Kim, Mark Jung
   software: Bootstrap, Django
+  favorite: true
   description: >
     SilverChips Online is the online version of Montgomery Blair High School's
     newspaper. I designed the system's overall architecture and implemented its much of the backend and frontend,

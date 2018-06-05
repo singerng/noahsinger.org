@@ -2,24 +2,30 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 
-<span class="date">{{ page.date |  date: "%A, %B %d, %Y, %l:%M %p %Z" }}</span>
+<p class="text-muted">{{ page.date |  date: "%A, %B %d, %Y, %l:%M %p %Z" }}</p>
+
+{% if page.tags %}
 {% assign tags = page.tags | sort %}
-<ul class="tags">
 {% for tag in tags %}
-    <li class="tag"><a href="/tags/#{{ tag }}" class="nav-link"><i class="fa fa-tag"></i> {{ tag }}</a></li>
+	<a href="/tags/#{{ tag }}" class="btn btn-info btn-sm mt-1"><i class="fas fa-tag"></i> {{ tag }}</a>
 {% endfor %}
-</ul>
+<br/><br/>
+{% endif %}
 
 {{ content }}
 
-<div class="nav">
-    {% if page.previous.url %}
-    <a href="{{ page.previous.url }}" id="previous">&laquo; {{ page.previous.title }}</a>
-    {% endif %}
+<hr/>
 
-    {% if page.next.url %}
-    <a href="{{ page.next.url }}" id="next">{{ page.next.title }} &raquo;</a>
-    {% endif %}
+<div class="d-flex flex-row">
+  {% if page.previous.url %}
+  	<a href="{{ page.previous.url }}" class="h6 text-dark"><i class="fas fa-long-arrow-alt-left"></i> {{ page.previous.title }}</a>
+  {% endif %}
+
+	<div class="flex-grow-1"></div>
+
+  {% if page.next.url %}
+  	<a href="{{ page.next.url }}" class="h6 text-dark">{{ page.next.title }} <i class="fas fa-long-arrow-alt-right"></i></div>
+  {% endif %}
 </div>

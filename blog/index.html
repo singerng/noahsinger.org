@@ -4,28 +4,24 @@ permalink: /blog
 layout: default
 ---
 
-<h2>Welcome!</h2>
-
-(This section is out-of-date but should be back soon!)
+<h1>Blog</h1>
 
 {% for post in site.posts %}
 <div>
-    <a href="{{ post.url }}" class="nav-link">
-        <h3 class="inline-header">{{ post.title }}</h3>
-        <span class="date">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</span>
-    </a>
+  <a href="{{ post.url }}" class="text-dark">
+    <h3>{{ post.title }}</h3>
+  </a>
 
-    {% assign tags = post.tags | sort %}
-    <ul class="tags">
-    {% for tag in tags %}
-    	<li class="tag"><a href="/tags/#{{ tag }}" class="nav-link"><i class="fa fa-tag"></i> {{ tag }}</a></li>
-    {% endfor %}
-    </ul>
+  <p class="text-muted">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</p>
+  <p>{{ post.excerpt | strip_html }}</p>
 
-    <a href="{{ post.url }}" class="nav-link">
-        <p>
-            {{ post.excerpt | strip_html }}
-        </p>
-    </a>
+  {% assign tags = post.tags | sort %}
+  {% for tag in tags %}
+  	<a href="/tags/#{{ tag }}" class="btn btn-info btn-sm mt-1"><i class="fas fa-tag"></i> {{ tag }}</a>
+  {% endfor %}
+
+  {% if forloop.last == false %}
+    <hr/>
+  {% endif %}
 </div>
 {% endfor %}

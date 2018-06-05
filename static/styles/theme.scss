@@ -1,8 +1,8 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600');
 
 @import "variables";
 
@@ -25,33 +25,11 @@
   background-image: linear-gradient(120deg, $back-primary, $back-secondary);
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-$footer-height: 60px;
-
 body {
-  margin-bottom: $footer-height;
-}
-
-main {
-  padding-bottom: 2.5rem;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-  min-height: $footer-height;
-  line-height: $footer-height;
+  min-height: 100vh;
 }
 
 .section {
-  padding: .5rem;
-
   &:nth-child(even) {
     background-color: white;
   }
