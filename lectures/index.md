@@ -1,6 +1,6 @@
 ---
 title: Lectures
-permalink: /lectures/
+permalink: /lectures
 layout: default
 ---
 
