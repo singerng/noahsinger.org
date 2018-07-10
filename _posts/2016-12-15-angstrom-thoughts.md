@@ -1,7 +1,6 @@
 ---
 title: First Thoughts on ångstromCTF
 date: 2016-12-15 21:10:14 -0500
-layout: blog
 tags: [angstrom]
 ---
 

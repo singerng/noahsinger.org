@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<h1>{{ page.title | markdownify }}</h1>
 
 <p class="text-muted">{{ page.date |  date: "%A, %B %d, %Y, %l:%M %p %Z" }}</p>
 
@@ -20,12 +20,12 @@ layout: default
 
 <div class="d-flex flex-row">
   {% if page.previous.url %}
-  	<a href="{{ page.previous.url }}" class="h6 text-dark"><i class="fas fa-long-arrow-alt-left"></i> {{ page.previous.title }}</a>
+  	<a href="{{ page.previous.url }}" class="h6 text-dark"><i class="fas fa-long-arrow-alt-left"></i> {{ page.previous.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
   {% endif %}
 
 	<div class="flex-grow-1"></div>
 
   {% if page.next.url %}
-  	<a href="{{ page.next.url }}" class="h6 text-dark">{{ page.next.title }} <i class="fas fa-long-arrow-alt-right"></i></div>
+  	<a href="{{ page.next.url }}" class="h6 text-dark">{{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }} <i class="fas fa-long-arrow-alt-right"></i></div>
   {% endif %}
 </div>

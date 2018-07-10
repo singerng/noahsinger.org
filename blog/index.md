@@ -4,16 +4,17 @@ permalink: /blog
 layout: default
 ---
 
-<h1>Blog</h1>
+# Blog
 
 {% for post in site.posts %}
 <div>
   <a href="{{ post.url }}" class="text-dark">
-    <h3>{{ post.title }}</h3>
+    <h3>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
   </a>
 
   <p class="text-muted">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</p>
-  <p>{{ post.excerpt | strip_html }}</p>
+  {{ post.excerpt | strip_html | truncatewords: 75 }}
+  <br/><br/>
 
   {% assign tags = post.tags | sort %}
   {% for tag in tags %}

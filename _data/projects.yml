@@ -7,8 +7,8 @@
   favorite: true
   description: >
     &aring;ngstromCTF is an online cybersecurity competition for high school
-    students. I direct the competition and wrote its RESTful website platform,
-    where competitors log in to the competition platform, form teams, and
+    students. I directed the competition from 2015 to 2018 and wrote several iterations of its RESTful website platform,
+    where competitors logged in to the competition platform, form teams, and
     work together to answer questions in cryptography, binary exploitation, web
     exploitation, digital forensics, reverse engineering, and more.
 
@@ -30,14 +30,15 @@
   source: https://github.com/mbhs/silverchips
   site: https://scobeta.mbhs.edu/
   author: Noah Singer, Noah Kim, Mark Jung
-  software: Bootstrap, Django
+  software: Bootstrap, Django, QuillJS
   favorite: true
   description: >
     SilverChips Online is the online version of Montgomery Blair High School's
-    newspaper. I designed the system's overall architecture and implemented its much of the backend and frontend,
-    including displaying content (stories, photos, videos, polls, etc.), viewing
-    newspaper sections and top stories, collecting content together in galleries,
-    and allowing writers and editors to create and edit content.
+    newspaper. I designed the project's overall architecture and implemented the entire backend and much of the frontend.
+    I built functionality for users to display content (stories, photos, videos, polls, etc.), edit content
+    with a rich text editor, embed content into other content, collect content into
+    galleries (which are themselves content), manage permissions and users,
+    create and layout newspaper section pages, and more.
 
 - name: algviz
   title: AlgViz

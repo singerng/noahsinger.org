@@ -4,7 +4,7 @@ permalink: /projects
 layout: default
 ---
 
-## Projects
+# Projects
 
 Here's a (very incomplete) list of coding projects that I've worked on over time.
 The starred projects I consider to be my most significant projects for technical

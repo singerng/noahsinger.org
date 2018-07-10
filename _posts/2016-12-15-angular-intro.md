@@ -1,7 +1,6 @@
 ---
 title: "Why REST?: An Introduction to Angular 2"
 date: 2016-12-15 21:31:13 -0500
-layout: blog
 tags: [angular, restful, angstrom]
 ---
 

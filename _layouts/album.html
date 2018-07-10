@@ -1,0 +1,74 @@
+---
+layout: blog
+---
+
+<div class="row">
+  <div class="col col-md-3 col-xs-12">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h5 class="card-title"><i class="fas fa-headphones"></i> Album Details</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><i class="fas fa-pencil-alt"></i> Name: <em>{{ page.album.name }}</em></li>
+        <li class="list-group-item"><i class="fas fa-user-tie"></i> Artist: {{ page.album.artist }}</li>
+        <li class="list-group-item"><i class="far fa-calendar"></i> Year: {{ page.album.year }}</li>
+        {% if page.album.label %}<li class="list-group-item"><i class="fas fa-compact-disc"></i> Label: {{ page.album.label }}</li>{% endif %}
+        {% if page.album.genre %}<li class="list-group-item"><i class="fas fa-box-open"></i> Genre: {{ page.album.genre }}</li>{% endif %}
+        {% if page.album.length %}<li class="list-group-item"><i class="fas fa-clock"></i> Length: {{ page.album.length }}</li>{% endif %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="col col-md-9 col-xs-12">
+    <h3>Album Review: <em>{{ page.album.name }}</em> by {{ page.album.artist }}</h3>
+
+    {{ content }}
+  </div>
+</div>
+
+<h4>Listen to <em>{{ page.album.name }}</em></h4>
+
+<ul class="nav nav-tabs" id="play-tabs" role="tablist">
+  {% if page.album.listen.youtube %}
+    <li class="nav-item">
+      <a class="nav-link active" id="youtube-tab" data-toggle="tab" href="#youtube" role="tab" aria-controls="youtube" aria-selected="true">
+        <i class="fab fa-youtube"></i>
+        YouTube
+      </a>
+    </li>
+  {% endif %}
+  {% if page.album.listen.spotify %}
+    <li class="nav-item">
+      <a class="nav-link" id="spotify-tab" data-toggle="tab" href="#spotify" role="tab" aria-controls="spotify" aria-selected="false">
+        <i class="fab fa-spotify"></i>
+        Spotify
+      </a>
+    </li>
+  {% endif %}
+</ul>
+<br/>
+<div class="tab-content" id="play-tabs-content">
+  {% if page.album.listen.youtube %}
+    <div class="tab-pane fade show active" id="youtube" role="tabpanel" aria-labelledby="youtube-tab">
+      <div class="w-50 mx-auto">
+        <div class="embed-responsive embed-responsive-16by9 text-center">
+          <iframe class="embed-responsive-item"
+              src="https://www.youtube.com/embed/{% if page.album.listen.youtube.playlist %}videoseries?list={% endif %}{{ page.album.listen.youtube.id }}"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  {% if page.album.listen.spotify %}
+    <div class="tab-pane fade text-center" id="spotify" role="tabpanel" aria-labelledby="spotify-tab">
+      <div class="w-50 mx-auto">
+          <div class="embed-responsive embed-responsive-16by9 text-center">
+          <iframe class="embed-responsive-item"
+              src="https://open.spotify.com/embed?uri=spotify:album:{{ page.album.listen.spotify.id }}"
+              allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>

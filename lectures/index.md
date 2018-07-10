@@ -4,7 +4,7 @@ permalink: /lectures
 layout: default
 ---
 
-## Lectures
+# Lectures
 
 Here I've collected slides and papers/notes I've used for various presentations, talks,
 lectures and tutorials throughout high school and beyond.

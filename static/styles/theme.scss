@@ -6,10 +6,12 @@
 
 @import "variables";
 
+// only take the things we need from bootstrap
 @import "bootstrap/mixins";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/grid";
+@import "bootstrap/list-group";
 @import "bootstrap/code";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
@@ -37,4 +39,8 @@ body {
   &:nth-child(odd) {
     background-color: lighten($back-primary, 55%);
   }
+}
+
+.card-header .card-title {
+  margin-bottom: 0;
 }
