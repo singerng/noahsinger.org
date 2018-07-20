@@ -24,8 +24,8 @@ layout: default
 			{% for post_tag in post.tags %}
 				{% if post_tag == tag %}
 					<li>
-						<a class="h6 text-dark" href="{{ post.url }}">{{ post.title }}</a>
-						<span class="text-muted">&mdash; {{ post.date | date: "%A, %B %d, %Y, %l:%M %p %Z" }}</span>
+						<a class="h6 text-dark" href="{{ post.url }}">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+						<span class="text-muted">&mdash; {{ post.date | date: "%A, %B %d, %Y, %l:%M %p" }}</span>
 					</li>
 				{% endif %}
 			{% endfor %}

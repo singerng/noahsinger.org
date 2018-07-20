@@ -20,7 +20,7 @@ layout: default
     </div>
   </div>
 
-  <div class="col-md-9">
+  <div class="col-md-6 mb-4">
     <h1>Noah Singer</h1>
     <p>I'm a freshman computer science student at Harvard with diverse interests including
        the theory of computation, signal processing and applied math,
@@ -35,11 +35,26 @@ layout: default
       talks</a> I've given over the years, many <a href="/projects">projects</a> that I've worked on,
       and my thoughts on various technical and nontechnical topics in my <a href="/blog">blog</a>. Scroll down to learn more!</p>
   </div>
+
+  <div class="col-md-3">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Latest Posts</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        {% for post in site.posts limit:5 %}
+          <ul class="list-group-item">
+            <a class="text-dark" href="{{ post.url }}"><h6>{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</h6></a>
+          </ul>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
 
 <br/>
 
-<div>
+<div class="row">
   <div class="row section p-3">
     <div class="col-md-3"><h2>Activities</h2></div>
     <div class="col-md-9">
