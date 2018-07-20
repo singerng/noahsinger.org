@@ -11,7 +11,7 @@ The starred projects I consider to be my most significant projects for technical
 or personal reasons.
 
 {% for project in site.data.projects %}
-  <a id="{{ project.name }}"/>
+  <a name="{{ project.name }}"/>
   <div class="card mb-3">
     <div class="card-body">
       <h5 class="card-title">{% if project.favorite %}<i class="fas fa-star" data-fa-transform="shrink-3"></i>{% endif %} {{ project.title }}</h5>
