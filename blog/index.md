@@ -18,7 +18,7 @@ layout: default
 
   {% assign tags = post.tags | sort %}
   {% for tag in tags %}
-  	<a href="/tags/#{{ tag }}" class="btn btn-info btn-sm mt-1"><i class="fas fa-tag"></i> {{ tag }}</a>
+  	<a href="/tags#{{ tag }}" class="btn btn-info btn-sm mt-1"><i class="fas fa-tag"></i> {{ tag }}</a>
   {% endfor %}
 
   {% if forloop.last == false %}
