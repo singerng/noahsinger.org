@@ -17,18 +17,26 @@ get some more people interested in them as well!
 
 
 <a id="albums"/>
+# Albums
 
-<div class="card mb-4">
-  <div class="card-header">
-    <h3 class="card-title"><i class="fas fa-headphones"></i> Albums</h3>
-  </div>
-  <div class="card-body">
+<div class="row">
   {% for post in site.categories.albums %}
-    <a href="{{ post.url }}" class="text-dark">
-      <h4>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h4>
+  <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+    <a href="{{ post.url }}">
+      <img class="img-fluid" src="/static/images/albums/{{ post.album.image }}"/>
     </a>
-    <h5><em>{{ post.album.name }}</em> by {{ post.album.artist }} ({{ post.album.year }})</h5>
-    <p class="text-muted">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</p>
-  {% endfor %}
+    <h5 class="mt-2 mb-0"><em>{{ post.album.name }}</em></h5>
+    {{ post.album.artist }} ({{ post.album.year }})
   </div>
+  {% endfor %}
 </div>
+
+<br/><br/>
+<sup>
+  All album artwork on this website is taken from Wikipedia, in accordance
+  with their <a href="https://en.wikipedia.org/wiki/Wikipedia:Non-free_content">
+  standards for fair use</a> of copyrighted material. Images are low-resolution
+  and contextually significant, since they uniquely identify and describe
+  albums that are being written about. The details of the fair use rationale for any particular
+  image can be viewed on its corresponding Wikipedia page.
+</sup>

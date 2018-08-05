@@ -1,6 +1,6 @@
 ---
 title: "How Daft Punk's _Discovery_ Changed My Life"
-date: 2018-07-20 2:29 -0500
+date: 2018-07-20 14:29 -0400
 category: albums
 tags: [french-house, daft-punk]
 
@@ -11,6 +11,7 @@ album:
   label: Virgin Records
   genre: Disco, French house
   length: "61:20"
+  image: discovery.jpg
 
   listen:
     youtube:
@@ -72,7 +73,7 @@ you can hear some of that acid house influence on tracks like "Aerodynamic" and
 No fair review of *Discovery* would be complete without mentioning that
 this album is also slightly infamous for making huge use of sampling, on practically
 every single track. See a video
-<a href="https://www.youtube.com/watch?time_continue=3&v=OpZRNq33Obk">like this</a>
+[like this](https://www.youtube.com/watch?time_continue=3&v=OpZRNq33Obk)
 to get an idea of the extent of the sampling. Although many of the riffs are not original,
 Daft Punk goes on to contribute basically every other part of every track,
 so it doesn't bother me that much&mdash;music should be a collaborative process!
