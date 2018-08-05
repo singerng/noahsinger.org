@@ -1,5 +1,5 @@
 ---
-title: "Why REST?: An Introduction to Angular 2"
+title: "Why REST?: An introduction to Angular 2"
 date: 2016-12-15 21:31:13 -0500
 tags: [angular, restful, angstrom]
 ---

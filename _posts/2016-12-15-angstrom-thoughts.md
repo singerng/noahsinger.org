@@ -1,5 +1,5 @@
 ---
-title: First Thoughts on ångstromCTF
+title: First thoughts on ångstromCTF
 date: 2016-12-15 21:10:14 -0500
 tags: [angstrom]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Starting Out with Jekyll
+title: Starting out with Jekyll
 date: 2016-12-15 21:08:37 -0500
 tags: [jekyll]
 ---

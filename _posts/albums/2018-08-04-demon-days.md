@@ -2,7 +2,7 @@
 title: "Gorillaz' masterful _Demon Days_"
 date: 2018-08-04 22:18 -0400
 category: albums
-tags: [hip-hop, indie]
+tags: [hip-hop, indie, gorillaz]
 
 album:
   name: Demon Days
@@ -27,7 +27,7 @@ consisting of animated members 2D, Noodle, Murdoc, and Russell; Damion Albarn (o
 Blur fame) is the musical mastermind behind the group, while Jamie Hewlett draws
 the characters and concocts increasingly creative ways to integrate the "virtual"
 band experience into real life, including during live concerts. Famously, the duo
-performed *Demon Days*'s excellent "Feel Good Inc" with Madonna to open the 2006 Grammy's
+performed *Demon Days*' excellent "Feel Good Inc" with Madonna to open the 2006 Grammy's
 by using [Pepper's ghost](https://en.wikipedia.org/wiki/Pepper%27s_ghost) to
 project a hologram of Gorillaz members for audience members and TV viewers.
 
@@ -54,8 +54,7 @@ managed by the song's ominous-sounding namesake corporation. Trugoy the Dove
 pays tribute to the power of music (hip hop music in particular?) to
 combat conformist, consumerist pressures in in modern society: "Yo, we gon' ghost town this Motown / With yo' sound, you in the
 blink / Gon' bite the dust, can't fight with us / With yo' sound, you kill
-the Inc." And there is, of course, an excellent [Steven Colbert live cover]
-(https://www.youtube.com/watch?v=u7L0MfhlowU).
+the Inc." And there is, of course, an excellent [Steven Colbert live cover](https://www.youtube.com/watch?v=u7L0MfhlowU).
 
 The rest of the album is a great listen, too. I love the moody electronica elements
 in "El Manana," "All Alone," and "Dirty Harry," and the contrast between Damon Albarn's
