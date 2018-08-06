@@ -1,5 +1,5 @@
 ---
-title: "How Daft Punk's _Discovery_ Changed My Life"
+title: "How Daft Punk's _Discovery_ changed my musical life"
 date: 2018-07-20 14:29 -0400
 category: albums
 tags: [french-house, daft-punk]
