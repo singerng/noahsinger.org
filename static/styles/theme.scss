@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:600');
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe:400');
 
 @import "variables";
 
@@ -38,10 +39,24 @@ body {
   }
 
   &:nth-child(odd) {
-    background-color: lighten($back-primary, 55%);
+    background-color: lighten($back-primary, 75%);
   }
 }
 
 .card-header .card-title {
   margin-bottom: 0;
+}
+
+@mixin glow($size, $color) {
+  $all: ();
+  @for $i from 1 through 5 {
+    $all: append($all, 0 0 ($i*$i*$size) + px $color, comma);
+  }
+  text-shadow: $all;
+}
+
+.navbar-brand {
+  font-family: "Mr Dafoe";
+  font-size: 2em;
+  @include glow(4, #ee82ee);
 }
