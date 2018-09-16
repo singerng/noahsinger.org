@@ -26,19 +26,18 @@
     and executable loading.
 
 - name: silverchips
-  title: SilverChips Online
+  title: Silver Chips Online
   source: https://github.com/mbhs/silverchips
   site: https://scobeta.mbhs.edu/
   author: Noah Singer, Noah Kim, Mark Jung
   software: Bootstrap, Django, QuillJS
   favorite: true
   description: >
-    SilverChips Online is the online version of Montgomery Blair High School's
-    newspaper. I designed the project's overall architecture and implemented the entire backend and much of the frontend.
-    I built functionality for users to display content (stories, photos, videos, polls, etc.), edit content
-    with a rich text editor, embed content into other content, collect content into
-    galleries (which are themselves content), manage permissions and users,
-    create and layout newspaper section pages, and more.
+    Silver Chips Online is the online version of Montgomery Blair High School's
+    newspaper. I designed the project's overall architecture and implemented the entire backend and much of the frontend;
+    I implemented a polymorphic content system supporting a wide variety of multimedia formats (stories, photos, videos, polls, etc.),
+    rich-text style content editing, content embedding, permissions and user administration,
+    newspaper layout, content approval pipelines, and more.
 
 - name: algviz
   title: AlgViz
@@ -70,12 +69,14 @@
   source: https://github.com/mbhs/scibowl
   site: http://scibowl.mbhs.edu
   author: Noah Singer
+  favorite: true
+  ongoing: true
   software: MongoDB, Express.js, Angular, node.js
   description: >
     Science Bowl is a nationwide science trivia competition hosted by the
     Department of Energy that I participated in for 7 years in middle and
-    high school. On this website, students can read about and tryout for
-    Blair's Science Bowl team.
+    high school. On this website, students register their school's teams
+    and can put together online tryout and practice rounds.
 
 - name: singerng
   title: singerng.github.io
@@ -83,6 +84,7 @@
   site: http://singerng.github.io
   author: Noah Singer
   software: Jekyll
+  ongoing: true
   description: >
     Wow, this is meta! This site was written as a mix between a blog and extended
     curriculum vitae and incorporates years of lectures and projects as well as
