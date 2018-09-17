@@ -1,0 +1,22 @@
+- term: Fall 2018
+  courses:
+    - title: Honors Abstract and Linear Algebra
+      instructor: Joe Harris
+      code: Math 55
+      content: Group theory, theoretical linear algebra, representation theory.
+      institution: Harvard College
+    - title: Compilers
+      instructor: Stephen Chong
+      code: CS153
+      site: https://www.seas.harvard.edu/courses/cs153/2018fa/
+      institution: Harvard College
+    - title: Introduction to Theoretical Computer Science
+      instructor: Boaz Barak
+      code: CS121
+      site: https://cs121.boazbarak.org/
+      content: Defining computation, computational models (NAND, Turing, lambda, etc.), computability, complexity, incompleteness, random and quantum computation.
+      institution: Harvard College
+    - title: Introduction to World Literature
+      instructor: Martin Puchner, David Damrosch
+      code: Hum12
+      institution: Harvard College
