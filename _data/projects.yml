@@ -8,8 +8,8 @@
   description: >
     &aring;ngstromCTF is an online cybersecurity competition for high school
     students. I directed the competition from 2015 to 2018 and wrote several iterations of its RESTful website platform,
-    where competitors logged in to the competition platform, form teams, and
-    work together to answer questions in cryptography, binary exploitation, web
+    where competitors logged in to the competition platform, formed teams, and
+    worked together to answer questions in cryptography, binary exploitation, web
     exploitation, digital forensics, reverse engineering, and more.
 
 - name: darkside
