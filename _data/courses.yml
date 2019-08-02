@@ -1,43 +1,35 @@
 - term: Spring 2019
   courses:
-    - title: Honors Topology and Complex Analysis
+    - title: Studies in Topology and Complex Analysis
       instructor: Joe Harris
       code: Math 55B
-      institution: Harvard College
     - title: Algorithms and Data Structures
       instructor: Jelani Nelson
       code: CS 124
       site: http://sites.fas.harvard.edu/~cs124/cs124/
-      institution: Harvard College
     - title: Operating Systems
       instructor: James Mickens, Eddie Kohler
       code: CS 161
       site: https://read.seas.harvard.edu/cs161-19/
-      institution: Harvard College
     - title: Religious Pluralism in the United States
       instructor: Jacob Betz
       code: Expos 20
-      institution: Harvard College
 
 - term: Fall 2018
   courses:
-    - title: Honors Abstract and Linear Algebra
+    - title: Studies in Group Theory and Linear Algebra
       instructor: Joe Harris
       code: Math 55A
       content: Group theory, theoretical linear algebra, representation theory.
-      institution: Harvard College
     - title: Compilers
       instructor: Stephen Chong
       code: CS 153
       site: https://www.seas.harvard.edu/courses/cs153/2018fa/
-      institution: Harvard College
     - title: Introduction to Theoretical Computer Science
       instructor: Boaz Barak
       code: CS 121
       site: https://cs121.boazbarak.org/
-      content: Defining computation, computational models (NAND, Turing, lambda, etc.), computability, complexity, incompleteness, random and quantum computation.
-      institution: Harvard College
+      content: Defining computation, models of computation, computability, complexity, incompleteness, random and quantum computation.
     - title: Introduction to World Literature
       instructor: Martin Puchner, David Damrosch
       code: Hum12
-      institution: Harvard College

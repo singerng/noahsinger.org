@@ -32,14 +32,15 @@
     fundamentals of the theory of computation: decision problems, languages, and
     automata.
 
-- title: "Computer Systems VI: Compilers"
-  slides: compilers.pdf
+- title: "Computer Systems"
+  slides: computer_systems.pdf
   date: 2017-12-7
   venue: MBHS Computer Team
   description: >
-    Compilers are the backbone of modern software, enabling programmers to write
-    efficient code at a highly-manageable level. This lecture is a introduction
-    to what compilers are and how they work.
+    A collection of lectures I wrote with George Klees for the 2017-18 MBHS Computer Team
+    on the basics of how computers work. Includes six sets of slides: Introduction,
+    Kernels and Memory Management, Multitasking and Concurrency, Computer Engineering,
+    Networking, and Compilers.
 
 - title: "Ordinals"
   slides: ordinals.pdf
@@ -53,14 +54,6 @@
     I examined the intuition behind ordinals and
     what makes them so vitally important in mathematical logic.
 
-- title: "Computer Systems V: Networking"
-  slides: networking.pdf
-  date: 2017-11-30
-  venue: MBHS Computer Team
-  description: >
-    The Internet, and computer networks in general, are ubiquituous in our everyday lives. In this lecture, we explore
-    the fundamentals of computer networks and how they are structured, common Internet protocols, and how the World Wide Web works.
-
 - title: "FASTA and FLOW: Adaptive and Accelerated Convex Optimization with a Sequential
 Paradigm for Iterative Numerical Algorithms"
   paper: fasta_paper.pdf
@@ -72,39 +65,3 @@ Paradigm for Iterative Numerical Algorithms"
     pure and applied science can be formulated in some way as an optimization problem.
     I developed a readable, user-friendly Python implementation of Goldstein's
     FASTA algorithm for optimization of nonsmooth convex objectives.
-
-- title: "Computer Systems IV: Computer Engineering"
-  slides: computer_engineering.pdf
-  date: 2017-10-12
-  venue: MBHS Computer Team
-  description: >
-    The central processing unit, or CPU, is by far the most important component of the computer. CPUs simply
-    sequentially execute a sequence of steps called instructions. However, the interface between the CPU and
-    other components of the computer, such as memory and peripherals, as well as a drive to make CPUs faster,
-    more efficient, and more parallel have driven a recent proliferation in advanced CPU optimizations.
-
-- title: "Computer Systems III: Multitasking and Concurrency"
-  slides: multitasking.pdf
-  date: 2017-10-05
-  venue: MBHS Computer Team
-  description: >
-    Another key function of the kernel is to allow multiple user- and supervisor-level tasks to run in parallel,
-    necessitating considerations and balances in terms of scheduling of tasks and concurrency between tasks.
-
-- title: "Computer Systems II: Kernels and Memory Management"
-  slides: kernels.pdf
-  date: 2017-09-29
-  venue: MBHS Computer Team
-  description: >
-    The kernel is the most fundamental component of the operating system, the interface between software and
-    hardware on a computer. Kernels, although of varying complexity and design, have several specific functions
-    in common. One of the most important functions common to almost every kernel is memory management: the ability
-    to control the layout and allocation of memory to user applications.
-
-- title: "Computer Systems I: Introduction"
-  slides: intro.pdf
-  date: 2017-09-14
-  venue: MBHS Computer Team
-  description: >
-    Welcome to Computer Team! This year, I'll be publishing all the lecture slides on my website. Computers are
-    complex and multifaceted systems, and we begin by discussing the basic parts of the computer.

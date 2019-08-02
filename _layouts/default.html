@@ -22,9 +22,11 @@
             <li class="nav-item {% if page.url == "/" %}active{% endif %}">
               <a class="nav-link" href="/">me <span class="sr-only">(current)</span></a>
             </li>
+            {% comment %}
             <li class="nav-item {% if page.url == "/blog" %}active{% endif %}">
               <a class="nav-link" href="/blog">blog</a>
             </li>
+            {% endcomment %}
             <li class="nav-item {% if page.url == "/courses" %}active{% endif %}">
               <a class="nav-link" href="/courses">courses</a>
             </li>
@@ -32,11 +34,13 @@
               <a class="nav-link" href="/projects">projects</a>
             </li>
             <li class="nav-item {% if page.url == "/lectures" %}active{% endif %}">
-              <a class="nav-link" href="/lectures">lectures</a>
+              <a class="nav-link" href="/lectures">materials</a>
             </li>
+            {% comment %}
             <li class="nav-item {% if page.url == "/nontech" %}active{% endif %}">
               <a class="nav-link" href="/nontech">non-technical</a>
             </li>
+            {% endcomment %}
         </div>
       </nav>
     </header>
@@ -47,7 +51,7 @@
 
     <footer class="footer bg-dark text-light p-3 mt-5">
       <div class="container">
-        &copy; 2016-18 Noah Singer. Powered by GitHub, Jekyll, and Bootstrap.
+        &copy; 2016-19 Noah Singer. Powered by GitHub, Jekyll, and Bootstrap.
       </div>
     </footer>
 
