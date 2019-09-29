@@ -9,12 +9,14 @@ layout: default
 {% for term in site.data.courses %}
 <h3>{{ term.term }}</h3>
 
-<div class="ml-3">
+<div class="row ml-3">
 {% for course in term.courses %}
-  <h6><em>{{ course.code }}:</em> {{ course.title }} {% if course.site %}<a href="{{ course.site }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>{% endif %}</h6>
-  <i class="fas fa-user"></i> {{ course.instructor }}
-  <p><small>{{ course.content }}</small></p>
-  <hr/>
+  <div class="col-md-6 col-sm-12">
+	<h6>{% if course.code %}<em>{{ course.code }}:</em>{% endif %} {{ course.title }} {% if course.site %}<a href="{{ course.site }}" target="_blank"><i class="fas fa-external-link-alt"></i></a>{% endif %}</h6>
+	{% if course.instructor %}<i class="fas fa-user"></i> {{ course.instructor }}{% endif %}
+	{% if course.book %}<i class="fas fa-book"></i> <em>{{ course.book }}</em> ({{ course.author }}){% endif %}
+	<p><small>{{ course.notes }}</small></p>
+  </div>
 {% endfor %}
 </div>
 {% endfor %}

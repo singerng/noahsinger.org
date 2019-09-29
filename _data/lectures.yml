@@ -1,56 +1,53 @@
 - title: "Quantum Computing"
   paper: quantum_computing.pdf
-  date: 2018-3-21
+  date: 2018-03-21
   venue: Mathematical Physics Class
   description: >
-    Quantum algorithms are one of the most important areas in computer science,
-    in that if and when large-scale quantum computers are developed, they
-    will have massive impacts on the lives of almost every person on Earth.
-    This paper is a tutorial in the basics of quantum computation, examining
+    A tutorial in the basics of quantum computation, examining basic concepts,
+    introducing Fourier analysis, and outlining
     Grover's algorithm for database searching and Shor's algorithm for efficient
     integer factorization.
 
 - title: "Post-G&ouml;del Logic and Unanswered Questions"
   slides: post_godel.pdf
-  date: 2018-1-24
+  date: 2018-01-24
   venue: Mathematical Logic Class
   description: >
-    Since our instructor was out on paternity leave, I had the privilege of
-    preparing and delivering the final lecture for the 2017-18 Mathematical Logic class
-    at Blair. The topic was beginning to examine the state that math was left in after
+    A brief examination of the state that math was left in after
     G&ouml;del's Incompleteness Theorems and other early 20th-century developments in
     set theory and logic, as well as the personal fates of Hilbert, Russell,
-    Turing, and G&ouml;del himself.
+    Turing, and G&ouml;del themselves.
 
 - title: "Formal Language Theory and Automata"
   paper: formal_languages.pdf
-  date: 2018-1-4
+  date: 2018-01-04
   venue: MBHS Computer Team
   description: >
-    This is a guided activity, which is a combination of lecture paper and exercises
-    that I helped Computer Team members work through to introduce them to the
-    fundamentals of the theory of computation: decision problems, languages, and
+    A guided activity based primarily
+    off of early chapters in Aho et al.'s <em>Compilers: Principles, Techniques,
+    and Tools</em>; the activity is an introduction to fundamental concepts of
+    the theory of computation, such as decision problems, languages, and
     automata.
 
 - title: "Computer Systems"
   slides: computer_systems.pdf
-  date: 2017-12-7
+  date: 2017-12-07
   venue: MBHS Computer Team
   description: >
-    A collection of lectures I wrote with George Klees for the 2017-18 MBHS Computer Team
+    A collection of lectures I wrote with George Klees
     on the basics of how computers work. Includes six sets of slides: Introduction,
     Kernels and Memory Management, Multitasking and Concurrency, Computer Engineering,
     Networking, and Compilers.
 
 - title: "Ordinals"
   slides: ordinals.pdf
-  date: 2017-12-6
+  date: 2017-12-06
   venue: Mathematical Logic Class
   description: >
     Informally, ordinals are extensions of the natural numbers to and beyond
     countable infinity. Formally, they are canonical representations of equivalence
     classes of well-ordered sets, with deep implications for axiomatic set theory.
-    Here, with Dilhan Salgado, as one of Logic's student presentations,
+    Here, with Dilhan Salgado,
     I examined the intuition behind ordinals and
     what makes them so vitally important in mathematical logic.
 

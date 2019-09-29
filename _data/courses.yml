@@ -1,3 +1,33 @@
+- term: Fall 2019
+  courses:
+    - title: Advanced Machine Learning
+      instructor: Jean-Baptiste Tristan, Michael Wick
+      code: CS 281
+      site: https://harvard-ml-courses.github.io/cs281-web/
+    - title: Algorithms and Data Structures
+      instructor: Systems Security
+      code: CS 263
+    - title: Quantum Mechanics I
+      instructor: Girma Hailu
+      code: Physics 143A
+    - title: Measure Theory and Functional Analysis
+      instructor: Christian Brennecke
+      code: Math 114
+    - title: Contemporary Literature in Spain
+      instructor: Raquel Vega-Durán
+      code: Spanish 72
+
+- term: Summer 2019 (self-study)
+  courses:
+    - title: Introduction to Probability
+      instructor: Joe Blitzstein
+      code: Stat 110
+      site: https://projects.iq.harvard.edu/stat110/home
+    - title: Rings and Modules
+      book: Algebra
+      author: Michael Artin
+
+
 - term: Spring 2019
   courses:
     - title: Studies in Topology and Complex Analysis
@@ -20,7 +50,7 @@
     - title: Studies in Group Theory and Linear Algebra
       instructor: Joe Harris
       code: Math 55A
-      content: Group theory, theoretical linear algebra, representation theory.
+      notes: And some finite representation theory.
     - title: Compilers
       instructor: Stephen Chong
       code: CS 153
@@ -29,7 +59,6 @@
       instructor: Boaz Barak
       code: CS 121
       site: https://cs121.boazbarak.org/
-      content: Defining computation, models of computation, computability, complexity, incompleteness, random and quantum computation.
     - title: Introduction to World Literature
       instructor: Martin Puchner, David Damrosch
       code: Hum12
