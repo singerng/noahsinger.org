@@ -28,7 +28,7 @@
 - name: silverchips
   title: Silver Chips Online
   source: https://github.com/mbhs/silverchips
-  site: https://scobeta.mbhs.edu/
+  site: https://silverchips.mbhs.edu/
   author: Noah Singer, Noah Kim, Mark Jung
   software: Bootstrap, Django, QuillJS
   favorite: true
