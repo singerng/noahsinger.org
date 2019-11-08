@@ -6,7 +6,8 @@ layout: default
 
 # Materials
 
-Here I've collected things like slides, notes, and papers that I've written for presentations, talks, and research projects. (I take no responsibility for any inaccuracies in the pre-summer-2018 content from when I was still in high school!)
+Here I've collected things like slides, notes, and papers that I've written for presentations, talks, and research projects. Feel free to contact me if
+you notice errors in any of the materials. (I take no responsibility for inaccuracies in pre-2019 content.)
 
 {% for lecture in site.data.lectures %}
   <div class="card mb-3">
