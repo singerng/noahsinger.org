@@ -7,6 +7,28 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="/static/styles/theme.css">
 
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
     <title>{{ page.title | markdownify | strip_html }}</title>
   </head>
 
@@ -22,19 +44,20 @@
             <li class="nav-item {% if page.url == "/" %}active{% endif %}">
               <a class="nav-link" href="/">me <span class="sr-only">(current)</span></a>
             </li>
-            {% comment %}
             <li class="nav-item {% if page.url == "/blog" %}active{% endif %}">
               <a class="nav-link" href="/blog">blog</a>
             </li>
-            {% endcomment %}
             <li class="nav-item {% if page.url == "/courses" %}active{% endif %}">
               <a class="nav-link" href="/courses">courses</a>
             </li>
             <li class="nav-item {% if page.url == "/projects" %}active{% endif %}">
               <a class="nav-link" href="/projects">projects</a>
             </li>
-            <li class="nav-item {% if page.url == "/lectures" %}active{% endif %}">
-              <a class="nav-link" href="/lectures">materials</a>
+            <li class="nav-item {% if page.url == "/papers" %}active{% endif %}">
+              <a class="nav-link" href="/papers">papers</a>
+            </li>
+            <li class="nav-item {% if page.url == "/talks" %}active{% endif %}">
+              <a class="nav-link" href="/talks">talks</a>
             </li>
             {% comment %}
             <li class="nav-item {% if page.url == "/nontech" %}active{% endif %}">

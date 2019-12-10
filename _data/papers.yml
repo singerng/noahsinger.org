@@ -1,0 +1,22 @@
+- title: "<em>FASTA</em> and <em>FLOW</em>: Adaptive and Accelerated Convex Optimization with a Sequential
+Paradigm for Iterative Numerical Algorithms"
+  paper: fasta_paper.pdf
+  slides: fasta_slides.pdf
+  date: 2017-11-15
+  authors: Noah Singer
+  venue: Senior Research Project
+  type: research
+
+- title: Quantum Computing Tutorial
+  paper: quantum_computing.pdf
+  date: 2018-03-21
+  venue: Mathematical Physics (MBHS)
+  authors: Noah Singer
+  type: education
+
+- title: Introduction to Formal Language Theory and Automata
+  paper: formal_languages.pdf
+  date: 2018-01-04
+  venue: MBHS Computer Team
+  authors: Noah Singer
+  type: education

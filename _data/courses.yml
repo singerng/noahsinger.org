@@ -62,3 +62,21 @@
     - title: Introduction to World Literature
       instructor: Martin Puchner, David Damrosch
       code: Hum12
+
+- term: Montgomery Blair High School (selected)
+  courses:
+    - title: Complex Analysis
+    - title: Mathematical Physics
+      notes: Introductory mechanics and electromagnetism; Lagrangians, special relativity, Maxwell's equations, etc.
+    - title: Quantum Physics
+      notes: Qualitative introduction to quantum mechanics from a historical and experimental perspective; Feynman's lectures on quantum electrodynamics.
+    - title: Mathematical Logic
+      notes: A survey of the history and philosophy of mathematics; overviews of the rigororization of analysis and geometry; and an introduction to axiomatic set theory and G&ouml;del's theorems.
+    - title: Artificial Intelligence
+      notes: Search problems and heuristics, an introduction to LISP, and general principles of classical artifical intelligence.
+    - title: Analysis of Algorithms
+      notes: Standard introduction to algorithms and data structures.
+    - title: Analysis I
+      notes: Single-variable calculus.
+    - title: Analysis II
+      notes: Multivariable calculus and differential equations.
