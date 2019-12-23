@@ -6,7 +6,7 @@ layout: default
 
 # Papers
 
-Here I've collected papers that I've written, divided by their primary purposes.
+Here I've collected various papers that I've written.
 
 ### Research
 
@@ -28,7 +28,7 @@ Here I've collected papers that I've written, divided by their primary purposes.
 
 <ul>
 {% for paper in site.data.papers %}
-{% if paper.type == "education" %}
+{% if paper.type == "expository" %}
   <li>
     <strong>{% if paper.paper %}
       <a href="/papers/{{ paper.paper }}" target="_blank" class="text-dark">{{ paper.title }}</a>.

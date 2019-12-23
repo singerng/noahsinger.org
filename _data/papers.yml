@@ -7,16 +7,23 @@ Paradigm for Iterative Numerical Algorithms"
   venue: Senior Research Project
   type: research
 
+- title: CS 121.5 Notes, Fall 2019
+  paper: cs_121_5_2019.pdf
+  date: 2019-12-19
+  venue: Harvard CS 121
+  authors: Noah Singer
+  type: expository
+
 - title: Quantum Computing Tutorial
   paper: quantum_computing.pdf
   date: 2018-03-21
   venue: Mathematical Physics (MBHS)
   authors: Noah Singer
-  type: education
+  type: expository
 
 - title: Introduction to Formal Language Theory and Automata
   paper: formal_languages.pdf
   date: 2018-01-04
   venue: MBHS Computer Team
   authors: Noah Singer
-  type: education
+  type: expository
