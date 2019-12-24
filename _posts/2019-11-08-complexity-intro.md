@@ -1,6 +1,6 @@
 ---
 title: What is theoretical computer science?
-date: 2019-12-23 -0500
+date: 2019-12-23 00:05 -0500
 tags: [tcs, complexity-theory]
 ---
 
