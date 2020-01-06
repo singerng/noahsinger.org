@@ -6,6 +6,8 @@ layout: default
 
 # Blog
 
+I occasionally post on this blog for several reasons. Expository writing is helpful for me in solidifying my own understandings; I want to write down my activities for myself to remember in the future and for my family and friends to know what I'm up to; and if anyone is interested in CS or math and would benefit from the perspective of an undergraduate (probably unlikely), I am happy to offer it to them!
+
 {% for post in site.posts %}
 <div>
   <a href="{{ post.url }}" class="text-dark">

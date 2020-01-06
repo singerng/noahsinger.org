@@ -7,7 +7,7 @@ layout: default
 # Talks
 
 I've given a number of talks and presentations, and have linked here the slides. Feel free to contact me if
-you notice errors in any of the materials. (I take no responsibility for inaccuracies in pre-2019 content.)
+you notice errors in any of the materials.
 
 {% for talk in site.data.talks %}
   <div class="card mb-3">
