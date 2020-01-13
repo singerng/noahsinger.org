@@ -39,17 +39,17 @@
     rich-text style content editing, content embedding, permissions and user administration,
     newspaper layout, content approval pipelines, and more.
 
-- name: algviz
-  title: AlgViz
-  source: https://github.com/singerng/alg-viz
-  author: Noah Singer
-  software: JavaScript
-  description: >
-    AlgViz is a web framework for visualizing the execution
-    of computer algorithms. Currently it supports several
-    different sorting algorithms and can simulate Turing machines and automata.
-    I developed it as an aid to use during lectures and talks I give on
-    topics in computer science.
+# - name: algviz
+#   title: AlgViz
+#   source: https://github.com/singerng/alg-viz
+#   author: Noah Singer
+#   software: JavaScript
+#   description: >
+#     AlgViz is a web framework for visualizing the execution
+#     of computer algorithms. Currently it supports several
+#     different sorting algorithms and can simulate Turing machines and automata.
+#     I developed it as an aid to use during lectures and talks I give on
+#     topics in computer science.
 
 - name: mbmt
   title: MBMT
@@ -90,38 +90,38 @@
     curriculum vitae and incorporates years of lectures and projects as well as
     lots of information about me.
 
-- name: kraken
-  title: Kraken
-  source: https://github.com/darksideos/kraken
-  author: Noah Singer
-  software: C++
-  description: >
-    Kraken is a fully compiled programming language in development. I've used
-    it as an opportunity to implement my own lexer and parser generators
-    as well as learn more a lot about how compilers work. The algorithms
-    are mostly implementations of those described in the first edition of
-    <em>Compilers: Principles, Techniques, and Tools</em> (Aho et al., 1986).
+# - name: kraken
+#   title: Kraken
+#   source: https://github.com/darksideos/kraken
+#   author: Noah Singer
+#   software: C++
+#   description: >
+#     Kraken is a fully compiled programming language in development. I've used
+#     it as an opportunity to implement my own lexer and parser generators
+#     as well as learn more a lot about how compilers work. The algorithms
+#     are mostly implementations of those described in the first edition of
+#     <em>Compilers: Principles, Techniques, and Tools</em> (Aho et al., 1986).
 
-- name: angstrom-learn
-  title: ångstromCTF Learn
-  source: https://github.com/angstromctf/learn
-  site: https://learn.angstromctf.com
-  author: Noah Singer
-  software: Jekyll, Ruby
-  description: >
-    &aring;ngstromCTF also includes interactive learning materials for
-    students interested in cybersecurity, housed separately from the
-    competition. Individual modules teach students concepts and let
-    them try out techniques and ideas in real time.
+# - name: angstrom-learn
+#   title: ångstromCTF Learn
+#   source: https://github.com/angstromctf/learn
+#   site: https://learn.angstromctf.com
+#   author: Noah Singer
+#   software: Jekyll, Ruby
+#   description: >
+#     &aring;ngstromCTF also includes interactive learning materials for
+#     students interested in cybersecurity, housed separately from the
+#     competition. Individual modules teach students concepts and let
+#     them try out techniques and ideas in real time.
 
-- name: vivid
-  title: Vivid
-  source: https://github.com/nsquared/vivid
-  author: Noah Singer, Noah Kim
-  software: JavaScript
-  description: >
-    Vivid is a music player and visualizer written in Javascript/HTML5. It
-    uses WebAudio's built-in Fast Fourier Transform API to extract frequency
-    data from an audio file and then displays it in a set of dynamic views.
-    Vivid is open source and allows for customization through its modular
-    visualizer system.
+# - name: vivid
+#   title: Vivid
+#   source: https://github.com/nsquared/vivid
+#   author: Noah Singer, Noah Kim
+#   software: JavaScript
+#   description: >
+#     Vivid is a music player and visualizer written in Javascript/HTML5. It
+#     uses WebAudio's built-in Fast Fourier Transform API to extract frequency
+#     data from an audio file and then displays it in a set of dynamic views.
+#     Vivid is open source and allows for customization through its modular
+#     visualizer system.

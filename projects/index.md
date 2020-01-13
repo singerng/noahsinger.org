@@ -6,7 +6,7 @@ layout: default
 
 # Projects
 
-Here's a (very incomplete) list of coding projects that I've worked on over time.
+Here's a portfolio of (non-research) coding projects that I've worked on over time.
 Starred are the projects that are most important to me.
 
 {% for project in site.data.projects %}
