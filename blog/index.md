@@ -1,5 +1,5 @@
 ---
-title: singerng
+title: Blog (singerng)
 permalink: /blog
 layout: default
 ---
