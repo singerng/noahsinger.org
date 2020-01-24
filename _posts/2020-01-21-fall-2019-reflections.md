@@ -1,6 +1,6 @@
 ---
 title: Reflections on Fall 2019
-date: 2020-01-21 5:34 -0500
+date: 2020-01-21 15:34 -0500
 tags: [activity-log]
 ---
 *I tend to forget things I've done very quickly, so I'd like to start writing recaps of my activities over the semester and over breaks as a kind of diary. Hopefully this post is the first of many! There might also be some retrospectives someday.*
