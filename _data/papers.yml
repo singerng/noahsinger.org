@@ -1,3 +1,10 @@
+- title: "<em>memery</em>: Analyzing Heap Memory for Fun and Profit"
+  paper: memery.pdf
+  date: 2019-12-08
+  authors: Nathan Contreras, Mridu Nanda, Noah Singer
+  venue: Harvard CS 263
+  type: research
+
 - title: "<em>FASTA</em> and <em>FLOW</em>: Adaptive and Accelerated Convex Optimization with a Sequential
 Paradigm for Iterative Numerical Algorithms"
   paper: fasta_paper.pdf

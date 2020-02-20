@@ -1,3 +1,18 @@
+- term: Spring 2020
+  courses:
+    - title: Cryptography
+      instructor: Boaz Barak
+      code: CS 127
+      site: https://cs127.boazbarak.org
+    - title: Algebraic Geometry
+      instructor: Brooke Ullery
+      code: Math 137
+      site: http://people.math.harvard.edu/~bullery/math137/
+    - title: Essential Coding Theory
+      instructor: Madhu Sudan
+      code: CS 229R
+      site: http://people.seas.harvard.edu/~madhusudan/courses/Spring2020/
+
 - term: Fall 2019
   courses:
     - title: Advanced Machine Learning
