@@ -8,6 +8,7 @@ url: https://singerng.github.io
 markdown: kramdown
 kramdown:
   input: GFM
+  mathjax: true
   syntax_highlighter: rouge
 
 sass:
