@@ -39,7 +39,7 @@ Let us restate the decoding problem as a fully algorithmic problem. In what foll
 {% endcapture %}
 {% include box.html content=rs_problem title="Problem (Reed-Solomon decoding)" %}
 
-The following algorithm is due to Berlekamp and Welch; (as best I can tell) it was patented in 1983, while the Reed-Solomon code itself was introduced in 1960.
+In other words, we know that such $$f$$ exists, and our goal is to recover it! The following algorithm is due to Berlekamp and Welch; (as best I can tell) it was patented in 1983, while the Reed-Solomon code itself was introduced in 1960.
 
 {% capture bw_algorithm %}
 1. Find a pair of polynomials $$E \in \mathbb{F}_q^{\leq t}[x], W \in \mathbb{F}_q^{<k+t}[x]$$ such that for all $$i \in \{1,\ldots,q\}$$, $$E(\alpha_i) y_i = W(\alpha_i)$$.
@@ -49,7 +49,7 @@ The following algorithm is due to Berlekamp and Welch; (as best I can tell) it w
 
 *A priori*, this algorithm might not even be well-defined: Why do we know that such a pair of polynomials $$(W,E)$$ exists? Why must $$E$$ divide $$W$$? How can this be implemented efficiently? To analyze this algorithm, we state and prove the following claims:
 
-1. There exists a pair of polynomials $$(W,E)$$ of appropriate degrees such that $$W/E = f$$, the polynomial we want to recover.<br/><br/>*Proof*. Suppose such $$f$$ exists. Then let $$E(x) = \prod_{i : y_i \neq f(\alpha_i)} (x-\alpha_i)$$, i.e., $$E(x)$$ is zero iff an error was made when transmitting the $$i$$-th symbol, and let $$W(x) = E(x)f(x)$$.[^eloc] Then we claim that for all $$x \in \mathbb{F}_q$$, $$E(x)y_i = W(x)$$. This follows since if $$y_i = f(\alpha_i)$$, then $$E(\alpha_i)f_i = E(\alpha_i) f(\alpha_i) = W(\alpha_i)$$, while if $$y_i \neq f(\alpha_i)$$, $$E(\alpha_i) = W(\alpha_i) = 0$$. Furthermore, by our assumption, $$\text{deg}(E) \leq t$$, since $$\Delta(y_i,(f(\alpha_1),\ldots,f(\alpha_q))) \leq t$$, while $$\text{deg}(W) = \text{deg}(E) + \text{deg}(f) < t+k$$.
+1. There exists a pair of polynomials $$(W,E)$$ of appropriate degrees such that $$W/E = f$$, the polynomial we want to recover.<br/><br/>*Proof*. Let $$E(x) = \prod_{i : y_i \neq f(\alpha_i)} (x-\alpha_i)$$, i.e., $$E(\alpha_i)$$ is zero iff an error was made when transmitting the $$i$$-th symbol, and let $$W(x) = E(x)f(x)$$.[^eloc] Then we claim that for all $$x \in \mathbb{F}_q$$, $$E(x)y_i = W(x)$$. This follows since if $$y_i = f(\alpha_i)$$, then $$E(\alpha_i)f_i = E(\alpha_i) f(\alpha_i) = W(\alpha_i)$$, while if $$y_i \neq f(\alpha_i)$$, $$E(\alpha_i) = W(\alpha_i) = 0$$. Furthermore, by our assumption, $$\text{deg}(E) \leq t$$, since $$\Delta(y_i,(f(\alpha_1),\ldots,f(\alpha_q))) \leq t$$, while $$\text{deg}(W) = \text{deg}(E) + \text{deg}(f) < t+k$$.
 2. The first step can be implemented *efficiently*. This follows since finding such $$(W,E)$$ is equivalent to solving a system of linear equations in the coefficients of $$W$$ and $$E$$; Gaussian elimination therefore can be used to find such coefficients.
 3. If another pair of polynomials $$(U,F)$$ satisfies the constraints of the algorithm, then $$UE=WF$$. Note that this implies that $$F$$ divides $$U$$ and that $$F/U = W/E$$.<br/><br/>*Proof*. Note that $$\text{deg}(UE) \leq \text{deg}(U) + \text{deg}(E) < k+2t$$; this also applies to $$WF$$. Then the polynomial $$R(x) = U(x)E(x)-W(x)F(x)$$, if nonzero, is a polynomial of degree strictly less than $$k+2t < k+(n-k+1) = n+1$$, i.e., $$\text{deg}(R) < n$$. But $$R(x)$$ vanishes *everywhere* on $$\mathbb{F}_q$$, so we may conclude that is in fact the zero polynomial, and $$UE = WF$$.
 
