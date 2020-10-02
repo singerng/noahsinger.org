@@ -1,3 +1,29 @@
+- term: Fall 2021
+  courses:
+    - title: Spectral Graph Theory in Computer Science
+      instructor: Salil Vadhan
+      code: CS 229R
+      site: https://salil.seas.harvard.edu/classes/spectral-graph-theory
+    - title: Commutative Algebra
+      instructor: Mihnea Popa
+      code: Math 221
+      site: http://people.math.harvard.edu/~mpopa/221/index.html
+    - title: "Knowing the World: An Introduction to the History of Science"
+      instructor: Hannah Marcus, Benjamin Wilson
+      code: HS 100
+    - title: "How Music Works: Engineering the Acoustical World"
+      instructor: Robert Wood, Kelly Miller
+      code: Gened 1080
+    - title: Algebraic Topology
+      instructor: Joseph Harris
+      code: Math 231a
+      type: Auditing
+    - title: Introduction to Theoretical Computer Science
+      instructor: Madhu Sudan
+      code: CS 121
+      type: Teaching
+      site: http://people.seas.harvard.edu/~madhusudan/courses/Fall2020/
+
 - term: Spring 2020
   courses:
     - title: Cryptography
@@ -12,6 +38,11 @@
       instructor: Madhu Sudan
       code: CS 229R
       site: http://people.seas.harvard.edu/~madhusudan/courses/Spring2020/
+    - title: Operating Systems
+      instructor: James Mickens
+      code: CS 161
+      type: Teaching
+      site: https://read.seas.harvard.edu/cs161/2020/
 
 - term: Fall 2019
   courses:
@@ -31,22 +62,27 @@
     - title: Contemporary Literature in Spain
       instructor: Raquel Vega-Durán
       code: Spanish 72
+    - title: Introduction to Theoretical Computer Science
+      instructor: Boaz Barak, Madhu Sudan
+      code: CS 121
+      site: https://cs121.boazbarak.org
+      type: Teaching
 
-- term: Summer 2019 (self-study)
-  courses:
-    - title: Introduction to Probability
-      instructor: Joe Blitzstein
-      code: Stat 110
-      site: https://projects.iq.harvard.edu/stat110/home
-    - title: Rings and Modules
-      book: Algebra
-      author: Michael Artin
+# - term: Summer 2019 (self-study)
+#   courses:
+#     - title: Introduction to Probability
+#       instructor: Joe Blitzstein
+#       code: Stat 110
+#       site: https://projects.iq.harvard.edu/stat110/home
+#     - title: Rings and Modules
+#       book: Algebra
+#       author: Michael Artin
 
 
 - term: Spring 2019
   courses:
     - title: Studies in Topology and Complex Analysis
-      instructor: Joe Harris
+      instructor: Joseph Harris
       code: Math 55B
     - title: Algorithms and Data Structures
       instructor: Jelani Nelson
@@ -63,7 +99,7 @@
 - term: Fall 2018
   courses:
     - title: Studies in Group Theory and Linear Algebra
-      instructor: Joe Harris
+      instructor: Joseph Harris
       code: Math 55A
       notes: And some finite representation theory.
     - title: Compilers
@@ -77,21 +113,3 @@
     - title: Introduction to World Literature
       instructor: Martin Puchner, David Damrosch
       code: Hum12
-
-- term: Montgomery Blair High School (selected)
-  courses:
-    - title: Complex Analysis
-    - title: Mathematical Physics
-      notes: Introductory mechanics and electromagnetism; Lagrangians, special relativity, Maxwell's equations, etc.
-    - title: Quantum Physics
-      notes: Qualitative introduction to quantum mechanics from a historical and experimental perspective; Feynman's lectures on quantum electrodynamics.
-    - title: Mathematical Logic
-      notes: A survey of the history and philosophy of mathematics; overviews of the rigororization of analysis and geometry; and an introduction to axiomatic set theory and G&ouml;del's theorems.
-    - title: Artificial Intelligence
-      notes: Search problems and heuristics, an introduction to LISP, and general principles of classical artifical intelligence.
-    - title: Analysis of Algorithms
-      notes: Standard introduction to algorithms and data structures.
-    - title: Analysis I
-      notes: Single-variable calculus.
-    - title: Analysis II
-      notes: Multivariable calculus and differential equations.
