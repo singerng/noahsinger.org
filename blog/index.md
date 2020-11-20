@@ -6,8 +6,6 @@ layout: default
 
 # Blog
 
-This blog is mostly a mix of expository posts and records of my activities. I also used to write about music a lot. Please reach out over email with any questions or suggestions.
-
 {% for post in site.posts %}
 <div>
   <a href="{{ post.url }}" class="text-dark">

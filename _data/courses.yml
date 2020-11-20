@@ -14,12 +14,8 @@
     - title: "How Music Works: Engineering the Acoustical World"
       instructor: Robert Wood, Kelly Miller
       code: Gened 1080
-    - title: Algebraic Topology
-      instructor: Joseph Harris
-      code: Math 231a
-      type: Auditing
     - title: Introduction to Theoretical Computer Science
-      instructor: Madhu Sudan
+      instructor: Madhu Sudan, Adam Hesterberg
       code: CS 121
       type: Teaching
       site: http://people.seas.harvard.edu/~madhusudan/courses/Fall2020/
