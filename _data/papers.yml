@@ -2,8 +2,15 @@
   paper: memery.pdf
   date: 2019-12-08
   authors: Nathan Contreras, Mridu Nanda, Noah Singer
-  venue: Harvard CS 263
-  type: research
+  venue: "Harvard CS 263: Systems Security (Prof. James Mickens)"
+  type: course_project
+
+- title: "The Artin-Rees Lemma and Applications"
+  paper: artin_rees.pdf
+  date: 2020-12-11
+  authors: Serina Hu, Michelle Qian, Noah Singer
+  venue: "Harvard Math 221: Commutative Algebra (Prof. Mihnea Popa)"
+  type: course_project
 
 # - title: "<em>FASTA</em> and <em>FLOW</em>: Adaptive and Accelerated Convex Optimization with a Sequential
 # Paradigm for Iterative Numerical Algorithms"

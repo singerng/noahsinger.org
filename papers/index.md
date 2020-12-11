@@ -6,11 +6,11 @@ layout: default
 
 # Papers
 
-### Research
+### Course Projects
 
 <ul>
 {% for paper in site.data.papers %}
-{% if paper.type == "research" %}
+{% if paper.type == "course_project" %}
   <li>
     <strong>{% if paper.paper %}
       <a href="/papers/{{ paper.paper }}" target="_blank" class="text-dark">{{ paper.title }}</a>.
