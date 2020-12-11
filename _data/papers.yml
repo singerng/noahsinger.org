@@ -1,10 +1,3 @@
-- title: "<em>memery</em>: Analyzing Heap Memory for Fun and Profit"
-  paper: memery.pdf
-  date: 2019-12-08
-  authors: Nathan Contreras, Mridu Nanda, Noah Singer
-  venue: "Harvard CS 263: Systems Security (Prof. James Mickens)"
-  type: course_project
-
 - title: "The Artin-Rees Lemma and Applications"
   paper: artin_rees.pdf
   date: 2020-12-11
@@ -12,14 +5,12 @@
   venue: "Harvard Math 221: Commutative Algebra (Prof. Mihnea Popa)"
   type: course_project
 
-# - title: "<em>FASTA</em> and <em>FLOW</em>: Adaptive and Accelerated Convex Optimization with a Sequential
-# Paradigm for Iterative Numerical Algorithms"
-#   paper: fasta_paper.pdf
-#   slides: fasta_slides.pdf
-#   date: 2017-11-15
-#   authors: Noah Singer
-#   venue: Senior Research Project
-#   type: research
+- title: "<em>memery</em>: Analyzing Heap Memory for Fun and Profit"
+  paper: memery.pdf
+  date: 2019-12-08
+  authors: Nathan Contreras, Mridu Nanda, Noah Singer
+  venue: "Harvard CS 263: Systems Security (Prof. James Mickens)"
+  type: course_project
 
 - title: Local Coding
   paper: local_coding_cs229r.pdf
@@ -37,16 +28,3 @@
   scribing: various
   type: notes
 
-# - title: Quantum Computing Tutorial
-#   paper: quantum_computing.pdf
-#   date: 2018-03-21
-#   venue: Mathematical Physics (MBHS)
-#   authors: Noah Singer
-#   type: expository
-
-# - title: Introduction to Formal Language Theory and Automata
-#   paper: formal_languages.pdf
-#   date: 2018-01-04
-#   venue: MBHS Computer Team
-#   authors: Noah Singer
-#   type: expository
