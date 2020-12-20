@@ -1,3 +1,10 @@
+- title: "Color Me Converged: Surveying and Experimenting on the Glauber Dynamics for Sampling <em>k</em>-Colorings"
+  paper: glauber_colorings_cs_229r.pdf
+  date: 2020-12-19
+  authors: Noah Singer, Grace Tian
+  venue: "Harvard CS 229r: Spectral Graph Theory (Prof. Salil Vadhan)"
+  type: course_project
+
 - title: "The Artin-Rees Lemma and Applications"
   paper: artin_rees.pdf
   date: 2020-12-11
