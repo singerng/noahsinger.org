@@ -1,4 +1,25 @@
-- term: Fall 2021
+- term: Spring 2021
+  courses:
+    - title: Computational Complexity
+      instructor: Madhu Sudan
+      code: CS 221
+      site: https://docs.google.com/document/d/1KzLaDWxY8skiYXtmst5izeFJLneV5lYyrAjr_Kv0Nj4/edit
+    - title: Analysis of Boolean Functions
+      instructor: Dor Minzer
+      code: 18.216
+    - title: "American Capitalism"
+      instructor: Sven Beckert
+      code: Gened 1159
+    - title: Classics of Computer Science
+      instructor: Harry Lewis
+      code: CS 191
+    - title: Data Structures and Algorithms
+      instructor: Michael Mitzenmacher, Adam Hesterberg
+      code: CS 124
+      type: Teaching
+      site: https://sites.fas.harvard.edu/~libcs124/cs124/index.html
+
+- term: Fall 2020
   courses:
     - title: Spectral Graph Theory in Computer Science
       instructor: Salil Vadhan

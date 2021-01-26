@@ -1,0 +1,13 @@
+<li>
+    <strong>{{ paper.title }}</strong>. {{ paper.authors }}. {{ paper.date |  date: "%B %Y" }}.
+    {% if paper.venue %}<em>{{ paper.venue }}.</em>{% endif %}
+    {% if paper.scribing %}Scribing {{ paper.scribing }}.{% endif %}
+
+    {% if paper.pdf %}
+    <a href="/papers/{{ paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>.
+    {% endif %}
+
+    {% if paper.arxiv %}
+    <a href="https://arxiv.org/abs/{{ paper.arxiv }}" target="_blank"><i class="fas fa-book-open"></i> arXiv</a>.
+    {% endif %}
+ </li>
