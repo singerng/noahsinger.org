@@ -1,27 +1,27 @@
 - title: "Point-hyperplane incidence geometry and the log-rank conjecture"
   date: 2021-01-23
-  authors: Noah Singer, Madhu Sudan
+  authors: Noah Singer and Madhu Sudan
   arxiv: 2101.09592
   type: research
 
 - title: "Color Me Converged: Surveying and Experimenting on the Glauber Dynamics for Sampling <em>k</em>-Colorings"
   pdf: glauber_colorings_cs_229r.pdf
   date: 2020-12-19
-  authors: Noah Singer, Grace Tian
+  authors: Noah Singer and Grace Tian
   venue: "Harvard CS 229r: Spectral Graph Theory (Prof. Salil Vadhan)"
   type: course_project
 
 - title: "The Artin-Rees Lemma and Applications"
   pdf: artin_rees.pdf
   date: 2020-12-11
-  authors: Serina Hu, Michelle Qian, Noah Singer
+  authors: Serina Hu, Michelle Qian, and Noah Singer
   venue: "Harvard Math 221: Commutative Algebra (Prof. Mihnea Popa)"
   type: course_project
 
 - title: "<em>memery</em>: Analyzing Heap Memory for Fun and Profit"
   pdf: memery.pdf
   date: 2019-12-08
-  authors: Nathan Contreras, Mridu Nanda, Noah Singer
+  authors: Nathan Contreras, Mridu Nanda, and Noah Singer
   venue: "Harvard CS 263: Systems Security (Prof. James Mickens)"
   type: course_project
 
@@ -29,7 +29,6 @@
   pdf: local_coding_cs229r.pdf
   date: 2020-04-13
   venue: Harvard CS 229r
-  authors: Noah Singer
   scribing: Madhu Sudan
   type: notes
 
@@ -37,6 +36,5 @@
   pdf: cs_121_5_2019.pdf
   date: 2019-12-19
   venue: Harvard CS 121
-  authors: Noah Singer
   scribing: various
   type: notes

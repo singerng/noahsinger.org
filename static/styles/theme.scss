@@ -67,3 +67,15 @@ blockquote {
   color: #6a737d;
   padding: 0 1em;
 }
+
+ul.paper-list {
+  list-style-type: none;
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  span.paper-title {
+  font-weight: bold;
+  }
+}
