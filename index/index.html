@@ -19,27 +19,11 @@ layout: default
         </div>
       </div>
     </div>
-
-    <br/>
-
-    <div class="card">
-      <div class="card-header">
-        <h3 class="card-title">Recent Blog Posts</h3>
-      </div>
-      <ul class="list-group list-group-flush">
-        {% for post in site.posts limit:5 %}
-          <ul class="list-group-item">
-            <a class="text-dark" href="{{ post.url }}"><h6>{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</h6></a>
-          </ul>
-        {% endfor %}
-      </ul>
-    </div>
   </div>
 
   <div class="col-md-9 mb-4">
-    <h1>Noah Singer</h1>
-    <p>I study computer science and math at Harvard (Pforzheimer House '22). I want to understand what problems can be solved by computational processes,
-      how such problems can best be solved, and what effect solving (or being unable to solve) such problems has on society. After graduating, I plan to pursue a Ph.D. and a career in research in theoretical computer science. <a href="/index/cv.pdf">Here</a> is my CV.</p>
+    <h1>About Me</h1>
+    <p>I study computer science and math at Harvard University (Pforzheimer House '22). My research is in theoretical computer science. At Harvard, I am incredibly fortunate to be working with Prof. <a href="https://madhu.seas.harvard.edu">Madhu Sudan</a> on streaming and communication complexity. In Summer 2021, I will be working at the <a href="https://reu.dimacs.rutgers.edu">DIMACS REU</a> with Prof. <a href="https://www.cs.rutgers.edu/~allender/">Eric Allender</a>. In Fall 2021, I will be applying to CS Ph.D. programs. <a href="/index/cv.pdf">Here</a> is my CV.</p>
     <br/>
 
     <div class="p-3">
@@ -47,7 +31,24 @@ layout: default
         <div class="col">
           <h3>Interests</h3>
 
-          <p>I have broad interests in theoretical computer science, including in complexity, cryptography, and algorithms. I enjoy topics where pure mathematics can be used to answer questions about computing; some of my recent areas of study include communication complexity, streaming algorithms, and Boolean function analysis. Other questions that interest me include: Why does interaction make computational tasks more tractable? What about non-black-box/non-oracle access to code or data? 
+          <p>I have broad interests in theoretical computer science, including in complexity, cryptography, and algorithms. Specific interests include using mathematical techniques (e.g. algebra, Boolean Fourier analysis) to answer questions about computation, and studying the role of interaction in computation (e.g. communication complexity, oracle complexity, zero-knowledge proofs).</p>
+        </div>
+      </div>
+
+      <div class="row section pt-3">
+        <div class="col">
+          <h3>Papers</h3>
+
+            <p>
+            <ul class="paper-list">
+            {% for paper in site.data.papers %}
+            {% if paper.select %}
+            {% include paper.html paper=paper %}
+            {% endif %}
+            {% endfor %}
+            </ul>
+
+            A full list of my papers and other writing may be found <a href="/papers">here</a>.</p>
         </div>
       </div>
 
@@ -56,16 +57,16 @@ layout: default
           <h3>Activities</h3>
 
           <p><strong>Teaching.</strong>
-            I was/am a teaching assistant for the following courses:
+            I have been a teaching assistant for the following courses:
             <ul>
-              <li><em>CS 124: Data Structures and Algorithms</em> in Spring 2021 (Prof. Michael Mitzenmacher and Adam Hesterberg)</li>
-              <li><em>CS 121: Introduction to Theoretical Computer Science</em> in Fall 2020 (Prof. Madhu Sudan and Adam Hesterberg)</li>
-              <li><em>CS 161: Operating Systems</em> in Spring 2020 (Prof. James Mickens)</li>
-              <li><em>CS 121: Introduction to Theoretical Computer Science</em> in Fall 2019 (Profs. Boaz Barak and Madhu Sudan)</li>
+              <li><a href="http://sites.fas.harvard.edu/~libcs124/cs124/index.html"><em>CS 124: Data Structures and Algorithms</em> (Spring 2021)</a></li>
+              <li><a href="http://people.seas.harvard.edu/~madhusudan/courses/Fall2020/"><em>CS 121: Introduction to Theoretical Computer Science</em> (Fall 2020)</a></li>
+              <li><a href="https://read.seas.harvard.edu/cs161/2020/"><em>CS 161: Operating Systems</em> (Spring 2020)</a></li>
+              <li><a href="https://cs121.boazbarak.org"><em>CS 121: Introduction to Theoretical Computer Science</em> (Fall 2019)</a></li>
             </ul>
-          For CS 121 in Fall 2019 and Fall 2020, I have organized guest lectures in the "CS 121.5" recitation section for advanced students.</p>
+          In CS 121 (Fall 2019 and 2020), I organized guest lectures in the "CS 121.5" advanced section.</p>
 
-          <p><strong>Community.</strong> In Fall 2020, I am a CS <a href="https://harvardcs.info/advising/pca/">Peer Concentration Adviser</a> and <a href="https://www.harvardwics.com/mentorships">Women in CS (WiCS) mentor</a>. In Spring 2019, I worked with Harvard's <a href="http://digilit.io/">Digital Literacy Project</a>
+          <p><strong>Community.</strong> Since 2020, I have been a CS <a href="https://harvardcs.info/advising/pca/">Peer Concentration Adviser</a> and <a href="https://www.harvardwics.com/mentorships">Women in CS (WiCS) mentor</a>. In Spring 2019, I worked with Harvard's <a href="http://digilit.io/">Digital Literacy Project</a>
             to teach Scratch and Processing.js to Boston-area middle school students.
 
           <p><strong>Work Experience.</strong>

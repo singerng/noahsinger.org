@@ -26,11 +26,11 @@ Organized in reverse chronological order.
 {% endfor %}
 </ul>
 
-### Course Notes
+### Miscellaneous
 
 <ul class="paper-list">
 {% for paper in site.data.papers %}
-{% if paper.type == "notes" %}
+{% if paper.type == "misc" %}
 {% include paper.html paper=paper %}
 {% endif %}
 {% endfor %}

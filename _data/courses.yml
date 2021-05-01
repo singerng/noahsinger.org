@@ -4,9 +4,11 @@
       instructor: Madhu Sudan
       code: CS 221
       site: https://docs.google.com/document/d/1KzLaDWxY8skiYXtmst5izeFJLneV5lYyrAjr_Kv0Nj4/edit
+      type: Graduate
     - title: Analysis of Boolean Functions
       instructor: Dor Minzer
       code: 18.216
+      type: Graduate, MIT
     - title: "American Capitalism"
       instructor: Sven Beckert
       code: Gened 1159
@@ -25,10 +27,12 @@
       instructor: Salil Vadhan
       code: CS 229R
       site: https://salil.seas.harvard.edu/classes/spectral-graph-theory
+      type: Graduate
     - title: Commutative Algebra
       instructor: Mihnea Popa
       code: Math 221
       site: http://people.math.harvard.edu/~mpopa/221/index.html
+      type: Graduate
     - title: "Knowing the World: An Introduction to the History of Science"
       instructor: Hannah Marcus, Benjamin Wilson
       code: HS 100
@@ -55,6 +59,7 @@
       instructor: Madhu Sudan
       code: CS 229R
       site: http://people.seas.harvard.edu/~madhusudan/courses/Spring2020/
+      type: Graduate
     - title: Operating Systems
       instructor: James Mickens
       code: CS 161
@@ -67,9 +72,11 @@
       instructor: Jean-Baptiste Tristan, Michael Wick
       code: CS 281
       site: https://harvard-ml-courses.github.io/cs281-web/
+      type: Graduate
     - title: Systems Security
       instructor: James Mickens
       code: CS 263
+      type: Graduate
     - title: Quantum Mechanics I
       instructor: Girma Hailu
       code: Physics 143A

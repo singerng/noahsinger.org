@@ -1,8 +1,18 @@
-- title: "Point-hyperplane incidence geometry and the log-rank conjecture"
+- title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-01-23
+  authors: Noah Singer, Madhu Sudan, and Santhoshini Velusamy
+  type: research
+  venue: In submission
+  eccc: 2021/064
+  select: yes
+
+- title: "Point-hyperplane incidence geometry and the log-rank conjecture"
+  date: 2021-04-30
   authors: Noah Singer and Madhu Sudan
   arxiv: 2101.09592
   type: research
+  venue: In submission
+  select: yes
 
 - title: "Color Me Converged: Surveying and Experimenting on the Glauber Dynamics for Sampling <em>k</em>-Colorings"
   pdf: glauber_colorings_cs_229r.pdf
@@ -25,16 +35,9 @@
   venue: "Harvard CS 263: Systems Security (Prof. James Mickens)"
   type: course_project
 
-- title: Local Coding
-  pdf: local_coding_cs229r.pdf
-  date: 2020-04-13
-  venue: Harvard CS 229r
-  scribing: Madhu Sudan
-  type: notes
-
 - title: CS 121.5 Notes, Fall 2019
   pdf: cs_121_5_2019.pdf
   date: 2019-12-19
   venue: Harvard CS 121
   scribing: various
-  type: notes
+  type: misc

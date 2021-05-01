@@ -5,7 +5,7 @@ $headings-font-weight: 600;
 
 $back-primary: #000050;
 $back-secondary: #280052;
-$link-color: #e97402;
+$link-color: lighten($back-secondary, 20%);
 $mark-bg: #ebdfeb;
 
 @import "bootstrap/functions";
