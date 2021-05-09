@@ -1,8 +1,16 @@
+- title: "Oracle <strong>BQP</strong> vs. <strong>PH</strong>"
+  date: 2021-05-09
+  authors: Juspreet Singh Sandhu, Noah Singer, and Lavanya Singh
+  type: course_project
+  venue: "Harvard CS 221: Computational Complexity (Prof. Madhu Sudan)"
+  pdf: oracle_bqp_vs_ph.pdf
+
 - title: "Streaming approximation resistance of every ordering CSP"
-  date: 2021-01-23
+  date: 2021-05-04
   authors: Noah Singer, Madhu Sudan, and Santhoshini Velusamy
   type: research
   venue: In submission
+  arxiv: 2105.01782
   eccc: 2021/064
   select: yes
 
