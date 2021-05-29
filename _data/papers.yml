@@ -13,6 +13,29 @@
   arxiv: 2105.01782
   eccc: 2021/064
   select: yes
+  abstract: >
+    An <em>ordering constraint satisfaction problem (OCSP)</em> is given by a positive integer \(k\) and a constraint predicate
+    \(\Pi\) mapping permutations on \(\{1,\ldots,k\}\) to \((0,1)\). Given an instance of OCSP(\(\Pi\)) on \(n\) variables
+    and \(m\) constraints, the goal is to find an ordering of the \(n\) variables that maximizes the number of constraints
+    that are satisfied, where a constraint specifies a sequence of \(k\) distinct variables and the constraint is <em>satisfied</em>
+    by an ordering on the \(n\) variables if the ordering induced on the \(k\) variables in the constraint satisfies \(\Pi\).
+    Natural ordering constraint satisfaction problems include "Maximum acyclic subgraph (MAS)" and "Betweenness".
+
+
+    In this work we consider the task of approximating the maximum number of satisfiable constraints in the <em>(single-pass)
+    streaming setting</em>, where an instance is presented as a stream of constraints. <mark>We show that for every \(\Pi\), algorithms
+    using \(o(\sqrt n)\) space cannot distinguish streams where almost every constraint is satisfiable from streams
+    where no ordering beats the random ordering by a noticeable amount.</mark> In the case of MAS our result shows that for
+    every \(\epsilon>0\), MAS is not \((\frac12+\epsilon)\)-approximable. The previous best inapproximability result only
+    ruled out a \(\frac34\)-approximation.
+    
+
+    Our results build on a recent work of Chou, Golovnev, Sudan, and Velusamy who show tight inapproximability results
+    for some constraint satisfaction problems over arbitrary (finite) alphabets. We show that the hard instances from
+    this earlier work have the property that in every partition of the hypergraph formed by the constraints into small
+    blocks, most of the hyperedges are incident on vertices from distinct blocks. By exploiting this combinatorial property,
+    in combination with a natural reduction from CSPs over large finite alphabets to OCSPs, we give optimal
+    inapproximability results for all OCSPs.
 
 - title: "Point-hyperplane incidence geometry and the log-rank conjecture"
   date: 2021-04-30
@@ -21,6 +44,21 @@
   type: research
   venue: In submission
   select: yes
+  abstract: >
+    We study the log-rank conjecture from the perspective of incidence geometry and present a reformulation as well as a
+    strengthening. The reformulation involves point sets in \(\mathbb{R}^d\) that are covered in many ways by constant-sized
+    sets of parallel hyperplanes. We show that the log-rank conjecture is equivalent to the implication that all such configurations
+    contain a subspace that accounts for a large fraction of the incidences, in the sense of containing a large fraction of
+    the points and being contained in a large fraction of the hyperplanes. In other words the log-rank conjecture is equivalent
+    to asserting that the point-hyperplane incidence graph for such configurations has a large complete bipartite subgraph.
+    The strengthening of the log-rank conjecture comes from relaxing the requirements that the set of hyperplanes be parallel. 
+
+
+    Motivated by the connections above we revisit some well-studied questions in point-hyperplane incidence geometry and present
+    some improvements. We give a simple probabilistic argument for the existence of complete bipartite subgraphs of density
+    \(\Omega(\epsilon^{2d}/d)\) in any \(d\)-dimensional configuration with incidence density \(\epsilon\), matching previously
+    known results qualitatively. We also improve an upper-bound construction of Apfelbaum and Sharir, yielding a configuration
+    whose complete bipartite subgraphs are exponentially small and whose incidence density is \(\Omega(1/\sqrt{d})\).
 
 - title: "Color Me Converged: Surveying and Experimenting on the Glauber Dynamics for Sampling <em>k</em>-Colorings"
   pdf: glauber_colorings_cs_229r.pdf

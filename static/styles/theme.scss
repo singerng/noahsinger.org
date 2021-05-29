@@ -79,3 +79,10 @@ ul.paper-list {
   font-weight: bold;
   }
 }
+
+div.abstract-card {
+  font-size: $font-size-base * 0.85 !important;
+  .mjx-chtml {
+    font-size: $font-size-base * 0.85 !important;
+  }
+}

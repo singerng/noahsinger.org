@@ -23,7 +23,7 @@ layout: default
 
   <div class="col-md-9 mb-4">
     <h1>About Me</h1>
-    <p>I study computer science and math at Harvard University (Pforzheimer House '22). My research is in theoretical computer science. At Harvard, I am incredibly fortunate to be working with Prof. <a href="https://madhu.seas.harvard.edu">Madhu Sudan</a> on streaming and communication complexity. In Summer 2021, I will be working at the <a href="https://reu.dimacs.rutgers.edu">DIMACS REU</a> with Prof. <a href="https://www.cs.rutgers.edu/~allender/">Eric Allender</a>. In Fall 2021, I will be applying to CS Ph.D. programs. <a href="/index/cv.pdf">Here</a> is my CV.</p>
+    <p>I study computer science and math at Harvard University (Pforzheimer House '22). My research is in theoretical computer science. At Harvard, I am incredibly fortunate to be working with Prof. <a href="https://madhu.seas.harvard.edu">Madhu Sudan</a> on streaming and communication complexity. In Summer 2021, I will be working at the <a href="https://reu.dimacs.rutgers.edu">DIMACS REU</a> with Prof. <a href="https://www.cs.rutgers.edu/~allender/">Eric Allender</a>, supported by NSF grant CCF-1852215 (see my <a href="http://reu.dimacs.rutgers.edu/~ns1313/">project site</a>). In Fall 2021, I will be applying to CS Ph.D. programs. <a href="/index/cv.pdf">Here</a> is my CV.</p>
     <br/>
 
     <div class="p-3">
@@ -43,7 +43,7 @@ layout: default
             <ul class="paper-list">
             {% for paper in site.data.papers %}
             {% if paper.select %}
-            {% include paper.html paper=paper %}
+            {% include paper.html paper=paper show_abstract=false %}
             {% endif %}
             {% endfor %}
             </ul>
@@ -82,12 +82,12 @@ layout: default
             a Hologram Rose</a>. Some of my favorite novels are Gibson's <em>Neuromancer</em>,
             Le Guin's <em>The Dispossessed</em>, Jemisin's <em>The Fifth Season</em> and Robinson's <em>Red Mars</em>.</p>
 
-          <p><strong>Music.</strong> I listen mostly to electronica, alt rock, dance,
+          <p><strong>Music.</strong> I listen to a lot of music, including electronica, alt rock, dance,
             and hip hop; my favorite artists include Daft
-            Punk, Ratatat, Gorillaz, Kanye West,
-            and The Strokes. I play classical piano in my free time.</p>
+            Punk, Ratatat, Gorillaz, Kanye West, Arctic Monkeys,
+            and The Strokes. I also play classical piano.</p>
 
-          <p><strong>Others.</strong> When school's not in session, I spend a lot of time catching up on television, baking, playing tennis, and watching hockey (go Caps!) and basketball.</p>
+          <p><strong>Other.</strong> I love to watch TV shows; bake and cook; play tennis and go on long walks; and watch hockey (go Caps!) and basketball.</p>
         </div>
       </div>
     </div>

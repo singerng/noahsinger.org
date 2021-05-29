@@ -15,4 +15,17 @@
     {% if paper.eccc %}
     <a href="https://eccc.weizmann.ac.il/report/{{ paper.eccc }}" target="_blank"><i class="fas fa-book-open"></i> ECCC</a>
     {% endif %}
+
+    {% if paper.abstract and include.show_abstract != false %}
+    <br/>
+    <a class="btn btn-info btn-sm" data-toggle="collapse" href="#abstract-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="abstract-{{ forloop.index }}">
+      Show/hide abstract
+    </a>
+
+    <div class="collapse" id="abstract-{{ forloop.index }}">
+      <div class="card card-body abstract-card mt-1">
+        <p>{{ paper.abstract | newline_to_br }}</p>
+      </div>
+    </div>
+    {% endif %}
  </li>
