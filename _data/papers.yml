@@ -9,7 +9,7 @@
   date: 2021-05-04
   authors: Noah Singer, Madhu Sudan, and Santhoshini Velusamy
   type: research
-  venue: In submission
+  venue: To appear in APPROX'21
   arxiv: 2105.01782
   eccc: 2021/064
   select: yes
@@ -42,7 +42,6 @@
   authors: Noah Singer and Madhu Sudan
   arxiv: 2101.09592
   type: research
-  venue: In submission
   select: yes
   abstract: >
     We study the log-rank conjecture from the perspective of incidence geometry and present a reformulation as well as a
