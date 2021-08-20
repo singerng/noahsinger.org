@@ -9,39 +9,49 @@
   date: 2021-05-04
   authors: Noah Singer, Madhu Sudan, and Santhoshini Velusamy
   type: research
-  venue: To appear in APPROX'21
+  venue: APPROX'21
   arxiv: 2105.01782
   eccc: 2021/064
+  talk: https://www.youtube.com/watch?v=QAHM1dCuJyQ&list=PL5-hmiX64aew0sOri8fhNhhn9v0SH5yrE&index=3
   select: yes
   abstract: >
-    An <em>ordering constraint satisfaction problem (OCSP)</em> is given by a positive integer \(k\) and a constraint predicate
-    \(\Pi\) mapping permutations on \(\{1,\ldots,k\}\) to \((0,1)\). Given an instance of OCSP(\(\Pi\)) on \(n\) variables
-    and \(m\) constraints, the goal is to find an ordering of the \(n\) variables that maximizes the number of constraints
-    that are satisfied, where a constraint specifies a sequence of \(k\) distinct variables and the constraint is <em>satisfied</em>
-    by an ordering on the \(n\) variables if the ordering induced on the \(k\) variables in the constraint satisfies \(\Pi\).
-    Natural ordering constraint satisfaction problems include "Maximum acyclic subgraph (MAS)" and "Betweenness".
+    An <em>ordering constraint satisfaction problem (OCSP)</em> is given by a positive integer \(k\) and a
+    constraint predicate \(\Pi\) mapping permutations on \(\{1,\ldots,k\}\) to \(\{0,1\}\). Given an
+    instance of OCSP\((\Pi)\) on \(n\) variables and \(m\) constraints, the goal is to find an
+    ordering of the \(n\) variables that maximizes the number of constraints that are satisfied,
+    where a constraint specifies a sequence of \(k\) distinct variables and the constraint is satisfied
+    by an ordering on the \(n\) variables if the ordering induced on the \(k\) variables in the
+    constraint satisfies \(\Pi\). Ordering constraint satisfaction problems capture natural problems
+    including "Maximum acyclic subgraph (MAS)" and "Betweenness".<br/>
 
+    In this work we consider the task of approximating the maximum number of satisfiable constraints
+    in the (single-pass) streaming setting, where an instance is presented as a stream of
+    constraints. <mark>We show that for every \(\Pi\), OCSP\((\Pi)\) is approximation-resistant to
+    \(o(n)\)-space streaming algorithms, i.e., algorithms using \(o(n)\) space cannot distinguish streams
+    where almost every constraint is satisfiable from streams where no ordering beats the
+    random ordering by a noticeable amount. This space bound is tight up to
+    polylogarithmic factors.</mark> In the case of MAS, our result shows that for every
+    \(\epsilon>0\), MAS is not \((1/2+\epsilon)\)-approximable in \(o(n)\) space. The previous best
+    inapproximability result only ruled out a \(3/4\)-approximation in \(o(\sqrt n)\) space.<br/>
 
-    In this work we consider the task of approximating the maximum number of satisfiable constraints in the <em>(single-pass)
-    streaming setting</em>, where an instance is presented as a stream of constraints. <mark>We show that for every \(\Pi\), algorithms
-    using \(o(\sqrt n)\) space cannot distinguish streams where almost every constraint is satisfiable from streams
-    where no ordering beats the random ordering by a noticeable amount.</mark> In the case of MAS our result shows that for
-    every \(\epsilon>0\), MAS is not \((\frac12+\epsilon)\)-approximable. The previous best inapproximability result only
-    ruled out a \(\frac34\)-approximation.
-    
+    Our results build on recent works of Chou, Golovnev, Sudan, Velingker, and Velusamy who show
+    tight, linear-space inapproximability results for a broad class of (non-ordering)
+    constraint satisfaction problems (CSPs) over arbitrary (finite) alphabets. Our results are
+    obtained by building a family of appropriate CSPs from any given OCSP, and applying their
+    work to this family of CSPs. To convert the resulting hardness results for CSPs back to our OCSP, 
+    we show that the hard instances from this earlier work have the following "small-set expansion" property:
+    If the CSP instance is viewed as a hypergraph in the natural way, then for every partition
+    of the hypergraph into small blocks most of the hyperedges are incident on vertices from
+    distinct blocks. By exploiting this combinatorial property, in combination with the hardness
+    results of the resulting families of CSPs, we give optimal inapproximability results for all OCSPs.
 
-    Our results build on a recent work of Chou, Golovnev, Sudan, and Velusamy who show tight inapproximability results
-    for some constraint satisfaction problems over arbitrary (finite) alphabets. We show that the hard instances from
-    this earlier work have the property that in every partition of the hypergraph formed by the constraints into small
-    blocks, most of the hyperedges are incident on vertices from distinct blocks. By exploiting this combinatorial property,
-    in combination with a natural reduction from CSPs over large finite alphabets to OCSPs, we give optimal
-    inapproximability results for all OCSPs.
 
 - title: "Point-hyperplane incidence geometry and the log-rank conjecture"
   date: 2021-04-30
   authors: Noah Singer and Madhu Sudan
   arxiv: 2101.09592
   type: research
+  venue: Preprint
   select: yes
   abstract: >
     We study the log-rank conjecture from the perspective of incidence geometry and present a reformulation as well as a
