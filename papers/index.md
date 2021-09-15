@@ -16,16 +16,6 @@ Organized in reverse chronological order.
 {% endfor %}
 </ul>
 
-### Course Projects
-
-<ul class="paper-list">
-{% for paper in site.data.papers %}
-{% if paper.type == "course_project" %}
-{% include paper.html paper=paper %}
-{% endif %}
-{% endfor %}
-</ul>
-
 ### Miscellaneous
 
 <ul class="paper-list">

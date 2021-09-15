@@ -1,15 +1,8 @@
-- title: "Oracle <strong>BQP</strong> vs. <strong>PH</strong>"
-  date: 2021-05-09
-  authors: Juspreet Singh Sandhu, Noah Singer, and Lavanya Singh
-  type: course_project
-  venue: "Harvard CS 221: Computational Complexity (Prof. Madhu Sudan)"
-  pdf: oracle_bqp_vs_ph.pdf
-
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
   authors: Noah Singer, Madhu Sudan, and Santhoshini Velusamy
   type: research
-  venue: APPROX'21
+  venue: APPROX 2021
   arxiv: 2105.01782
   eccc: 2021/064
   talk: https://www.youtube.com/watch?v=QAHM1dCuJyQ&list=PL5-hmiX64aew0sOri8fhNhhn9v0SH5yrE&index=3
@@ -32,7 +25,8 @@
     random ordering by a noticeable amount. This space bound is tight up to
     polylogarithmic factors.</mark> In the case of MAS, our result shows that for every
     \(\epsilon>0\), MAS is not \((1/2+\epsilon)\)-approximable in \(o(n)\) space. The previous best
-    inapproximability result only ruled out a \(3/4\)-approximation in \(o(\sqrt n)\) space.<br/>
+    inapproximability result (Guruswami and Tao, APPROX 2019) only ruled out a \(3/4\)-approximation
+    in \(o(\sqrt n)\) space.<br/>
 
     Our results build on recent works of Chou, Golovnev, Sudan, Velingker, and Velusamy who show
     tight, linear-space inapproximability results for a broad class of (non-ordering)
@@ -54,41 +48,38 @@
   venue: Preprint
   select: yes
   abstract: >
-    We study the log-rank conjecture from the perspective of incidence geometry and present a reformulation as well as a
-    strengthening. The reformulation involves point sets in \(\mathbb{R}^d\) that are covered in many ways by constant-sized
-    sets of parallel hyperplanes. We show that the log-rank conjecture is equivalent to the implication that all such configurations
-    contain a subspace that accounts for a large fraction of the incidences, in the sense of containing a large fraction of
-    the points and being contained in a large fraction of the hyperplanes. In other words the log-rank conjecture is equivalent
-    to asserting that the point-hyperplane incidence graph for such configurations has a large complete bipartite subgraph.
-    The strengthening of the log-rank conjecture comes from relaxing the requirements that the set of hyperplanes be parallel. 
+    We study the log-rank conjecture from the perspective of point-hyperplane incidence geometry.
+    We formulate the following conjecture: Given a point set in \(\mathbb{R}^d\) that is covered by
+    constant-sized sets of parallel hyperplanes, there exists an affine subspace that
+    accounts for a large (i.e., \(2^{-{\operatorname{polylog}(d)}}\) fraction of the incidences, in the
+    sense of containing a large fraction of the points and being contained in a large fraction
+    of the hyperplanes. (In other words, the point-hyperplane incidence graph for such configurations
+    has a large complete bipartite subgraph.) Alternatively, our conjecture may be interpreted
+    linear-algebraically as follows: Any rank-\(d\) matrix containing at most \(O(1)\) distinct entries
+    in each column contains a submatrix of fractional size \(2^{-{\operatorname{polylog}(d)}}\), in which each
+    column contains one distinct entry. We prove that our conjecture is equivalent to the log-rank
+    conjecture; the crucial ingredient of this proof is a reduction from bounds for parallel
+    \(k\)-partitions to bounds for parallel \((k-1)\)-partitions. We also introduce an (apparent)
+    strengthening of the conjecture, which relaxes the requirements that the sets of hyperplanes be parallel.<br/>
 
+    Motivated by the connections above, we revisit well-studied questions in point-hyperplane
+    incidence geometry <em>without</em> structural assumptions (i.e., the existence of partitions),
+    and  in particular, we initiate the study of complete bipartite subgraph size in incidence graphs
+    in the regime where dimension is not a constant. We give an elementary argument for the existence
+    of complete bipartite subgraphs of density \(\Omega(\epsilon^{2d}/d)\) in any \(d\)-dimensional
+    configuration with incidence density \(\epsilon\) (qualitatively matching previous results, which had
+    implicit dimension-dependent constants and required sophisticated incidence-geometric techniques).
+    We also improve an upper-bound construction of Apfelbaum and Sharir (SIAM J. Discrete Math. 2007),
+    yielding a configuration whose complete bipartite subgraphs are exponentially small and
+    whose incidence density is \(\Omega(1/\sqrt d)\). Finally, we discuss various constructions
+    (due to others) of products of Boolean matrices which yield configurations with incidence
+    density \(\Omega(1)\) and bipartite subgraph density \(2^{-\Omega(\sqrt d)}\), and pose several
+    questions for this special case in the alternative language of extremal set combinatorics.<br/>
 
-    Motivated by the connections above we revisit some well-studied questions in point-hyperplane incidence geometry and present
-    some improvements. We give a simple probabilistic argument for the existence of complete bipartite subgraphs of density
-    \(\Omega(\epsilon^{2d}/d)\) in any \(d\)-dimensional configuration with incidence density \(\epsilon\), matching previously
-    known results qualitatively. We also improve an upper-bound construction of Apfelbaum and Sharir, yielding a configuration
-    whose complete bipartite subgraphs are exponentially small and whose incidence density is \(\Omega(1/\sqrt{d})\).
-
-- title: "Color Me Converged: Surveying and Experimenting on the Glauber Dynamics for Sampling <em>k</em>-Colorings"
-  pdf: glauber_colorings_cs_229r.pdf
-  date: 2020-12-19
-  authors: Noah Singer and Grace Tian
-  venue: "Harvard CS 229r: Spectral Graph Theory (Prof. Salil Vadhan)"
-  type: course_project
-
-- title: "The Artin-Rees Lemma and Applications"
-  pdf: artin_rees.pdf
-  date: 2020-12-11
-  authors: Serina Hu, Michelle Qian, and Noah Singer
-  venue: "Harvard Math 221: Commutative Algebra (Prof. Mihnea Popa)"
-  type: course_project
-
-- title: "<em>memery</em>: Analyzing Heap Memory for Fun and Profit"
-  pdf: memery.pdf
-  date: 2019-12-08
-  authors: Nathan Contreras, Mridu Nanda, and Noah Singer
-  venue: "Harvard CS 263: Systems Security (Prof. James Mickens)"
-  type: course_project
+    Our framework and results may help shed light on the difficulty of improving Lovett's
+    \(\tilde{O}(\sqrt{\operatorname{rank}(f)})\) bound (J. ACM 2016) for the log-rank conjecture; in particular,
+    any improvement on this bound would imply the first bipartite subgraph size bounds for
+    parallel \(3\)-partitioned configurations which beat our generic bounds for unstructured configurations.
 
 - title: CS 121.5 Notes, Fall 2019
   pdf: cs_121_5_2019.pdf

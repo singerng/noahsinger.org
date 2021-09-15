@@ -1,3 +1,21 @@
+- term: Fall 2021
+  courses:
+    - title: Quantum Computation
+      instructor: Peter Shor
+      code: 18.435
+      type: Graduate, MIT
+    - title: Modern South Asia
+      instructor: Sugata Bose
+      code: History 1036
+    - title: Ignorance, Lies, Hogwash, and Humbug
+      instructor: Christopher Robichaud
+      code: Gened 1023
+    - title: Introduction to Theoretical Computer Science
+      instructor: Madhu Sudan, Adam Hesterberg
+      code: CS 121
+      type: Teaching
+      site: https://docs.google.com/document/d/17hzp9r-SCY5lKlYp7a-2KlhsPEkkuV2CwMXXPwDHPx0/edit
+
 - term: Spring 2021
   courses:
     - title: Computational Complexity
@@ -91,17 +109,6 @@
       code: CS 121
       site: https://cs121.boazbarak.org
       type: Teaching
-
-# - term: Summer 2019 (self-study)
-#   courses:
-#     - title: Introduction to Probability
-#       instructor: Joe Blitzstein
-#       code: Stat 110
-#       site: https://projects.iq.harvard.edu/stat110/home
-#     - title: Rings and Modules
-#       book: Algebra
-#       author: Michael Artin
-
 
 - term: Spring 2019
   courses:
