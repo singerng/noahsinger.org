@@ -1,3 +1,10 @@
+- title: "Streaming approximability of symmetric Boolean CSPs"
+  date: 2021-11-16
+  authors: Joanna Boyland, Michael Hwang, Tarun Prasad, Noah Singer, and Santhoshini Velusamy
+  type: research
+  venue: Working paper
+  select: yes
+
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
   authors: Noah Singer, Madhu Sudan, and Santhoshini Velusamy
