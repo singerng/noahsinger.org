@@ -1,9 +1,39 @@
-- title: "Streaming approximability of symmetric Boolean CSPs"
-  date: 2021-11-16
+- title: "Closed-Form Expressions for the Sketching Approximability of (Some) Symmetric Boolean CSPs"
+  date: 2021-12-13
   authors: Joanna Boyland, Michael Hwang, Tarun Prasad, Noah Singer, and Santhoshini Velusamy
   type: research
-  venue: Working paper
+  venue: Preprint
+  arxiv: 2112.06319
   select: yes
+  abstract: >
+    A <em>Boolean maximum constraint satisfaction problem</em>, Max-CSP(\(f\)), is a maximization problem specified
+    by a constraint function \(f:\{-1,1\}^k\to\{0,1\}\). An instance of Max-CSP(\(f\)) consists of \(n\) variables
+    and \(m\) constraints, where each constraint is \(f\) applied on a tuple of "literals" of \(k\) distinct
+    variables chosen from the \(n\) variables. \(f\) is said to be <em>symmetric</em> if \(f(x)\) depends only on
+    \(\sum_{i=1}^k x_i\), where \(x=(x_1,\dots,x_k)\). Chou, Golovnev, and Velusamy [CGV20, FOCS 2020] obtained explicit
+    constants characterizing the <em>streaming</em>> approximability of all symmetric Max-\(2\)CSPs.
+    More recently, Chou, Golovnev, Sudan, and Velusamy [CGSV21, FOCS 2021] proved a general dichotomy 
+    theorem showing tight approximability of Boolean Max-CSPs with respect to <em>sketching</em> algorithms.
+    For every \(f\), they showed that there exists an optimal approximation ratio \(\alpha(f)\in (0,1]\) such
+    that for every \(\epsilon>0\), Max-CSP(\(f\)) is \((\alpha(f)-\epsilon)\)-approximable by a <em>linear</em> sketching
+    algorithm in \(O(\log n)\) space, but any \((\alpha(f)+\epsilon)\)-approximation sketching algorithm for
+    Max-CSP(\(f\)) requires \(\Omega(\sqrt{n})\) space. While they show that \(\alpha(f)\) is computable to arbitrary
+    precision in \(\mathbf{PSPACE}\), they do not give a closed-form expression.
+     
+    In this work, we build on the [CSGV21] dichotomy theorem and give closed-form expressions
+    for the sketching approximation ratios of multiple families of symmetric Boolean functions. These include
+    \(k\mathsf{AND}\) and \(\mathsf{Th}_k^{k-1}\) (the ``weight-at-least-\((k-1)\)'' threshold function on \(k\) variables). In particular,
+    letting \(\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}\), we show that for odd \(k \geq 3\), \(\alpha(k\mathsf{AND}) = \alpha'_k\); 
+    for even \(k \geq 2\), \(\alpha(k\mathsf{AND}) = 2\alpha'_{k+1}\); and for even \(k \geq 2\),
+    \(\alpha(\mathsf{Th}_k^{k-1}) = \frac{k}2\alpha'_{k-1}\). We also resolve the ratio for the ``weight-exactly-\(\frac{k+1}2\)''
+    function for odd \(k \in \{3,\ldots,51\}\) as well as fifteen other functions. We stress here that the
+    closed-form expressions need not have existed just given the [CGSV21] dichotomy, and our
+    analysis involves identifying structural "saddle-point" properties of the dichotomy. For arbitrary
+    <em>threshold</em> functions, we also give optimal "bias-based" approximation algorithms generalizing
+    [CGV20] while simplifying [CGSV21]. Finally, we investigate the <em>streaming</em> lower
+    bounds in [CGSV21]. We show that for \(\mathsf{Th}^3_4\), the [CGSV21] streaming and
+    sketching lower bounds match (previously only known for \(2\mathsf{AND}\)), while for \(3\mathsf{AND}\), their streaming
+    lower bound is provably weaker.
 
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
