@@ -1,5 +1,5 @@
-<li>
-    <span class="paper-title">{{ paper.title }}</span><br/>
+<li class="mb-3">
+    <strong>{{ paper.title }}</strong><br/>
     {{ paper.authors }} {% if paper.scribing %}Scribing {{ paper.scribing }}{% endif %}<br/>
     {% if paper.venue %}<em>{{ paper.venue }}</em><br/>{% endif %}
     <!-- {{ paper.date |  date: "%B %Y" }}.<br/> -->
@@ -22,12 +22,12 @@
 
     {% if paper.abstract and include.show_abstract != false %}
     <br/>
-    <a class="btn btn-info btn-sm" data-toggle="collapse" href="#abstract-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="abstract-{{ forloop.index }}">
+    <a class="btn btn-secondary btn-sm" data-bs-toggle="collapse" href="#abstract-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="abstract-{{ forloop.index }}">
       Show/hide abstract
     </a>
 
     <div class="collapse" id="abstract-{{ forloop.index }}">
-      <div class="card card-body abstract-card mt-1">
+      <div class="card card-body small mt-1">
         <p>{{ paper.abstract | newline_to_br }}</p>
       </div>
     </div>

@@ -5,32 +5,55 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:600');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 
-@import "variables";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
-// only take the things we need from bootstrap
+// Default variable overrides
+
+// Required
+@import "bootstrap/functions";
+
+$font-family-sans-serif: "Open Sans", sans-serif !default;
+$font-size-base: 1.1rem !default;
+$headings-font-family: "Raleway", serif !default;
+$headings-font-weight: 600;
+
+$navbar-bg-color: #000050;
+
+$link-decoration: none;
+$link-hover-decoration: underline;
+$link-color: lighten($navbar-bg-color, 20%);
+$mark-bg: #ebdfeb;
+
+// Required
+@import "bootstrap/variables";
 @import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// Layout & components
+@import "bootstrap/root";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/containers";
 @import "bootstrap/grid";
-@import "bootstrap/list-group";
-@import "bootstrap/code";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
-@import "bootstrap/utilities";
-@import "bootstrap/dropdown";
 @import "bootstrap/card";
-@import "bootstrap/buttons";
-@import "bootstrap/images";
-@import "bootstrap/transitions";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
 
-@import "rouge";
+// Helpers
+@import "bootstrap/helpers";
 
-.bg-gradient {
-  background-image: linear-gradient(120deg, $back-primary, $back-secondary);
-}
+// Utilities
+@import "bootstrap/utilities/api";
 
-body {
-  min-height: 100vh;
+nav {
+  background-image: linear-gradient(120deg, $navbar-bg-color, $purple-600);
 }
 
 .section {
@@ -39,7 +62,7 @@ body {
   }
 
   &:nth-child(odd) {
-    background-color: lighten($back-primary, 75%);
+    background-color: lighten($navbar-bg-color, 75%);
   }
 }
 
@@ -57,32 +80,9 @@ body {
 
 .navbar-brand {
   font-family: "Fira Mono";
-  font-size: 1.4em;
   @include glow(4, #ee82ee);
-}
-
-/* https://medium.com/@cjcnex/a-reflection-on-solving-blockquote-style-in-jekyll-e6109c8c03a */
-blockquote {
-  border-left: .25em solid #dfe2e5;
-  color: #6a737d;
-  padding: 0 1em;
 }
 
 ul.paper-list {
   list-style-type: none;
-
-  li {
-    margin-bottom: 1em;
-  }
-
-  span.paper-title {
-  font-weight: bold;
-  }
-}
-
-div.abstract-card {
-  font-size: $font-size-base * 0.85 !important;
-  .mjx-chtml {
-    font-size: $font-size-base * 0.85 !important;
-  }
 }

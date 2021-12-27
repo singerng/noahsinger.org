@@ -20,20 +20,6 @@ exclude:
 
 timezone: America/New_York
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "blog"
-  -
-    scope:
-      path: "_posts/albums"
-      type: "posts"
-    values:
-      layout: "album"
-
 titles_from_headings:
   collections: true
   strip_title: true

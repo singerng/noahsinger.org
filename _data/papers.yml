@@ -11,8 +11,8 @@
     and \(m\) constraints, where each constraint is \(f\) applied on a tuple of "literals" of \(k\) distinct
     variables chosen from the \(n\) variables. \(f\) is said to be <em>symmetric</em> if \(f(x)\) depends only on
     \(\sum_{i=1}^k x_i\), where \(x=(x_1,\dots,x_k)\). Chou, Golovnev, and Velusamy [CGV20, FOCS 2020] obtained explicit
-    constants characterizing the <em>streaming</em>> approximability of all symmetric Max-\(2\)CSPs.
-    More recently, Chou, Golovnev, Sudan, and Velusamy [CGSV21, FOCS 2021] proved a general dichotomy 
+    constants characterizing the <em>streaming</em> approximability of all symmetric Max-\(2\)CSPs.
+    More recently, Chou, Golovnev, Sudan, and Velusamy [CGSV21, FOCS] proved a general dichotomy 
     theorem showing tight approximability of Boolean Max-CSPs with respect to <em>sketching</em> algorithms.
     For every \(f\), they showed that there exists an optimal approximation ratio \(\alpha(f)\in (0,1]\) such
     that for every \(\epsilon>0\), Max-CSP(\(f\)) is \((\alpha(f)-\epsilon)\)-approximable by a <em>linear</em> sketching
@@ -20,20 +20,20 @@
     Max-CSP(\(f\)) requires \(\Omega(\sqrt{n})\) space. While they show that \(\alpha(f)\) is computable to arbitrary
     precision in \(\mathbf{PSPACE}\), they do not give a closed-form expression.
      
-    In this work, we build on the [CSGV21] dichotomy theorem and give closed-form expressions
-    for the sketching approximation ratios of multiple families of symmetric Boolean functions. These include
+    In this work, we build on the [CSGV21] dichotomy theorem and give <mark>closed-form expressions
+    for the sketching approximation ratios of multiple families of symmetric Boolean functions</mark>. These include
     \(k\mathsf{AND}\) and \(\mathsf{Th}_k^{k-1}\) (the ``weight-at-least-\((k-1)\)'' threshold function on \(k\) variables). In particular,
     letting \(\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}\), we show that for odd \(k \geq 3\), \(\alpha(k\mathsf{AND}) = \alpha'_k\); 
     for even \(k \geq 2\), \(\alpha(k\mathsf{AND}) = 2\alpha'_{k+1}\); and for even \(k \geq 2\),
     \(\alpha(\mathsf{Th}_k^{k-1}) = \frac{k}2\alpha'_{k-1}\). We also resolve the ratio for the ``weight-exactly-\(\frac{k+1}2\)''
     function for odd \(k \in \{3,\ldots,51\}\) as well as fifteen other functions. We stress here that the
     closed-form expressions need not have existed just given the [CGSV21] dichotomy, and our
-    analysis involves identifying structural "saddle-point" properties of the dichotomy. For arbitrary
+    analysis involves identifying structural "saddle-point" properties of the dichotomy. <mark>For arbitrary
     <em>threshold</em> functions, we also give optimal "bias-based" approximation algorithms generalizing
-    [CGV20] while simplifying [CGSV21]. Finally, we investigate the <em>streaming</em> lower
-    bounds in [CGSV21]. We show that for \(\mathsf{Th}^3_4\), the [CGSV21] streaming and
+    [CGV20] while simplifying [CGSV21].</mark> Finally, we investigate the <em>streaming</em> lower
+    bounds in [CGSV21]. <mark>We show that for \(\mathsf{Th}^3_4\), the [CGSV21] streaming and
     sketching lower bounds match (previously only known for \(2\mathsf{AND}\)), while for \(3\mathsf{AND}\), their streaming
-    lower bound is provably weaker.
+    lower bound is provably weaker.</mark>
 
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
@@ -62,8 +62,8 @@
     random ordering by a noticeable amount. This space bound is tight up to
     polylogarithmic factors.</mark> In the case of MAS, our result shows that for every
     \(\epsilon>0\), MAS is not \((1/2+\epsilon)\)-approximable in \(o(n)\) space. The previous best
-    inapproximability result (Guruswami and Tao, APPROX 2019) only ruled out a \(3/4\)-approximation
-    in \(o(\sqrt n)\) space.<br/>
+    inapproximability result, due to Guruswami and Tao [APPROX 2019],
+    only ruled out a \(3/4\)-approximation in \(o(\sqrt n)\) space.<br/>
 
     Our results build on recent works of Chou, Golovnev, Sudan, Velingker, and Velusamy who show
     tight, linear-space inapproximability results for a broad class of (non-ordering)
@@ -106,7 +106,7 @@
     of complete bipartite subgraphs of density \(\Omega(\epsilon^{2d}/d)\) in any \(d\)-dimensional
     configuration with incidence density \(\epsilon\) (qualitatively matching previous results, which had
     implicit dimension-dependent constants and required sophisticated incidence-geometric techniques).
-    We also improve an upper-bound construction of Apfelbaum and Sharir (SIAM J. Discrete Math. 2007),
+    We also improve an upper-bound construction of Apfelbaum and Sharir [<em>SIAM J. Discrete Math.</em> 2007],
     yielding a configuration whose complete bipartite subgraphs are exponentially small and
     whose incidence density is \(\Omega(1/\sqrt d)\). Finally, we discuss various constructions
     (due to others) of products of Boolean matrices which yield configurations with incidence
@@ -114,7 +114,7 @@
     questions for this special case in the alternative language of extremal set combinatorics.<br/>
 
     Our framework and results may help shed light on the difficulty of improving Lovett's
-    \(\tilde{O}(\sqrt{\operatorname{rank}(f)})\) bound (J. ACM 2016) for the log-rank conjecture; in particular,
+    \(\tilde{O}(\sqrt{\operatorname{rank}(f)})\) bound [<em>J. ACM</em> 2016] for the log-rank conjecture; in particular,
     any improvement on this bound would imply the first bipartite subgraph size bounds for
     parallel \(3\)-partitioned configurations which beat our generic bounds for unstructured configurations.
 
