@@ -1,0 +1,136 @@
+- title: Banana Cream Pie
+  source: Cook's Illustrated
+  photo: "sweet/banana_cream_pie.jpg"
+  type: sweet
+- title: Cherry Pie
+  source: Cook's Illustrated
+  photo: "sweet/cherry_pie.jpg"
+  type: sweet
+- title: Nectarine and Blackberry Tart
+  source: Cook's Illustrated
+  photo: "sweet/nectarine_blackberry_tart.jpg"
+  type: sweet
+- title: Plum Torte
+  source: New York Times Cooking
+  photo: "sweet/plum_torte.jpg"
+  type: sweet
+- title: Spiced Pumpkin Cheesecake
+  source: Cook's Illustrated
+  photo: "sweet/pumpkin_cheesecake.jpg"
+  type: sweet
+- title: Molasses Spice Cookies
+  source: Cook's Illustrated
+  photo: "sweet/molasses_cookies.jpg"
+  type: sweet
+- title: Banana Bread
+  source: Cook's Illustrated
+  photo: "sweet/banana_bread.jpg"
+  type: sweet
+- title: Raspberry Streusel Bars
+  source: Cook's Illustrated
+  photo: "sweet/raspberry_streusel_bars.jpg"
+  type: sweet
+- title: Bananas Foster
+  source: Cook's Illustrated
+  photo: "sweet/bananas_foster.jpg"
+  type: sweet
+- title: Key Lime Pie
+  source: Cook's Illustrated
+  photo: "sweet/key_lime_pie.jpg"
+  type: sweet
+- title: Fluffy Yellow Layer Cake
+  source: Cook's Illustrated
+  photo: "sweet/chocolate_cake.jpg"
+  type: sweet
+- title: Pear and Almond Tart
+  source: Cook's Illustrated
+  photo: "sweet/almond_pear_tart.jpg"
+  type: sweet
+- title: Classic Brownies
+  source: Cook's Illustrated
+  photo: "sweet/brownies.jpg"
+  type: sweet
+- title: Tiramisu
+  source: Cook's Illustrated
+  photo: "sweet/tiramisu.jpg"
+  type: sweet
+- title: Lemon Layer Cake
+  source: Cook's Illustrated
+  photo: "sweet/lemon_cake.jpg"
+  type: sweet
+- title: Lemon Bars
+  source: Cook's Illustrated
+  photo: "sweet/lemon_bars.jpg"
+  type: sweet
+- title: Peach Shortcakes
+  source: Cook's Illustrated
+  photo: "sweet/peach_shortcake.jpg"
+  type: sweet
+- title: Deep-Dish Apple Pie
+  source: Cook's Illustrated
+  photo: "sweet/apple_pie.jpg"
+  type: sweet
+- title: Marble Cheesecake
+  source: Cook's Illustrated
+  photo: "sweet/marbled_cheesecake.jpg"
+  type: sweet
+- title: Blueberry Buckle
+  source: Cook's Illustrated
+  photo: "sweet/blueberry_buckle.jpg"
+  type: sweet
+- title: Triple-Chocolate Mousse Cake
+  source: Cook's Illustrated
+  photo: "sweet/triple_mousse_cake.jpg"
+  type: sweet
+- title: Tarte Tatin
+  source: Cook's Illustrated
+  photo: "sweet/tarte_tatin.jpg"
+  type: sweet
+
+- title: Chicken Schawarma
+  source: New York Times Cooking
+  photo: "savory/schawarma.jpg"
+  type: savory
+- title: Italian-Style Turkey Meatballs
+  source: Cook's Illustrated
+  photo: "savory/turkey_meatballs.jpg"
+  type: savory
+- title: Cast-Iron Skillet Pizza Margherita
+  source: Cook's Illustrated
+  photo: "savory/margherita_pizza.jpg"
+  type: savory
+- title: Three-Cup Chicken
+  source: New York Times Cooking
+  photo: "savory/three_cup_chicken.jpg"
+  type: savory
+- title: Grilled Cheese, Tomato Soup, and Deep-Fried Brussels Sprouts
+  photo: "savory/tomato_soup.jpg"
+  type: savory
+- title: Pan-Seared Flank Steak with Mustard-Chive Butter
+  source: Cook's Illustrated
+  photo: "savory/mustard_chive_flank.jpg"
+  type: savory
+- title: Chicken Tikka Masala
+  source: Cook's Illustrated
+  photo: "savory/tikka_masala.jpg"
+  type: savory
+- title: Fresh Pasta, Marinara
+  source: Cook's Illustrated
+  photo: "savory/fresh_pasta.jpg"
+  type: savory
+- title: Enchiladas Verdes
+  source: Cook's Illustrated
+  photo: "savory/enchiladas_verdes.jpg"
+  type: savory
+- title: Pasta with Roasted Cherry Tomatoes
+  source: Cook's Illustrated
+  photo: "savory/cherry_pasta.jpg"
+  type: savory
+- title: Salmon Nicoise
+  source: New York Times Cooking
+  photo: "savory/nicoise.jpg"
+  type: savory
+- title: Shrimp Pad Thai
+  source: Cook's Illustrated
+  photo: "savory/pad_thai.jpg"
+  type: savory
