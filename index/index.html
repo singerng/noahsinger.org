@@ -20,7 +20,9 @@ layout: default
 
   <div class="col-md-9 mb-4">
     <h1>About Me</h1>
-    <p>I study computer science and math at Harvard University (Pforzheimer House '22). My research is in theoretical computer science. At Harvard, I am fortunate to be working with Prof. <a href="https://madhu.seas.harvard.edu">Madhu Sudan</a> on streaming and communication complexity. I also participated in the 2021 <a href="https://reu.dimacs.rutgers.edu">DIMACS REU program</a>, where I worked with Prof. <a href="https://www.cs.rutgers.edu/~allender/">Eric Allender</a> on metacomplexity (see my <a href="https://reu.dimacs.rutgers.edu/~ns1313/">project blog</a>). <a href="/index/cv.pdf">Here</a> is my CV.</p>
+    <p>I study computer science and math at Harvard University (Pforzheimer House '22). My research is in theoretical computer science. At Harvard, I am fortunate to be working with Prof. <a href="https://madhu.seas.harvard.edu">Madhu Sudan</a> on streaming and communication complexity. <a href="/index/cv.pdf">Here</a> is my CV.</p>
+
+    Starting next year, I'll be pursuing a Ph.D. in the Computer Science Department at Carnegie Mellon University, where I'll be supported by an NSF GRFP fellowship.
     <br/>
 
     <div class="p-3">
@@ -40,7 +42,7 @@ layout: default
             <ul class="paper-list">
             {% for paper in site.data.papers %}
             {% if paper.select %}
-            {% include paper.html paper=paper show_abstract=false %}
+            {% include paper.html paper=paper short=1 %}
             {% endif %}
             {% endfor %}
             </ul>
@@ -85,7 +87,7 @@ layout: default
             and hip hop; my favorite artists include The Strokes, Ratatat, Gorillaz, and Daft
             Punk. I also play classical piano.</p>
 
-          <p><strong>Other.</strong> I love to watch TV shows; <a href="/cooking">bake and cook</a>; play tennis and go on long walks; and watch hockey (go Caps!) and basketball.</p>
+          <p><strong>Other.</strong> I love to watch TV shows and listen to podcasts; <a href="/cooking">bake and cook</a>; play tennis and go on long walks; and watch hockey (go Caps!) and basketball.</p>
         </div>
       </div>
     </div>

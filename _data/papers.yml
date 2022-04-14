@@ -1,3 +1,33 @@
+
+- title: On streaming approximation algorithms for constraint satisfaction problems
+  date: 2022-03-25
+  desc: Harvard College Senior Thesis
+  type: misc
+  authors: Noah Singer
+  abstract: >
+    In this thesis, we explore <em>streaming algorithms</em> for <em>approximating
+    constraint satisfaction problems (CSPs)</em>. The setup is roughly the following:
+    A computer has limited memory space, sees a long "stream" of local constraints on
+    a set of variables, and tries to estimate how many of the constraints may be simultaneously
+    satisfied. The past ten years have seen a number of works in this area, and this thesis
+    includes both expository material and novel contributions. Throughout, we emphasize connections 
+    to the broader theories of CSPs, approximability, and streaming models, and highlight interesting
+    open problems.<br/>
+
+    In the second part of the thesis, we present two of our own joint works. We begin with a work with
+    Madhu Sudan and Santhoshini Velusamy in which
+    we prove linear-space streaming approximation-resistance for all <em>ordering CSPs (OCSPs)</em>,
+    which are "CSP-like" problems maximizing over sets of permutations. Previous works considered
+    the <em>maximum acyclic subgraph (MAS)</em> problem, the prototypical OCSP; even for MAS,
+    we improve on both the inapproximability factor and the space bound.
+    Next, we present joint work with Joanna Boyland, Michael Hwang, Tarun Prasad, and Santhoshini
+    Velusamy in which we investigate the \(\sqrt n\)-space streaming approximability of symmetric Boolean CSPs
+    with negations. In particular, we give explicit \(\sqrt n\)-space sketching approximability ratios
+    for several families of CSPs, including Max-\(k\)AND; develop simpler optimal sketching approximation
+    algorithms for <em>threshold</em> predicates; and show that previous streaming lower bounds are
+    "incomplete" in that they fail to characterize the \(\sqrt n\)-space streaming approximability
+    of Max-\(3\)AND.
+
 - title: "Sketching approximations for (some) symmetric Boolean CSPs: closed-form ratios and simple algorithms"
   date: 2021-12-13
   authors: Joanna Boyland, Michael Hwang, Tarun Prasad, Noah Singer, and Santhoshini Velusamy
@@ -20,20 +50,20 @@
     Max-CSP(\(f\)) requires \(\Omega(\sqrt{n})\) space. While they show that \(\alpha(f)\) is computable to arbitrary
     precision in \(\mathbf{PSPACE}\), they do not give a closed-form expression.
      
-    In this work, we build on the [CSGV21] dichotomy theorem and give <mark>closed-form expressions
-    for the sketching approximation ratios of multiple families of symmetric Boolean functions</mark>. These include
-    \(k\mathsf{AND}\) and \(\mathsf{Th}_k^{k-1}\) (the ``weight-at-least-\((k-1)\)'' threshold function on \(k\) variables). In particular,
+    In this work, we build on the [CSGV21] dichotomy theorem and give closed-form expressions
+    for the sketching approximation ratios of multiple families of symmetric Boolean functions. These include
+    \(k\mathsf{AND}\) and \(\mathsf{Th}_k^{k-1}\) (the "weight-at-least-\((k-1)\)" threshold function on \(k\) variables). In particular,
     letting \(\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}\), we show that for odd \(k \geq 3\), \(\alpha(k\mathsf{AND}) = \alpha'_k\); 
     for even \(k \geq 2\), \(\alpha(k\mathsf{AND}) = 2\alpha'_{k+1}\); and for even \(k \geq 2\),
-    \(\alpha(\mathsf{Th}_k^{k-1}) = \frac{k}2\alpha'_{k-1}\). We also resolve the ratio for the ``weight-exactly-\(\frac{k+1}2\)''
+    \(\alpha(\mathsf{Th}_k^{k-1}) = \frac{k}2\alpha'_{k-1}\). We also resolve the ratio for the "weight-exactly-\(\frac{k+1}2\)"
     function for odd \(k \in \{3,\ldots,51\}\) as well as fifteen other functions. We stress here that the
     closed-form expressions need not have existed just given the [CGSV21] dichotomy, and our
-    analysis involves identifying structural "saddle-point" properties of the dichotomy. <mark>For arbitrary
+    analysis involves identifying structural "saddle-point" properties of the dichotomy. For arbitrary
     <em>threshold</em> functions, we also give optimal "bias-based" approximation algorithms generalizing
-    [CGV20] while simplifying [CGSV21].</mark> Finally, we investigate the <em>streaming</em> lower
-    bounds in [CGSV21]. <mark>We show that for \(\mathsf{Th}^3_4\), the [CGSV21] streaming and
+    [CGV20] while simplifying [CGSV21]. Finally, we investigate the <em>streaming</em> lower
+    bounds in [CGSV21]. We show that for \(\mathsf{Th}^3_4\), the [CGSV21] streaming and
     sketching lower bounds match (previously only known for \(2\mathsf{AND}\)), while for \(3\mathsf{AND}\), their streaming
-    lower bound is provably weaker.</mark>
+    lower bound is provably weaker.
 
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
@@ -41,6 +71,8 @@
   type: research
   venue: APPROX 2021
   arxiv: 2105.01782
+  eccc: https://eccc.weizmann.ac.il/report/2021/064/
+  conference: https://drops.dagstuhl.de/opus/volltexte/2021/14710/
   talk: https://www.youtube.com/watch?v=QAHM1dCuJyQ&list=PL5-hmiX64aew0sOri8fhNhhn9v0SH5yrE&index=3
   select: yes
   abstract: >
@@ -55,11 +87,11 @@
 
     In this work we consider the task of approximating the maximum number of satisfiable constraints
     in the (single-pass) streaming setting, where an instance is presented as a stream of
-    constraints. <mark>We show that for every \(\Pi\), OCSP\((\Pi)\) is approximation-resistant to
+    constraints. We show that for every \(\Pi\), OCSP\((\Pi)\) is approximation-resistant to
     \(o(n)\)-space streaming algorithms, i.e., algorithms using \(o(n)\) space cannot distinguish streams
     where almost every constraint is satisfiable from streams where no ordering beats the
     random ordering by a noticeable amount. This space bound is tight up to
-    polylogarithmic factors.</mark> In the case of MAS, our result shows that for every
+    polylogarithmic factors. In the case of MAS, our result shows that for every
     \(\epsilon>0\), MAS is not \((1/2+\epsilon)\)-approximable in \(o(n)\) space. The previous best
     inapproximability result, due to Guruswami and Tao [APPROX 2019],
     only ruled out a \(3/4\)-approximation in \(o(\sqrt n)\) space.<br/>
@@ -75,51 +107,48 @@
     distinct blocks. By exploiting this combinatorial property, in combination with the hardness
     results of the resulting families of CSPs, we give optimal inapproximability results for all OCSPs.
 
-
 - title: "Point-hyperplane incidence geometry and the log-rank conjecture"
   date: 2021-04-30
   authors: Noah Singer and Madhu Sudan
   arxiv: 2101.09592
   type: research
-  venue: Preprint
+  venue: <i>ACM Transactions on Computation Theory</i> (forthcoming)
   select: yes
   abstract: >
     We study the log-rank conjecture from the perspective of point-hyperplane incidence geometry.
     We formulate the following conjecture: Given a point set in \(\mathbb{R}^d\) that is covered by
-    constant-sized sets of parallel hyperplanes, there exists an affine subspace that
-    accounts for a large (i.e., \(2^{-{\operatorname{polylog}(d)}}\) fraction of the incidences, in the
-    sense of containing a large fraction of the points and being contained in a large fraction
-    of the hyperplanes. (In other words, the point-hyperplane incidence graph for such configurations
-    has a large complete bipartite subgraph.) Alternatively, our conjecture may be interpreted
-    linear-algebraically as follows: Any rank-\(d\) matrix containing at most \(O(1)\) distinct entries
-    in each column contains a submatrix of fractional size \(2^{-{\operatorname{polylog}(d)}}\), in which each
-    column contains one distinct entry. We prove that our conjecture is equivalent to the log-rank
+    constant-sized sets of parallel hyperplanes, there exists an affine subspace that accounts
+    for a large (i.e., \(2^{-{\mathrm{polylog}(d)}}\) fraction of the incidences, in the sense of
+    containing a large fraction of the points and being contained in a large fraction of the
+    hyperplanes. In other words, the point-hyperplane incidence graph for such configurations
+    has a large complete bipartite subgraph. Alternatively, our conjecture may be interpreted
+    linear-algebraically as follows: Any rank-$d$ matrix containing at most \(O(1)\) distinct
+    entries in each column contains a submatrix of fractional size \(2^{-{\mathrm{polylog}(d)}}\), in
+    which each column is constant. We prove that our conjecture is equivalent to the log-rank
     conjecture; the crucial ingredient of this proof is a reduction from bounds for parallel
     \(k\)-partitions to bounds for parallel \((k-1)\)-partitions. We also introduce an (apparent)
     strengthening of the conjecture, which relaxes the requirements that the sets of hyperplanes be parallel.<br/>
 
     Motivated by the connections above, we revisit well-studied questions in point-hyperplane
-    incidence geometry <em>without</em> structural assumptions (i.e., the existence of partitions),
-    and  in particular, we initiate the study of complete bipartite subgraph size in incidence graphs
-    in the regime where dimension is not a constant. We give an elementary argument for the existence
-    of complete bipartite subgraphs of density \(\Omega(\epsilon^{2d}/d)\) in any \(d\)-dimensional
-    configuration with incidence density \(\epsilon\) (qualitatively matching previous results, which had
-    implicit dimension-dependent constants and required sophisticated incidence-geometric techniques).
-    We also improve an upper-bound construction of Apfelbaum and Sharir [<em>SIAM J. Discrete Math.</em> 2007],
-    yielding a configuration whose complete bipartite subgraphs are exponentially small and
-    whose incidence density is \(\Omega(1/\sqrt d)\). Finally, we discuss various constructions
-    (due to others) of products of Boolean matrices which yield configurations with incidence
-    density \(\Omega(1)\) and bipartite subgraph density \(2^{-\Omega(\sqrt d)}\), and pose several
-    questions for this special case in the alternative language of extremal set combinatorics.<br/>
+    incidence geometry <em>without</em> structural assumptions (i.e., the existence of partitions).
+    We give an elementary argument for the existence of complete bipartite subgraphs of density
+    \(\Omega(\epsilon^{2d}/d)\) in any \(d\)-dimensional configuration with incidence density \(\epsilon\),
+    qualitatively matching previous results proved using sophisticated geometric techniques.
+    We also improve an upper-bound construction of Apfelbaum and Sharir [<em>J. Discrete Math.</em> 2007], yielding a 
+    configuration whose complete bipartite subgraphs are exponentially small and whose incidence
+    density is \(\Omega(1/\sqrt d)\). Finally, we discuss various constructions (due to others) of
+    products of Boolean matrices which yield configurations with incidence density \(\Omega(1)\) and
+    complete bipartite subgraph density \(2^{-\Omega(\sqrt d)}\), and pose several questions for this
+    special case in the alternative language of extremal set combinatorics.<br/>
 
     Our framework and results may help shed light on the difficulty of improving Lovett's
-    \(\tilde{O}(\sqrt{\operatorname{rank}(f)})\) bound [<em>J. ACM</em> 2016] for the log-rank conjecture; in particular,
-    any improvement on this bound would imply the first bipartite subgraph size bounds for
-    parallel \(3\)-partitioned configurations which beat our generic bounds for unstructured configurations.
+    \(\tilde{O}(\sqrt{\mathrm{rank}(f)})\) bound [<em>J. ACM.</em> 2014] for the log-rank conjecture. In particular,
+    any improvement on this bound would imply the first complete bipartite subgraph size bounds
+    for parallel \(3\)-partitioned configurations which beat our generic bounds for unstructured configurations.
 
 - title: CS 121.5 Notes, Fall 2019
   pdf: cs_121_5_2019.pdf
   date: 2019-12-19
-  venue: Harvard CS 121
-  scribing: various
+  desc: "Notes from advanced section in <em>CS 121: Introduction to Theoretical Computer Science</em> (Fall 2019)"
   type: misc
+  authors: Noah Singer

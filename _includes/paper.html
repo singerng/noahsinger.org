@@ -1,35 +1,65 @@
 <li class="mb-3">
     <strong>{{ paper.title }}</strong><br/>
-    {{ paper.authors }} {% if paper.scribing %}Scribing {{ paper.scribing }}{% endif %}<br/>
+    {% if paper.authors %}{{ paper.authors }}<br/>{% endif %}
+    {% if paper.desc %}{{ paper.desc }}<br/>{% endif %}
     {% if paper.venue %}<em>{{ paper.venue }}</em><br/>{% endif %}
-    <!-- {{ paper.date |  date: "%B %Y" }}.<br/> -->
 
-    {% if paper.pdf %}
-    <a href="/papers/{{ paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+    {% unless include.short %}
+    {% if paper.arxiv or paper.eccc or paper.conference or paper.journal or paper.pdf %}
+    <div class="btn-group">
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink-{{ forloop.index }}" data-bs-toggle="dropdown" aria-expanded="false">
+            Versions
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-{{ forloop.index }}">
+            {% if paper.pdf %}
+            <li><a class="dropdown-item" href="/papers/{{ paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> local</a></li>
+            {% endif %}
+
+            {% if paper.arxiv %}
+            <li><a class="dropdown-item" href="https://arxiv.org/abs/{{ paper.arxiv }}" target="_blank"><i class="fas fa-hdd"></i> arxiv</a></li>
+            {% endif %}
+
+            {% if paper.eccc %}
+            <li><a class="dropdown-item" href="https://eccc.weizmann.ac.il/report/{{ paper.eccc }}" target="_blank"><i class="fas fa-hdd"></i> eccc</a></li>
+            {% endif %}
+
+            {% if paper.conference %}
+            <li><a class="dropdown-item" href="{{ paper.conference }}" target="_blank"><i class="fas fa-users"></i> conference</a></li>
+            {% endif %}
+
+            {% if paper.journal %}
+            <li><a class="dropdown-item" href="{{ paper.journal }}" target="_blank"><i class="fas fa-book"></i> journal</a></li>
+            {% endif %}
+          </ul>
+        </div>
+    </div>
     {% endif %}
 
-    {% if paper.arxiv %}
-    <a href="https://arxiv.org/abs/{{ paper.arxiv }}" target="_blank"><i class="fas fa-book-open"></i> arXiv</a>
-    {% endif %}
+    {% if paper.abstract %}
+    <div class="btn-group">
+    <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ forloop.index }}"><i class="fas fa-file-alt"></i> Abstract</button>
+    </div>
 
-    {% if paper.eccc %}
-    <a href="https://eccc.weizmann.ac.il/report/{{ paper.eccc }}" target="_blank"><i class="fas fa-book-open"></i> ECCC</a>
-    {% endif %}
-
-    {% if paper.talk %}
-    <a href="{{ paper.talk }}" target="_blank"><i class="fas fa-play-circle"></i> Recorded Talk</a>
-    {% endif %}
-
-    {% if paper.abstract and include.show_abstract != false %}
-    <br/>
-    <a class="btn btn-secondary btn-sm" data-bs-toggle="collapse" href="#abstract-{{ forloop.index }}" role="button" aria-expanded="false" aria-controls="abstract-{{ forloop.index }}">
-      Show/hide abstract
-    </a>
-
-    <div class="collapse" id="abstract-{{ forloop.index }}">
-      <div class="card card-body small mt-1">
-        <p>{{ paper.abstract | newline_to_br }}</p>
+    <div class="modal fade" id="modal-{{ forloop.index }}" tabindex="-1" aria-labelledby="modalLabel-{{ forloop.index }}" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel-{{ forloop.index }}">Abstract: "{{ paper.title }}"</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            {{ paper.abstract|newline_to_br }}
+          </div>
+        </div>
       </div>
     </div>
     {% endif %}
- </li>
+
+    {% if paper.talk %}
+    <a role="button" class="btn btn-secondary btn-sm" href="{{ paper.talk }}" target="_blank"><i class="fas fa-play-circle"></i> Talk</a>
+    {% endif %}
+    {% endunless %}
+</li>
+
