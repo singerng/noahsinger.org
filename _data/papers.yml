@@ -14,6 +14,13 @@
     to the broader theories of CSPs, approximability, and streaming models, and highlight interesting
     open problems.<br/>
 
+    The first part of our thesis is expository: We present aspects of previous works
+    that completely characterize the approximability of specific CSPs like Max-Cut and
+    Max-Dicut with \(\sqrt{n}\)-space streaming algorithm (on \(n\)-variable instances), while
+    characterizing the approximability of all CSPs in \(\sqrt n\) space in the special case
+    of "composable" (i.e., <em>sketching</em>) algorithms, and of a particular subclass of
+    CSPs with <em>linear-space</em> streaming algorithms.<br/>
+
     In the second part of the thesis, we present two of our own joint works. We begin with a work with
     Madhu Sudan and Santhoshini Velusamy in which
     we prove linear-space streaming approximation-resistance for all <em>ordering CSPs (OCSPs)</em>,
