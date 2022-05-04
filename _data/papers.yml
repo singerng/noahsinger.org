@@ -1,3 +1,8 @@
+- title: Streaming complexity of CSPs with randomly ordered constraints
+  date: 2022-04-10
+  venue: In submission
+  type: research
+  authors: Raghuvansh R. Saxena, Noah Singer, Madhu Sudan, and Santhoshini Velusamy
 
 - title: On streaming approximation algorithms for constraint satisfaction problems
   date: 2022-03-25
@@ -35,42 +40,44 @@
     "incomplete" in that they fail to characterize the \(\sqrt n\)-space streaming approximability
     of Max-\(3\)AND.
 
-- title: "Sketching approximations for (some) symmetric Boolean CSPs: closed-form ratios and simple algorithms"
-  date: 2021-12-13
+- title: "On sketching approximations for symmetric Boolean CSPs"
+  date: 2022-05-04
   authors: Joanna Boyland, Michael Hwang, Tarun Prasad, Noah Singer, and Santhoshini Velusamy
   type: research
   venue: Preprint
   arxiv: 2112.06319
   select: yes
   abstract: >
-    A <em>Boolean maximum constraint satisfaction problem</em>, Max-CSP(\(f\)), is a maximization problem specified
-    by a constraint function \(f:\{-1,1\}^k\to\{0,1\}\). An instance of Max-CSP(\(f\)) consists of \(n\) variables
-    and \(m\) constraints, where each constraint is \(f\) applied on a tuple of "literals" of \(k\) distinct
-    variables chosen from the \(n\) variables. \(f\) is said to be <em>symmetric</em> if \(f(x)\) depends only on
-    \(\sum_{i=1}^k x_i\), where \(x=(x_1,\dots,x_k)\). Chou, Golovnev, and Velusamy [CGV20, FOCS 2020] obtained explicit
-    constants characterizing the <em>streaming</em> approximability of all symmetric Max-\(2\)CSPs.
-    More recently, Chou, Golovnev, Sudan, and Velusamy [CGSV21, FOCS] proved a general dichotomy 
-    theorem showing tight approximability of Boolean Max-CSPs with respect to <em>sketching</em> algorithms.
-    For every \(f\), they showed that there exists an optimal approximation ratio \(\alpha(f)\in (0,1]\) such
-    that for every \(\epsilon>0\), Max-CSP(\(f\)) is \((\alpha(f)-\epsilon)\)-approximable by a <em>linear</em> sketching
-    algorithm in \(O(\log n)\) space, but any \((\alpha(f)+\epsilon)\)-approximation sketching algorithm for
-    Max-CSP(\(f\)) requires \(\Omega(\sqrt{n})\) space. While they show that \(\alpha(f)\) is computable to arbitrary
-    precision in \(\mathbf{PSPACE}\), they do not give a closed-form expression.
+    A <em>Boolean maximum constraint satisfaction problem</em>, \(\textsf{Max-CSP}(f)\), is specified by a predicate
+    \(f:\{-1,1\}^k\to\{0,1\}\). An \(n\)-variable instance of \(\textsf{Max-CSP}(f)\) consists of a list ofconstraints,
+    each of which applies \(f\) to \(k\) distinct literals drawn from the \(n\) variables. For \(k=2\), Chou,
+    Golovnev, and Velusamy [CGV20, FOCS 2020] obtained explicit ratios characterizing the \(\sqrt n\)-space
+    <em>streaming</em> approximability of every predicate. For \(k \geq 3\), Chou, Golovnev, Sudan, and
+    Velusamy [CGSV21, arXiv:2102.12351] proved a general dichotomy theorem for \(\sqrt n\)-space
+    <em>sketching</em> algorithms: For every \(f\), there exists \(\alpha(f)\in (0,1]\) such that
+    for every \(\epsilon>0\), \(\textsf{Max-CSP}(f)\) is \((\alpha(f)-\epsilon)\)-approximable by an \(O(\log n)\)-space
+    <em>linear</em> sketching algorithm, but \((\alpha(f)+\epsilon)\)-approximation sketching algorithms
+    require \(\Omega(\sqrt{n})\) space.<br/>
      
-    In this work, we build on the [CSGV21] dichotomy theorem and give closed-form expressions
-    for the sketching approximation ratios of multiple families of symmetric Boolean functions. These include
-    \(k\mathsf{AND}\) and \(\mathsf{Th}_k^{k-1}\) (the "weight-at-least-\((k-1)\)" threshold function on \(k\) variables). In particular,
-    letting \(\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}\), we show that for odd \(k \geq 3\), \(\alpha(k\mathsf{AND}) = \alpha'_k\); 
-    for even \(k \geq 2\), \(\alpha(k\mathsf{AND}) = 2\alpha'_{k+1}\); and for even \(k \geq 2\),
-    \(\alpha(\mathsf{Th}_k^{k-1}) = \frac{k}2\alpha'_{k-1}\). We also resolve the ratio for the "weight-exactly-\(\frac{k+1}2\)"
-    function for odd \(k \in \{3,\ldots,51\}\) as well as fifteen other functions. We stress here that the
-    closed-form expressions need not have existed just given the [CGSV21] dichotomy, and our
-    analysis involves identifying structural "saddle-point" properties of the dichotomy. For arbitrary
-    <em>threshold</em> functions, we also give optimal "bias-based" approximation algorithms generalizing
-    [CGV20] while simplifying [CGSV21]. Finally, we investigate the <em>streaming</em> lower
-    bounds in [CGSV21]. We show that for \(\mathsf{Th}^3_4\), the [CGSV21] streaming and
-    sketching lower bounds match (previously only known for \(2\mathsf{AND}\)), while for \(3\mathsf{AND}\), their streaming
-    lower bound is provably weaker.
+    In this work, we give closed-form expressions for the sketching approximation ratios of multiple
+    families of <em>symmetric</em> Boolean functions. Letting \(\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}\),
+    we show that for odd \(k \geq 3\), \(\alpha(k\textsf{AND}) = \alpha'_k\), and for even \(k \geq 2\),
+    \(\alpha(k\textsf{AND}) = 2\alpha'_{k+1}\). Thus, for every \(k\), \(k\textsf{AND}\) can be
+    \((2-o(1))2^{-k}\)-approximated by \(O(\log n)\)-space <em>sketching</em> algorithms; we contrast this
+    with a lower bound of Chou, Golovnev, Sudan, Velingker, and Velusamy [STOC 2022] implying that
+    <em>streaming</em> \((2+\epsilon)\cdot2^{-k}\)-approximations require \(\Omega(n)\) space
+    We also resolve the ratio for the "at-least-\((k-1)\)-\(1\)'s" function for all even \(k\); the
+    "exactly-\(\frac{k+1}2\)-\(1\)'s" function for odd \(k \in \{3,\ldots,51\}\); and fifteen other
+    functions. We stress here that for general \(f\), the dichotomy theorem in [CGSV21]
+    only implies that \(\alpha(f)\) can be computed to arbitrary precision in \(\textbf{PSPACE}\), and thus
+    closed-form expressions need not have existed <em>a priori</em>. Our analyses involve identifying
+    and exploiting structural "saddle-point" properties of this dichotomy.<br/>
+    
+    Separately, for all <em>threshold</em> functions, we give optimal "bias-based" approximation
+    algorithms generalizing [CGV20] while simplifying [CGSV21]. Finally, we investigate
+    the \(\sqrt n\)-space <em>streaming</em> lower bounds in [CGSV21], and show that they are
+    <em>incomplete</em> for \(\textsf{3AND}\), i.e., they fail to rule out \((\alpha(\textsf{3AND})-\epsilon)\)-approximations
+    in \(o(\sqrt n)\) space.
 
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
@@ -85,7 +92,7 @@
   abstract: >
     An <em>ordering constraint satisfaction problem (OCSP)</em> is given by a positive integer \(k\) and a
     constraint predicate \(\Pi\) mapping permutations on \(\{1,\ldots,k\}\) to \(\{0,1\}\). Given an
-    instance of OCSP\((\Pi)\) on \(n\) variables and \(m\) constraints, the goal is to find an
+    instance of \(\textsf{Max-OCSP}(\Pi)\) on \(n\) variables and \(m\) constraints, the goal is to find an
     ordering of the \(n\) variables that maximizes the number of constraints that are satisfied,
     where a constraint specifies a sequence of \(k\) distinct variables and the constraint is satisfied
     by an ordering on the \(n\) variables if the ordering induced on the \(k\) variables in the
@@ -94,7 +101,7 @@
 
     In this work we consider the task of approximating the maximum number of satisfiable constraints
     in the (single-pass) streaming setting, where an instance is presented as a stream of
-    constraints. We show that for every \(\Pi\), OCSP\((\Pi)\) is approximation-resistant to
+    constraints. We show that for every \(\Pi\), \(\textsf{Max-OCSP}(\Pi)\) is approximation-resistant to
     \(o(n)\)-space streaming algorithms, i.e., algorithms using \(o(n)\) space cannot distinguish streams
     where almost every constraint is satisfiable from streams where no ordering beats the
     random ordering by a noticeable amount. This space bound is tight up to
