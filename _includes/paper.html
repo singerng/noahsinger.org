@@ -5,7 +5,12 @@
     {% if paper.venue %}<em>{{ paper.venue }}</em><br/>{% endif %}
 
     {% unless include.short %}
-    {% if paper.arxiv or paper.eccc or paper.conference or paper.journal or paper.pdf %}
+
+    {% if paper.award %}
+    <i class="fas fa-award"></i> {{ paper.award }}<br/>
+    {% endif %}
+
+    {% if paper.arxiv or paper.eccc or paper.conference or paper.journal or paper.pdf or paper.url %}
     <div class="btn-group">
         <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink-{{ forloop.index }}" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,6 +36,10 @@
 
             {% if paper.journal %}
             <li><a class="dropdown-item" href="{{ paper.journal }}" target="_blank"><i class="fas fa-book"></i> journal</a></li>
+            {% endif %}
+
+            {% if paper.url %}
+            <li><a class="dropdown-item" href="{{ paper.url }}" target="_blank"><i class="fas fa-hdd"></i> online</a></li>
             {% endif %}
           </ul>
         </div>

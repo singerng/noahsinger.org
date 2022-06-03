@@ -2,12 +2,15 @@
   date: 2022-04-10
   venue: In submission
   type: research
+  select: yes
   authors: Raghuvansh R. Saxena, Noah Singer, Madhu Sudan, and Santhoshini Velusamy
 
 - title: On streaming approximation algorithms for constraint satisfaction problems
   date: 2022-03-25
   desc: Harvard College Senior Thesis
   type: misc
+  url: "https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37371750"
+  award: Hoopes Prize (Harvard College)
   authors: Noah Singer
   abstract: >
     In this thesis, we explore <em>streaming algorithms</em> for <em>approximating
@@ -65,7 +68,7 @@
     \(\alpha(k\textsf{AND}) = 2\alpha'_{k+1}\). Thus, for every \(k\), \(k\textsf{AND}\) can be
     \((2-o(1))2^{-k}\)-approximated by \(O(\log n)\)-space <em>sketching</em> algorithms; we contrast this
     with a lower bound of Chou, Golovnev, Sudan, Velingker, and Velusamy [STOC 2022] implying that
-    <em>streaming</em> \((2+\epsilon)\cdot2^{-k}\)-approximations require \(\Omega(n)\) space
+    <em>streaming</em> \((2+\epsilon)\cdot2^{-k}\)-approximations require \(\Omega(n)\) space!
     We also resolve the ratio for the "at-least-\((k-1)\)-\(1\)'s" function for all even \(k\); the
     "exactly-\(\frac{k+1}2\)-\(1\)'s" function for odd \(k \in \{3,\ldots,51\}\); and fifteen other
     functions. We stress here that for general \(f\), the dichotomy theorem in [CGSV21]
