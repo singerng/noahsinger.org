@@ -3,6 +3,32 @@
   venue: In submission
   type: research
   select: yes
+  arxiv: 2207.07158
+  eccc: 2022/100
+  abstract: >
+    We initiate a study of the streaming complexity of constraint satisfaction problems (CSPs) when
+    the constraints arrive in a random order. We show that there exists a CSP, namely $\textsf{Max-DiCut}$,
+    for which random ordering makes a provable difference. Whereas a $4/9 \approx 0.445$-approximation
+    of $\textsf{DiCut}$ requires $\Omega(\sqrt n)$ space with
+    adversarial ordering, we show that with random ordering of
+    constraints there exists a $0.48$-approximation algorithm that only needs $O(\log n)$ space. We also
+    give new algorithms for $\textsf{Max-DiCut}$ in variants of the adversarial ordering setting. Specifically,
+    we give a two-pass $O(\log n)$ space $0.48$-approximation algorithm
+    for general graphs and a single-pass $\tilde{O}(\sqrt n)$ space $0.48$-approximation algorithm for bounded
+    degree graphs.<br/>
+
+    On the negative side, we prove that CSPs where the satisfying assignments of the constraints
+    support a one-wise independent distribution require $\Omega(\sqrt n)$-space for any non-trivial approximation,
+    even when the constraints are randomly ordered. This was previously known only for
+    adversarially ordered constraints. Extending the results to randomly ordered constraints
+    requires switching the hard instances from a union of random matchings to simple Erd&#337;s-R&eacute;nyi
+    random (hyper)graphs and extending tools that can perform Fourier analysis on such instances.<br/>
+
+    The only CSP to have been considered previously with random ordering is $\textsf{Max-Cut}$ where the
+    ordering is not known to change the approximability. Specifically it is known to be as
+    hard to approximate with random ordering as with adversarial ordering, for $o(\sqrt n)$ space
+    algorithms. Our results show a richer variety of possibilities and motivate further study of
+    CSPs with randomly ordered constraints.
   authors: Raghuvansh R. Saxena, Noah Singer, Madhu Sudan, and Santhoshini Velusamy
 
 - title: On streaming approximation algorithms for constraint satisfaction problems
@@ -24,8 +50,8 @@
 
     The first part of our thesis is expository: We present aspects of previous works
     that completely characterize the approximability of specific CSPs like Max-Cut and
-    Max-Dicut with \(\sqrt{n}\)-space streaming algorithm (on \(n\)-variable instances), while
-    characterizing the approximability of all CSPs in \(\sqrt n\) space in the special case
+    Max-Dicut with $\sqrt{n}$-space streaming algorithm (on $n$-variable instances), while
+    characterizing the approximability of all CSPs in $\sqrt n$ space in the special case
     of "composable" (i.e., <em>sketching</em>) algorithms, and of a particular subclass of
     CSPs with <em>linear-space</em> streaming algorithms.<br/>
 
@@ -36,12 +62,12 @@
     the <em>maximum acyclic subgraph (MAS)</em> problem, the prototypical OCSP; even for MAS,
     we improve on both the inapproximability factor and the space bound.
     Next, we present joint work with Joanna Boyland, Michael Hwang, Tarun Prasad, and Santhoshini
-    Velusamy in which we investigate the \(\sqrt n\)-space streaming approximability of symmetric Boolean CSPs
-    with negations. In particular, we give explicit \(\sqrt n\)-space sketching approximability ratios
-    for several families of CSPs, including Max-\(k\)AND; develop simpler optimal sketching approximation
+    Velusamy in which we investigate the $\sqrt n$-space streaming approximability of symmetric Boolean CSPs
+    with negations. In particular, we give explicit $\sqrt n$-space sketching approximability ratios
+    for several families of CSPs, including $\textsf{Max-}k\textsf{AND}$ develop simpler optimal sketching approximation
     algorithms for <em>threshold</em> predicates; and show that previous streaming lower bounds are
-    "incomplete" in that they fail to characterize the \(\sqrt n\)-space streaming approximability
-    of Max-\(3\)AND.
+    "incomplete" in that they fail to characterize the $\sqrt n$-space streaming approximability
+    of $\textsf{Max-3AND}$.
 
 - title: "On sketching approximations for symmetric Boolean CSPs"
   date: 2022-05-04
@@ -49,38 +75,39 @@
   type: research
   venue: APPROX 2022
   arxiv: 2112.06319
+  eccc: 2022/066
   select: yes
   abstract: >
-    A <em>Boolean maximum constraint satisfaction problem</em>, \(\textsf{Max-CSP}(f)\), is specified by a predicate
-    \(f:\{-1,1\}^k\to\{0,1\}\). An \(n\)-variable instance of \(\textsf{Max-CSP}(f)\) consists of a list ofconstraints,
-    each of which applies \(f\) to \(k\) distinct literals drawn from the \(n\) variables. For \(k=2\), Chou,
-    Golovnev, and Velusamy [CGV20, FOCS 2020] obtained explicit ratios characterizing the \(\sqrt n\)-space
-    <em>streaming</em> approximability of every predicate. For \(k \geq 3\), Chou, Golovnev, Sudan, and
-    Velusamy [CGSV21, arXiv:2102.12351] proved a general dichotomy theorem for \(\sqrt n\)-space
-    <em>sketching</em> algorithms: For every \(f\), there exists \(\alpha(f)\in (0,1]\) such that
-    for every \(\epsilon>0\), \(\textsf{Max-CSP}(f)\) is \((\alpha(f)-\epsilon)\)-approximable by an \(O(\log n)\)-space
-    <em>linear</em> sketching algorithm, but \((\alpha(f)+\epsilon)\)-approximation sketching algorithms
-    require \(\Omega(\sqrt{n})\) space.<br/>
+    A <em>Boolean maximum constraint satisfaction problem</em>, $\textsf{Max-CSP}(f)$, is specified by a predicate
+    $f:\{-1,1\}^k\to\{0,1\}$. An $n$-variable instance of $\textsf{Max-CSP}(f)$ consists of a list ofconstraints,
+    each of which applies $f$ to $k$ distinct literals drawn from the $n$ variables. For $k=2$, Chou,
+    Golovnev, and Velusamy [CGV20, FOCS 2020] obtained explicit ratios characterizing the $\sqrt n$-space
+    <em>streaming</em> approximability of every predicate. For $k \geq 3$, Chou, Golovnev, Sudan, and
+    Velusamy [CGSV21, arXiv:2102.12351] proved a general dichotomy theorem for $\sqrt n$-space
+    <em>sketching</em> algorithms: For every $f$, there exists $\alpha(f)\in (0,1]$ such that
+    for every $\epsilon>0$, $\textsf{Max-CSP}(f)$ is $(\alpha(f)-\epsilon)$-approximable by an $O(\log n)$-space
+    <em>linear</em> sketching algorithm, but $(\alpha(f)+\epsilon)$-approximation sketching algorithms
+    require $\Omega(\sqrt{n})$ space.<br/>
      
     In this work, we give closed-form expressions for the sketching approximation ratios of multiple
-    families of <em>symmetric</em> Boolean functions. Letting \(\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}\),
-    we show that for odd \(k \geq 3\), \(\alpha(k\textsf{AND}) = \alpha'_k\), and for even \(k \geq 2\),
-    \(\alpha(k\textsf{AND}) = 2\alpha'_{k+1}\). Thus, for every \(k\), \(k\textsf{AND}\) can be
-    \((2-o(1))2^{-k}\)-approximated by \(O(\log n)\)-space <em>sketching</em> algorithms; we contrast this
+    families of <em>symmetric</em> Boolean functions. Letting $\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}$,
+    we show that for odd $k \geq 3$, $\alpha(k\textsf{AND}) = \alpha'_k$, and for even $k \geq 2$,
+    $\alpha(k\textsf{AND}) = 2\alpha'_{k+1}$. Thus, for every $k$, $k\textsf{AND}$ can be
+    $(2-o(1))2^{-k}$-approximated by $O(\log n)$-space <em>sketching</em> algorithms; we contrast this
     with a lower bound of Chou, Golovnev, Sudan, Velingker, and Velusamy [STOC 2022] implying that
-    <em>streaming</em> \((2+\epsilon)\cdot2^{-k}\)-approximations require \(\Omega(n)\) space!
-    We also resolve the ratio for the "at-least-\((k-1)\)-\(1\)'s" function for all even \(k\); the
-    "exactly-\(\frac{k+1}2\)-\(1\)'s" function for odd \(k \in \{3,\ldots,51\}\); and fifteen other
-    functions. We stress here that for general \(f\), the dichotomy theorem in [CGSV21]
-    only implies that \(\alpha(f)\) can be computed to arbitrary precision in \(\textbf{PSPACE}\), and thus
+    <em>streaming</em> $(2+\epsilon)\cdot2^{-k}$-approximations require $\Omega(n)$ space!
+    We also resolve the ratio for the "at-least-$(k-1)$-$1$'s" function for all even $k$; the
+    "exactly-$\frac{k+1}2$-$1$'s" function for odd $k \in \{3,\ldots,51\}$; and fifteen other
+    functions. We stress here that for general $f$, the dichotomy theorem in [CGSV21]
+    only implies that $\alpha(f)$ can be computed to arbitrary precision in $\textbf{PSPACE}$, and thus
     closed-form expressions need not have existed <em>a priori</em>. Our analyses involve identifying
     and exploiting structural "saddle-point" properties of this dichotomy.<br/>
     
     Separately, for all <em>threshold</em> functions, we give optimal "bias-based" approximation
     algorithms generalizing [CGV20] while simplifying [CGSV21]. Finally, we investigate
-    the \(\sqrt n\)-space <em>streaming</em> lower bounds in [CGSV21], and show that they are
-    <em>incomplete</em> for \(\textsf{3AND}\), i.e., they fail to rule out \((\alpha(\textsf{3AND})-\epsilon)\)-approximations
-    in \(o(\sqrt n)\) space.
+    the $\sqrt n$-space <em>streaming</em> lower bounds in [CGSV21], and show that they are
+    <em>incomplete</em> for $\textsf{3AND}$, i.e., they fail to rule out $(\alpha(\textsf{3AND})-\epsilon)$-approximations
+    in $o(\sqrt n)$ space.
 
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
@@ -88,30 +115,30 @@
   type: research
   venue: APPROX 2021
   arxiv: 2105.01782
-  eccc: https://eccc.weizmann.ac.il/report/2021/064/
+  eccc: 2021/064
   conference: https://drops.dagstuhl.de/opus/volltexte/2021/14710/
   talk: https://www.youtube.com/watch?v=QAHM1dCuJyQ&list=PL5-hmiX64aew0sOri8fhNhhn9v0SH5yrE&index=3
   select: yes
   abstract: >
-    An <em>ordering constraint satisfaction problem (OCSP)</em> is given by a positive integer \(k\) and a
-    constraint predicate \(\Pi\) mapping permutations on \(\{1,\ldots,k\}\) to \(\{0,1\}\). Given an
-    instance of \(\textsf{Max-OCSP}(\Pi)\) on \(n\) variables and \(m\) constraints, the goal is to find an
-    ordering of the \(n\) variables that maximizes the number of constraints that are satisfied,
-    where a constraint specifies a sequence of \(k\) distinct variables and the constraint is satisfied
-    by an ordering on the \(n\) variables if the ordering induced on the \(k\) variables in the
-    constraint satisfies \(\Pi\). Ordering constraint satisfaction problems capture natural problems
+    An <em>ordering constraint satisfaction problem (OCSP)</em> is given by a positive integer $k$ and a
+    constraint predicate $\Pi$ mapping permutations on $\{1,\ldots,k\}$ to $\{0,1\}$. Given an
+    instance of $\textsf{Max-OCSP}(\Pi)$ on $n$ variables and $m$ constraints, the goal is to find an
+    ordering of the $n$ variables that maximizes the number of constraints that are satisfied,
+    where a constraint specifies a sequence of $k$ distinct variables and the constraint is satisfied
+    by an ordering on the $n$ variables if the ordering induced on the $k$ variables in the
+    constraint satisfies $\Pi$. Ordering constraint satisfaction problems capture natural problems
     including "Maximum acyclic subgraph (MAS)" and "Betweenness".<br/>
 
     In this work we consider the task of approximating the maximum number of satisfiable constraints
     in the (single-pass) streaming setting, where an instance is presented as a stream of
-    constraints. We show that for every \(\Pi\), \(\textsf{Max-OCSP}(\Pi)\) is approximation-resistant to
-    \(o(n)\)-space streaming algorithms, i.e., algorithms using \(o(n)\) space cannot distinguish streams
+    constraints. We show that for every $\Pi$, $\textsf{Max-OCSP}(\Pi)$ is approximation-resistant to
+    $o(n)$-space streaming algorithms, i.e., algorithms using $o(n)$ space cannot distinguish streams
     where almost every constraint is satisfiable from streams where no ordering beats the
     random ordering by a noticeable amount. This space bound is tight up to
     polylogarithmic factors. In the case of MAS, our result shows that for every
-    \(\epsilon>0\), MAS is not \((1/2+\epsilon)\)-approximable in \(o(n)\) space. The previous best
+    $\epsilon>0$, MAS is not $(1/2+\epsilon)$-approximable in $o(n)$ space. The previous best
     inapproximability result, due to Guruswami and Tao [APPROX 2019],
-    only ruled out a \(3/4\)-approximation in \(o(\sqrt n)\) space.<br/>
+    only ruled out a $3/4$-approximation in $o(\sqrt n)$ space.<br/>
 
     Our results build on recent works of Chou, Golovnev, Sudan, Velingker, and Velusamy who show
     tight, linear-space inapproximability results for a broad class of (non-ordering)
@@ -133,35 +160,35 @@
   select: yes
   abstract: >
     We study the log-rank conjecture from the perspective of point-hyperplane incidence geometry.
-    We formulate the following conjecture: Given a point set in \(\mathbb{R}^d\) that is covered by
+    We formulate the following conjecture: Given a point set in $\mathbb{R}^d$ that is covered by
     constant-sized sets of parallel hyperplanes, there exists an affine subspace that accounts
-    for a large (i.e., \(2^{-{\mathrm{polylog}(d)}}\) fraction of the incidences, in the sense of
+    for a large (i.e., $2^{-{\mathrm{polylog}(d)}}$ fraction of the incidences, in the sense of
     containing a large fraction of the points and being contained in a large fraction of the
     hyperplanes. In other words, the point-hyperplane incidence graph for such configurations
     has a large complete bipartite subgraph. Alternatively, our conjecture may be interpreted
-    linear-algebraically as follows: Any rank-$d$ matrix containing at most \(O(1)\) distinct
-    entries in each column contains a submatrix of fractional size \(2^{-{\mathrm{polylog}(d)}}\), in
+    linear-algebraically as follows: Any rank-$d$ matrix containing at most $O(1)$ distinct
+    entries in each column contains a submatrix of fractional size $2^{-{\mathrm{polylog}(d)}}$, in
     which each column is constant. We prove that our conjecture is equivalent to the log-rank
     conjecture; the crucial ingredient of this proof is a reduction from bounds for parallel
-    \(k\)-partitions to bounds for parallel \((k-1)\)-partitions. We also introduce an (apparent)
+    $k$-partitions to bounds for parallel $(k-1)$-partitions. We also introduce an (apparent)
     strengthening of the conjecture, which relaxes the requirements that the sets of hyperplanes be parallel.<br/>
 
     Motivated by the connections above, we revisit well-studied questions in point-hyperplane
     incidence geometry <em>without</em> structural assumptions (i.e., the existence of partitions).
     We give an elementary argument for the existence of complete bipartite subgraphs of density
-    \(\Omega(\epsilon^{2d}/d)\) in any \(d\)-dimensional configuration with incidence density \(\epsilon\),
+    $\Omega(\epsilon^{2d}/d)$ in any $d$-dimensional configuration with incidence density $\epsilon$,
     qualitatively matching previous results proved using sophisticated geometric techniques.
     We also improve an upper-bound construction of Apfelbaum and Sharir [<em>J. Discrete Math.</em> 2007], yielding a 
     configuration whose complete bipartite subgraphs are exponentially small and whose incidence
-    density is \(\Omega(1/\sqrt d)\). Finally, we discuss various constructions (due to others) of
-    products of Boolean matrices which yield configurations with incidence density \(\Omega(1)\) and
-    complete bipartite subgraph density \(2^{-\Omega(\sqrt d)}\), and pose several questions for this
+    density is $\Omega(1/\sqrt d)$. Finally, we discuss various constructions (due to others) of
+    products of Boolean matrices which yield configurations with incidence density $\Omega(1)$ and
+    complete bipartite subgraph density $2^{-\Omega(\sqrt d)}$, and pose several questions for this
     special case in the alternative language of extremal set combinatorics.<br/>
 
     Our framework and results may help shed light on the difficulty of improving Lovett's
-    \(\tilde{O}(\sqrt{\mathrm{rank}(f)})\) bound [<em>J. ACM.</em> 2014] for the log-rank conjecture. In particular,
+    $\tilde{O}(\sqrt{\mathrm{rank}(f)})$ bound [<em>J. ACM.</em> 2014] for the log-rank conjecture. In particular,
     any improvement on this bound would imply the first complete bipartite subgraph size bounds
-    for parallel \(3\)-partitioned configurations which beat our generic bounds for unstructured configurations.
+    for parallel $3$-partitioned configurations which beat our generic bounds for unstructured configurations.
 
 - title: CS 121.5 Notes, Fall 2019
   pdf: cs_121_5_2019.pdf
