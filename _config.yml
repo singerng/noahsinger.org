@@ -1,9 +1,9 @@
-title: singerng.github.io
+title: noahsinger.org
 description: Noah Singer's personal website and blog.
 
 email: singerng@gmail.com
 username: singerng
-url: https://singerng.github.io
+url: https://noahsinger.org
 
 markdown: kramdown
 kramdown:
@@ -24,5 +24,16 @@ titles_from_headings:
   collections: true
   strip_title: true
 
-plugins:
-  - jekyll-titles-from-headings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "blog"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "drafts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "blog"

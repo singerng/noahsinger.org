@@ -12,14 +12,12 @@ layout: default
     <h3>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
   </a>
 
-  <p class="text-muted">{{ post.date | date: "%B %d, %Y, %l:%M %p" }}</p>
+  <p class="text-muted">{{ post.date | date: "%B %d, %Y" }}</p>
   {{ post.excerpt | strip_html | truncatewords: 75 }}
   <br/><br/>
 
   {% assign tags = post.tags | sort %}
-  {% for tag in tags %}
-  	<a href="/tags#{{ tag }}" class="btn btn-info btn-sm mt-1"><i class="fas fa-tag"></i> {{ tag }}</a>
-  {% endfor %}
+  {% include taglist.html tags=tags %}
 
   {% if forloop.last == false %}
     <hr/>

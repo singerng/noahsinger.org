@@ -156,7 +156,8 @@
   authors: Noah Singer and Madhu Sudan
   arxiv: 2101.09592
   type: research
-  venue: <i>ACM Transactions on Computation Theory</i> (forthcoming)
+  venue: <i>ACM Transactions on Computation Theory</i>
+  journal: https://dl.acm.org/doi/10.1145/3543684
   select: yes
   abstract: >
     We study the log-rank conjecture from the perspective of point-hyperplane incidence geometry.

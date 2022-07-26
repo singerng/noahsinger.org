@@ -10,13 +10,7 @@
     <!-- mathjax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-      };
-    </script>
+    <script src="/static/scripts/mathjax-config.js"></script>
     <title>{{ page.title | markdownify | strip_html }}</title>
   </head>
 
@@ -37,6 +31,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link {% if page.url == "/papers" %}active{% endif %}" href="/papers">papers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% if page.url == "/blog" %}active{% endif %}" href="/blog">blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link {% if page.url == "/cooking" %}active{% endif %}" href="/cooking">cooking</a>

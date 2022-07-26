@@ -1,16 +1,16 @@
 <li class="mb-3">
-    <strong>{{ paper.title }}</strong><br/>
-    {% if paper.authors %}{{ paper.authors }}<br/>{% endif %}
-    {% if paper.desc %}{{ paper.desc }}<br/>{% endif %}
-    {% if paper.venue %}<em>{{ paper.venue }}</em><br/>{% endif %}
+    <strong>{{ include.paper.title }}</strong><br/>
+    {% if include.paper.authors %}{{ include.paper.authors }}<br/>{% endif %}
+    {% if include.paper.desc %}{{ include.paper.desc }}<br/>{% endif %}
+    {% if include.paper.venue %}<em>{{ include.paper.venue }}</em><br/>{% endif %}
 
     {% unless include.short %}
 
-    {% if paper.award %}
-    <i class="fas fa-award"></i> {{ paper.award }}<br/>
+    {% if include.paper.award %}
+    <i class="fas fa-award"></i> {{ include.paper.award }}<br/>
     {% endif %}
 
-    {% if paper.arxiv or paper.eccc or paper.conference or paper.journal or paper.pdf or paper.url %}
+    {% if include.paper.arxiv or include.paper.eccc or include.paper.conference or include.paper.journal or include.paper.pdf or include.paper.url %}
     <div class="btn-group">
         <div class="dropdown">
           <a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink-{{ forloop.index }}" data-bs-toggle="dropdown" aria-expanded="false">
@@ -18,35 +18,35 @@
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-{{ forloop.index }}">
-            {% if paper.pdf %}
-            <li><a class="dropdown-item" href="/papers/{{ paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> local</a></li>
+            {% if include.paper.pdf %}
+            <li><a class="dropdown-item" href="/papers/{{ include.paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> local</a></li>
             {% endif %}
 
-            {% if paper.arxiv %}
-            <li><a class="dropdown-item" href="https://arxiv.org/abs/{{ paper.arxiv }}" target="_blank"><i class="fas fa-hdd"></i> arxiv</a></li>
+            {% if include.paper.arxiv %}
+            <li><a class="dropdown-item" href="https://arxiv.org/abs/{{ include.paper.arxiv }}" target="_blank"><i class="fas fa-hdd"></i> arxiv</a></li>
             {% endif %}
 
-            {% if paper.eccc %}
-            <li><a class="dropdown-item" href="https://eccc.weizmann.ac.il/report/{{ paper.eccc }}" target="_blank"><i class="fas fa-hdd"></i> eccc</a></li>
+            {% if include.paper.eccc %}
+            <li><a class="dropdown-item" href="https://eccc.weizmann.ac.il/report/{{ include.paper.eccc }}" target="_blank"><i class="fas fa-hdd"></i> eccc</a></li>
             {% endif %}
 
-            {% if paper.conference %}
-            <li><a class="dropdown-item" href="{{ paper.conference }}" target="_blank"><i class="fas fa-users"></i> conference</a></li>
+            {% if include.paper.conference %}
+            <li><a class="dropdown-item" href="{{ include.paper.conference }}" target="_blank"><i class="fas fa-users"></i> conference</a></li>
             {% endif %}
 
-            {% if paper.journal %}
-            <li><a class="dropdown-item" href="{{ paper.journal }}" target="_blank"><i class="fas fa-book"></i> journal</a></li>
+            {% if include.paper.journal %}
+            <li><a class="dropdown-item" href="{{ include.paper.journal }}" target="_blank"><i class="fas fa-book"></i> journal</a></li>
             {% endif %}
 
-            {% if paper.url %}
-            <li><a class="dropdown-item" href="{{ paper.url }}" target="_blank"><i class="fas fa-hdd"></i> online</a></li>
+            {% if include.paper.url %}
+            <li><a class="dropdown-item" href="{{ include.paper.url }}" target="_blank"><i class="fas fa-hdd"></i> online</a></li>
             {% endif %}
           </ul>
         </div>
     </div>
     {% endif %}
 
-    {% if paper.abstract %}
+    {% if include.paper.abstract %}
     <div class="btn-group">
     <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ forloop.index }}"><i class="fas fa-file-alt"></i> Abstract</button>
     </div>
@@ -55,19 +55,19 @@
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel-{{ forloop.index }}">Abstract: "{{ paper.title }}"</h5>
+            <h5 class="modal-title" id="modalLabel-{{ forloop.index }}">Abstract: "{{ include.paper.title }}"</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            {{ paper.abstract | newline_to_br }}
+            {{ include.paper.abstract | newline_to_br }}
           </div>
         </div>
       </div>
     </div>
     {% endif %}
 
-    {% if paper.talk %}
-    <a role="button" class="btn btn-secondary btn-sm" href="{{ paper.talk }}" target="_blank"><i class="fas fa-play-circle"></i> Talk</a>
+    {% if include.paper.talk %}
+    <a role="button" class="btn btn-secondary btn-sm" href="{{ include.paper.talk }}" target="_blank"><i class="fas fa-play-circle"></i> Talk</a>
     {% endif %}
     {% endunless %}
 </li>
