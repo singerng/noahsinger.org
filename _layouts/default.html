@@ -7,11 +7,13 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="/static/styles/theme.css">
 
+    <title>{{ page.title | markdownify | strip_html }}</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.svg">
+
     <!-- mathjax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="/static/scripts/mathjax-config.js"></script>
-    <title>{{ page.title | markdownify | strip_html }}</title>
   </head>
 
   <body class="d-flex flex-column h-100">

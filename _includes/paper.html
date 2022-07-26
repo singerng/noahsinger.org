@@ -19,7 +19,7 @@
 
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-{{ forloop.index }}">
             {% if include.paper.pdf %}
-            <li><a class="dropdown-item" href="/papers/{{ include.paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> local</a></li>
+            <li><a class="dropdown-item" href="/static/pdfs/{{ include.paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> local</a></li>
             {% endif %}
 
             {% if include.paper.arxiv %}
@@ -59,7 +59,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            {{ include.paper.abstract | newline_to_br }}
+            {{ include.paper.abstract | markdownify }}
           </div>
         </div>
       </div>
