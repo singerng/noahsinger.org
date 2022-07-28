@@ -1,0 +1,19 @@
+<tr id="cite-{{ include.key }}">
+	<th scope="row">[{{ include.key }}]</td>
+	<td>
+	{% include bib/authorlist.html ref=include.ref full=true %}.
+	{% include bib/title.html ref=include.ref %}.
+	{% if include.ref.type == "paper-conference" %}
+	In: {{ include.ref["event-title"] }}.
+	{% elsif include.ref.type == "book" %}
+	{{ include.ref.publisher }}, {{ include.ref.issued[0].year }}.
+	{% elsif include.ref.type == "article-journal" %}
+	In: <em>{{ include.ref["container-title"] }}</em> {{ include.ref.volume }}{% if include.ref.issue %}.{{ include.ref.issue }}{% endif %} ({{ include.ref.issued[0].year }}), pp. {{ include.ref.page }}.
+	{% elsif include.ref.type == "manuscript" %}
+	In: <em>{{ include.ref.genre }}</em>. URL: <a href="{{ include.ref.URL }}">{{ include.ref.URL }}</a>.
+	{% endif %}
+	{% if include.ref.DOI %}
+	DOI: <a href="https://doi.org/{{ include.ref.DOI }}">{{ include.ref.DOI }}</a>.
+	{% endif %}
+	</td>
+</p>

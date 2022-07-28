@@ -1,7 +1,7 @@
 
 window.MathJax = {
   tex: {
-    inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
     macros: {
       // mathbb
       BA: "{\\mathbb A}",

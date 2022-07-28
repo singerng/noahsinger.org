@@ -1,0 +1,1 @@
+{% for author in include.ref.author %}{% if forloop.index == include.ref.author.size and include.ref.author.size > 1 %}and {% endif %}{% if include.full %}{{ author.given }} {{ author.non_dropping_particle }} {% endif %}{{ author.family }}{% if forloop.index < include.ref.author.size %}{% if include.ref.author.size > 2 %},{% endif %} {% endif %}{% endfor %}

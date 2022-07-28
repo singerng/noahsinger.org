@@ -4,7 +4,7 @@ layout: default
 
 <h1>{{ page.title | markdownify }}</h1>
 
-<p class="text-muted">{{ page.date |  date: "%A, %B %d, %Y" }}</p>
+<p class="text-muted">{{ page.date | date: "%A, %B %d, %Y" }}</p>
 
 {% if page.tags %}
 {% assign tags = page.tags | sort %}
@@ -12,7 +12,30 @@ layout: default
 <br/><br/>
 {% endif %}
 
+{% assign bibliography = "" %}
+{% assign key = 0 %}
+
+{% for ref in site.data.bib.references %}
+{% capture marker %}[cite:{{ ref.id }}]{% endcapture %}
+{% if content contains marker %}
+{% assign key = key | plus: 1 %}
+{% capture intext_cite %}{% include bib/intext_citation.html ref=ref key=key %}{% endcapture %}
+{% capture bib_cite %}{% include bib/bib_citation.html ref=ref key=key %}{% endcapture %}
+{% assign content = content | replace: marker, intext_cite %}
+{% assign bibliography = bibliography | append: bib_cite %}
+{% endif %}
+{% endfor %}
+
 {{ content }}
+
+{% if key %}
+<h2>Bibliography</h2>
+<table class="table">
+  <tbody>
+  {{ bibliography }}
+  </tbody>
+</table>
+{% endif %}
 
 <hr/>
 
@@ -27,3 +50,10 @@ layout: default
   	<a href="{{ page.next.url }}" class="h6 text-dark">{{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }} <i class="fas fa-long-arrow-alt-right"></i></div>
   {% endif %}
 </div>
+
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
