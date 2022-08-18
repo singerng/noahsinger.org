@@ -7,7 +7,6 @@ url: https://noahsinger.org
 
 markdown: kramdown
 kramdown:
-  input: GFM
   mathjax: true
   syntax_highlighter: rouge
 

@@ -4,7 +4,7 @@ permalink: /blog
 layout: default
 ---
 
-# Blog
+<h1>Blog</h1>
 
 {% for post in site.posts %}
 <div>
@@ -16,8 +16,7 @@ layout: default
   {{ post.excerpt | strip_html | truncatewords: 75 }}
   <br/><br/>
 
-  {% assign tags = post.tags | sort %}
-  {% include taglist.html tags=tags %}
+  {% include taglist.html tags=post.tags %}
 
   {% if forloop.last == false %}
     <hr/>

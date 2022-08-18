@@ -104,3 +104,28 @@ p.small-card-h {
   font-size: $font-size-base * 0.9;
   margin-bottom: 0;
 }
+
+div.mathjax-hdr {
+  display: none;
+}
+
+div.blog-post h2::before {
+  content: "⟩ ";
+  color: lightgrey;
+}
+div.blog-post h3::before {
+  content: "⟩⟩ ";
+  color: lightgrey;
+}
+div.blog-post h4::before {
+  content: "⟩⟩⟩ ";
+  color: lightgrey;
+}
+div.blog-post h5::before {
+  content: "⟩⟩⟩⟩ ";
+  color: lightgrey;
+}
+div.blog-post h6::before {
+  content: "⟩⟩⟩⟩⟩ ";
+  color: lightgrey;
+}

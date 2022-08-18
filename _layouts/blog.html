@@ -4,12 +4,26 @@ layout: default
 
 <h1>{{ page.title | markdownify }}</h1>
 
+{% if page.lead %}
+<p class="lead">
+  {{ page.lead }}
+</p>
+{% endif %}
+
 <p class="text-muted">{{ page.date | date: "%A, %B %d, %Y" }}</p>
 
+<p>{% include taglist.html tags=page.tags %}</p>
+
 {% if page.tags %}
-{% assign tags = page.tags | sort %}
-{% include taglist.html tags=tags %}
-<br/><br/>
+{% for tag in page.tags %}
+  {% for entry in site.data.tag_descriptions %}
+  {% if entry.tag == tag %}
+  <p>
+    <i class="fas fa-tag"></i> {{ tag }}</a>: <em>{{ entry.description }}</em>
+  </p>
+  {% endif %}
+  {% endfor %}
+{% endfor %}
 {% endif %}
 
 {% assign bibliography = "" %}
@@ -26,7 +40,19 @@ layout: default
 {% endif %}
 {% endfor %}
 
+{% if page.mathjax-defaults %}
+{% include mathjax.html %}
+{% endif %}
+
+{% if page.mathjax-hdr %}
+<div class="mathjax-hdr">
+  {{ page.mathjax-hdr }}
+</div>
+{% endif %}
+
+<div class="blog-post">
 {{ content }}
+</div>
 
 {% if key %}
 <h2>Bibliography</h2>

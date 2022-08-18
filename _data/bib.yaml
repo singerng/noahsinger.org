@@ -1,0 +1,877 @@
+---
+references:
+- id: '84'
+  accessed:
+    - year: 2022
+      month: 8
+      day: 6
+  citation-key: '84'
+  container-title: Discrete Mathematics
+  DOI: 10.1016/0012-365X(84)90178-X
+  ISSN: 0012-365X
+  issue: 2-3
+  issued:
+    - year: 1984
+      month: 2
+      day: 1
+  page: 147-162
+  source: www-sciencedirect-com.cmu.idm.oclc.org
+  title: >-
+    Digraph extremal problems, hypergraph extremal problems, and the densities
+    of graph structures
+  type: article-journal
+  URL: >-
+    https://www-sciencedirect-com.cmu.idm.oclc.org/science/article/pii/0012365X8490178X
+  volume: '48'
+
+- id: AGHR21
+  author:
+    - family: Allender
+      given: Eric
+    - family: Gouwar
+      given: John
+    - family: Hirahara
+      given: Shuichi
+    - family: Robelle
+      given: Caleb
+  citation-key: AGHR21
+  genre: Electronic Colloquium on Computational Complexity
+  issued:
+    - year: 2021
+      month: 2
+  title: >-
+    Cryptographic hardness under projections for time-bounded Kolmogorov
+    complexity
+  type: manuscript
+  URL: https://eccc.weizmann.ac.il/report/2021/010
+
+- id: AGv+18
+  author:
+    - family: Allender
+      given: Eric
+    - family: Grochow
+      given: Joshua A.
+    - family: Melkebeek
+      given: Dieter
+      non-dropping-particle: van
+    - family: Moore
+      given: Cristopher
+    - family: Morgan
+      given: Andrew
+  citation-key: AGv+18
+  container-title: SIAM Journal on Computing
+  container-title-short: SIAM J. Comput.
+  DOI: 10.1137/17M1157970
+  issue: '4'
+  issued:
+    - year: 2018
+  page: 1339-1372
+  title: Minimum circuit size, graph isomorphism, and related problems
+  type: article-journal
+  volume: '47'
+
+- id: AHM+08
+  author:
+    - family: Allender
+      given: Eric
+    - family: Hellerstein
+      given: Lisa
+    - family: McCabe
+      given: Paul
+    - family: Pitassi
+      given: Toniann
+    - family: Saks
+      given: Michael
+  citation-key: AHM+08
+  container-title: SIAM Journal on Computing
+  container-title-short: SIAM J. Comput.
+  DOI: 10.1137/060664537
+  issue: '1'
+  issued:
+    - year: 2008
+      month: 1
+  page: 63-84
+  title: >-
+    Minimizing disjunctive normal form formulas and \(\mathsf{AC}^0\) circuits
+    given a truth table
+  type: article-journal
+  volume: '38'
+
+- id: AIV21
+  author:
+    - family: Allender
+      given: Eric
+    - family: Ilango
+      given: Rahul
+    - family: Vafa
+      given: Neekon
+  citation-key: AIV21
+  container-title: Theory of Computing Systems
+  container-title-short: Theory Comput. Sys.
+  DOI: 10.1007/s00224-020-10004-x
+  editor:
+    - family: Bevern
+      given: René
+    - family: Kucherov
+      given: Gregory
+  issue: '3'
+  issued:
+    - year: 2021
+  page: 559–578
+  title: The non-hardness of approximating circuit size
+  type: article-journal
+  volume: '65'
+
+- id: AZ18
+  author:
+    - family: Aigner
+      given: Martin
+    - family: Ziegler
+      given: Günter M.
+  citation-key: AZ18
+  edition: '6'
+  event-place: Berlin, Heidelberg
+  ISBN: 978-3-662-57264-1 978-3-662-57265-8
+  issued:
+    - year: 2018
+  language: en
+  number-of-pages: '326'
+  publisher: Springer Berlin Heidelberg
+  publisher-place: Berlin, Heidelberg
+  title: Proofs from THE BOOK
+  type: book
+
+- id: BC99
+  author:
+    - family: Bernasconi
+      given: A.
+    - family: Codenotti
+      given: B.
+  citation-key: BC99
+  container-title: IEEE Transactions on Computers
+  DOI: 10.1109/12.755000
+  ISSN: 1557-9956
+  issue: '3'
+  issued:
+    - year: 1999
+      month: 3
+  page: 345-351
+  source: IEEE Xplore
+  title: Spectral analysis of Boolean functions as a graph eigenvalue problem
+  type: article-journal
+  volume: '48'
+
+- id: CMS20
+  accessed:
+    - year: 2022
+      month: 7
+      day: 25
+  author:
+    - family: Chattopadhyay
+      given: Arkadev
+    - family: Mande
+      given: Nikhil S.
+    - family: Sherif
+      given: Suhail
+  citation-key: CMS20
+  container-title: Journal of the ACM
+  container-title-short: J. ACM
+  DOI: 10.1145/3396695
+  ISSN: 0004-5411, 1557-735X
+  issue: '4'
+  issued:
+    - year: 2020
+      month: 8
+      day: 31
+  language: en
+  page: 1-28
+  source: DOI.org (Crossref)
+  title: The Log-Approximate-Rank Conjecture Is False
+  type: article-journal
+  URL: https://dl.acm.org/doi/10.1145/3396695
+  volume: '67'
+
+- id: Fei07
+  author:
+    - family: Feige
+      given: Uriel
+  citation-key: Fei07
+  container-title: 48th Annual IEEE Symposium on Foundations of Computer Science (FOCS'07)
+  DOI: 10.1109/FOCS.2007.16
+  event-title: 48th Annual IEEE Symposium on Foundations of Computer Science (FOCS'07)
+  ISSN: 0272-5428
+  issued:
+    - year: 2007
+      month: 10
+  page: 407-417
+  source: IEEE Xplore
+  title: Refuting Smoothed 3CNF Formulas
+  type: paper-conference
+
+- id: Fei08
+  accessed:
+    - year: 2022
+      month: 8
+      day: 2
+  author:
+    - family: Feige
+      given: Uriel
+  citation-key: Fei08
+  collection-editor:
+    - family: Tóth
+      given: Gábor Fejes
+    - family: Katona
+      given: Gyula O. H.
+    - family: Lovász
+      given: László
+    - family: Pálfy
+      given: Péter Pál
+    - family: Recski
+      given: András
+    - family: Stipsicz
+      given: András
+    - family: Szász
+      given: Domokos
+    - family: Miklós
+      given: Dezső
+  container-title: Building Bridges
+  DOI: 10.1007/978-3-540-85221-6_9
+  editor:
+    - family: Grötschel
+      given: Martin
+    - family: Katona
+      given: Gyula O. H.
+    - family: Sági
+      given: Gábor
+  event-place: Berlin, Heidelberg
+  ISBN: 978-3-540-85218-6 978-3-540-85221-6
+  issued:
+    - year: 2008
+  language: en
+  page: 283-307
+  publisher: Springer Berlin Heidelberg
+  publisher-place: Berlin, Heidelberg
+  source: DOI.org (Crossref)
+  title: Small Linear Dependencies for Binary Vectors of Low Weight
+  type: chapter
+  URL: http://link.springer.com/10.1007/978-3-540-85221-6_9
+  volume: '19'
+
+- id: Fu20
+  author:
+    - family: Fu
+      given: Bin
+  citation-key: Fu20
+  collection-title: LNCS
+  container-title: Computing and combinatorics
+  DOI: 10.1007/978-3-030-58150-339
+  editor:
+    - family: Kim
+      given: Donghyun
+    - family: Uma
+      given: R. N.
+    - family: Cai
+      given: Zhipeng
+  event-date:
+    - year: 2020
+      month: 8
+      day: 29
+    - year: 2020
+      month: 8
+      day: 31
+  event-place: virtual
+  event-title: COCOON 2020
+  issued:
+    - year: 2020
+  page: 484–495
+  publisher: Springer
+  title: Hardness of sparse sets and minimal circuit size problem
+  type: paper-conference
+  volume: '12273'
+
+- id: GII+19
+  author:
+    - family: Golovnev
+      given: Alexander
+    - family: Ilango
+      given: Rahul
+    - family: Impagliazzo
+      given: Russell
+    - family: Kabanets
+      given: Valentine
+    - family: Kolokolova
+      given: Antonina
+    - family: Tal
+      given: Avishay
+  citation-key: GII+19
+  collection-title: LIPIcs
+  container-title: >-
+    Proceedings of the 46th International Colloquium on Automata, Languages, and
+    Programming
+  DOI: 10.4230/LIPIcs.ICALP.2019.66
+  editor:
+    - family: Baier
+      given: Christel
+    - family: Chatzigiannakis
+      given: Ioannis
+    - family: Flocchini
+      given: Paola
+    - family: Leonardi
+      given: Stefano
+  event-date:
+    - year: 2019
+      month: 7
+      day: 9
+    - year: 2019
+      month: 12
+      day: 9
+  event-place: Patras, Greece
+  event-title: ICALP 2019
+  issued:
+    - year: 2019
+  page: 66:1-66:15
+  publisher: Schloss Dagstuhl — Leibniz-Zentrum für Informatik
+  title: \(\mathsf{AC}^0[p]\) lower bounds against MCSP via the coin problem
+  type: paper-conference
+  volume: '132'
+
+- id: GL14
+  author:
+    - family: Gavinsky
+      given: Dmitry
+    - family: Lovett
+      given: Shachar
+  citation-key: GL14
+  collection-title: Lecture Notes in Computer Science
+  container-title: Automata, Languages, and Programming
+  DOI: 10.1007/978-3-662-43948-7_43
+  editor:
+    - family: Esparza
+      given: Javier
+    - family: Fraigniaud
+      given: Pierre
+    - family: Husfeldt
+      given: Thore
+    - family: Koutsoupias
+      given: Elias
+  event-place: Berlin, Heidelberg
+  ISBN: 978-3-662-43948-7
+  issued:
+    - year: 2014
+  language: en
+  page: 514-524
+  publisher: Springer
+  publisher-place: Berlin, Heidelberg
+  source: Springer Link
+  title: >-
+    En Route to the Log-Rank Conjecture: New Reductions and Equivalent
+    Formulations
+  title-short: En Route to the Log-Rank Conjecture
+  type: paper-conference
+
+- id: HHL18
+  accessed:
+    - year: 2022
+      month: 8
+      day: 4
+  author:
+    - family: Hatami
+      given: Hamed
+    - family: Hosseini
+      given: Kaave
+    - family: Lovett
+      given: Shachar
+  citation-key: HHL18
+  container-title: SIAM Journal on Computing
+  container-title-short: SIAM J. Comput.
+  DOI: 10.1137/17M1136869
+  ISSN: 0097-5397
+  issue: '1'
+  issued:
+    - year: 2018
+      month: 1
+  page: 208-217
+  source: epubs.siam.org (Atypon)
+  title: Structure of Protocols for XOR Functions
+  type: article-journal
+  URL: https://epubs.siam.org/doi/10.1137/17M1136869
+  volume: '47'
+
+- id: HRST17
+  author:
+    - family: Håstad
+      given: Johan
+    - family: Rossman
+      given: Benjamin
+    - family: Servedio
+      given: Rocco A.
+    - family: Tan
+      given: Li-Yang
+  citation-key: HRST17
+  container-title: Journal of the ACM
+  container-title-short: J. ACM
+  DOI: 10.1145/3095799
+  issue: '5'
+  issued:
+    - year: 2017
+      month: 10
+  page: 35:1-35:27
+  title: An average-case depth hierarchy theorem for Boolean circuits
+  type: article-journal
+  volume: '64'
+
+- id: Ila20-formula-partial
+  author:
+    - family: Ilango
+      given: Rahul
+  citation-key: Ila20-formula-partial
+  container-title: 2020 IEEE 61st Annual Symposium on Foundations of Computer Science
+  DOI: 10.1109/FOCS46700.2020.00047
+  event-date:
+    - year: 2020
+      month: 11
+      day: 16
+    - year: 2020
+      month: 11
+      day: 19
+  event-place: virtual
+  event-title: FOCS 2020
+  issued:
+    - year: 2020
+  page: 424-433
+  publisher: IEEE Computer Society
+  title: Constant depth formula and partial function versions of MCSP are hard
+  type: paper-conference
+
+- id: Juk12
+  author:
+    - family: Jukna
+      given: Stasys
+  citation-key: Juk12
+  collection-number: '13'
+  collection-title: Algorithms and Combinatorics
+  issued:
+    - year: 2012
+  publisher: Springer
+  title: 'Boolean Function Complexity: Advances and Frontiers'
+  type: book
+  volume: '27'
+
+- id: Kee11
+  author:
+    - family: Keevash
+      given: Peter
+  citation-key: Kee11
+  collection-title: London Mathematical Society Lecture Note Series
+  container-title: Surveys in Combinatorics 2011
+  editor:
+    - family: Chapman
+      given: Robin
+  event-place: Cambridge
+  issued:
+    - year: 2011
+  page: 83-140
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  source: Cambridge University Press
+  title: Hypergraph Turán problems
+  type: chapter
+
+- id: KLMY21
+  accessed:
+    - year: 2022
+      month: 8
+      day: 3
+  author:
+    - family: Knop
+      given: Alexander
+    - family: Lovett
+      given: Shachar
+    - family: McGuire
+      given: Sam
+    - family: Yuan
+      given: Weiqiang
+  citation-key: KLMY21
+  collection-title: STOC 2021
+  DOI: 10.1145/3406325.3450999
+  event-place: New York, NY, USA
+  ISBN: 978-1-4503-8053-9
+  issued:
+    - year: 2021
+      month: 6
+      day: 15
+  page: 197–208
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  source: ACM Digital Library
+  title: Log-rank and lifting for AND-functions
+  type: paper-conference
+  URL: https://doi.org/10.1145/3406325.3450999
+
+- id: Kra96
+  author:
+    - family: Krause
+      given: Matthias
+  citation-key: Kra96
+  container-title: Theoretical computer science
+  DOI: 10.1016/0304-3975(95)00005-4
+  ISSN: 0304-3975
+  issue: '1'
+  issued:
+    - year: 1996
+  language: eng
+  page: 99–117
+  publisher: Elsevier B.V
+  source: cmu.primo.exlibrisgroup.com
+  title: >-
+    Geometric arguments yield better bounds for threshold circuits and
+    distributed computing
+  type: article-journal
+  volume: '156'
+
+- id: KS08
+  author:
+    - family: Khot
+      given: Subhash
+    - family: Saket
+      given: Rishi
+  citation-key: KS08
+  container-title: 2008 49th Annual IEEE Symposium on Foundations of Computer Science
+  DOI: 10.1109/FOCS.2008.37
+  event-date:
+    - year: 2008
+      month: 10
+      day: 25
+    - year: 2008
+      month: 10
+      day: 28
+  event-place: Philadelphia, PA, USA
+  event-title: FOCS 2008
+  issued:
+    - year: 2008
+  page: 231-240
+  title: Hardness of minimizing and learning DNF expressions
+  type: paper-conference
+
+- id: Lov16
+  author:
+    - family: Lovett
+      given: Shachar
+  citation-key: Lov16
+  container-title: Journal of the ACM
+  container-title-short: J. ACM
+  DOI: 10.1145/2724704
+  issue: '1'
+  issued:
+    - year: 2016
+      month: 2
+  page: 1-9
+  title: Communication is bounded by root of rank
+  type: article-journal
+  volume: '63'
+
+- id: LS07
+  accessed:
+    - year: 2022
+      month: 8
+      day: 10
+  author:
+    - family: Lee
+      given: T.
+    - family: Shraibman
+      given: A.
+  citation-key: LS07
+  container-title: Foundations and Trends in Theoretical Computer Science
+  container-title-short: FNT in Theoretical Computer Science
+  DOI: 10.1561/0400000040
+  ISSN: 1551-305X, 1551-3068
+  issue: '4'
+  issued:
+    - year: 2007
+  language: en
+  page: 263-399
+  source: DOI.org (Crossref)
+  title: Lower Bounds in Communication Complexity
+  type: article-journal
+  URL: http://www.nowpublishers.com/article/Details/TCS-040
+  volume: '3'
+
+- id: LS88
+  author:
+    - family: Lovász
+      given: László
+    - family: Saks
+      given: Michael
+  citation-key: LS88
+  container-title: Proceedings of the 29th Annual Symposium on Foundations of Computer Science
+  DOI: 10.1109/SFCS.1988.21924
+  event-date:
+    - year: 1988
+      month: 10
+      day: 24
+    - year: 1988
+      month: 10
+      day: 26
+  event-title: SFCS 1988
+  issued:
+    - year: 1988
+  page: 81–90
+  publisher: IEEE Computer Society
+  title: Lattices, Möbius functions and communications complexity
+  type: paper-conference
+
+- id: MS82
+  author:
+    - family: Mehlhorn
+      given: Kurt
+    - family: Schmidt
+      given: Erik M.
+  citation-key: MS82
+  container-title: Proceedings of the 14th Annual ACM Symposium on Theory of Computing
+  DOI: 10.1145/800070.802208
+  event-date:
+    - year: 1982
+      month: 5
+      day: 5
+    - year: 1982
+      month: 5
+      day: 7
+  event-place: San Francisco, CA, USA
+  event-title: STOC 1982
+  issued:
+    - year: 1982
+  page: 330–337
+  publisher: Association for Computing Machinery
+  title: Las Vegas is better than determinism in VLSI and distributed computing
+  type: paper-conference
+
+- id: MW17
+  author:
+    - family: Murray
+      given: Cody D.
+    - family: Williams
+      given: R. Ryan
+  citation-key: MW17
+  container-title: Theory of Computing
+  container-title-short: Theory Comput.
+  DOI: 10.4086/toc.2017.v013a004
+  issue: '4'
+  issued:
+    - year: 2017
+  page: 1–22
+  title: On the (non) NP-hardness of computing circuit complexity
+  type: article-journal
+  volume: '13'
+
+- id: NW95
+  author:
+    - family: Nisan
+      given: Noam
+    - family: Wigderson
+      given: Avi
+  citation-key: NW95
+  container-title: Combinatorica
+  container-title-short: Combinatorica
+  DOI: 10.1007/BF01192527
+  issue: '4'
+  issued:
+    - year: 1995
+      month: 12
+      day: 1
+  page: 557-565
+  title: On rank vs. communication complexity
+  type: article-journal
+  volume: '15'
+
+- id: Rot14
+  accessed:
+    - year: 2022
+      month: 8
+      day: 10
+  author:
+    - family: Rothvoß
+      given: Thomas
+  citation-key: Rot14
+  DOI: 10.48550/arXiv.1409.6366
+  issued:
+    - year: 2014
+      month: 9
+      day: 22
+  number: arXiv:1409.6366
+  publisher: arXiv
+  source: arXiv.org
+  title: >-
+    A direct proof for Lovett's bound on the communication complexity of low
+    rank matrices
+  type: article
+  URL: http://arxiv.org/abs/1409.6366
+
+- id: Sid87
+  accessed:
+    - year: 2022
+      month: 8
+      day: 6
+  author:
+    - family: Sidorenko
+      given: A. F.
+  citation-key: Sid87
+  container-title: Mathematical notes of the Academy of Sciences of the USSR
+  container-title-short: Mathematical Notes of the Academy of Sciences of the USSR
+  DOI: 10.1007/BF01158259
+  ISSN: 1573-8876
+  issue: '3'
+  issued:
+    - year: 1987
+      month: 3
+      day: 1
+  language: en
+  license: 1987 Plenum Publishing Corporation
+  page: 247-259
+  source: link-springer-com.cmu.idm.oclc.org
+  title: >-
+    The maximal number of edges in a homogeneous hypergraph containing no
+    prohibited subgraphs
+  type: article-journal
+  URL: https://link-springer-com.cmu.idm.oclc.org/article/10.1007/BF01158259
+  volume: '41'
+
+- id: SS22
+  author:
+    - family: Singer
+      given: Noah
+    - family: Sudan
+      given: Madhu
+  citation-key: SS22
+  container-title: ACM Transactions on Computation Theory
+  container-title-short: ACM Trans. Comput. Theory
+  DOI: 10.1145/3543684
+  issue: '2'
+  issued:
+    - year: 2022
+      month: 6
+  title: Point-hyperplane incidence geometry and the log-rank conjecture
+  type: article-journal
+  volume: '14'
+
+- id: SV10
+  author:
+    - family: Shaltiel
+      given: Ronen
+    - family: Viola
+      given: Emanuele
+  citation-key: SV10
+  container-title: SIAM Journal on Computing
+  container-title-short: SIAM J. Comput.
+  DOI: 10.1145/1374376.1374461
+  issue: '7'
+  issued:
+    - year: 2010
+  page: 3122-3154
+  title: Hardness amplification proofs require majority
+  type: article-journal
+  volume: '39'
+
+- id: TWXZ13
+  author:
+    - family: Tsang
+      given: Hing Yin
+    - family: Wong
+      given: Chung Hoi
+    - family: Xie
+      given: Ning
+    - family: Zhang
+      given: Shengyu
+  citation-key: TWXZ13
+  container-title: 2013 IEEE 54th Annual Symposium on Foundations of Computer Science
+  DOI: 10.1109/FOCS.2013.76
+  event-title: 2013 IEEE 54th Annual Symposium on Foundations of Computer Science
+  ISSN: 0272-5428
+  issued:
+    - year: 2013
+      month: 10
+  page: 658-667
+  source: IEEE Xplore
+  title: Fourier Sparsity, Spectral Norm, and the Log-Rank Conjecture
+  type: paper-conference
+
+- id: Weg87
+  author:
+    - family: Wegener
+      given: Ingo
+  citation-key: Weg87
+  collection-title: Wiley-Teubner series in computer science
+  issued:
+    - year: 1987
+  publisher: John Wiley & Sons, Ltd., and B. G. Teubner, Stuttgart
+  title: The Complexity of Boolean Functions
+  type: book
+
+- id: Yan91
+  accessed:
+    - year: 2022
+      month: 8
+      day: 10
+  author:
+    - family: Yannakakis
+      given: Mihalis
+  citation-key: Yan91
+  container-title: Journal of Computer and System Sciences
+  container-title-short: Journal of Computer and System Sciences
+  DOI: 10.1016/0022-0000(91)90024-Y
+  ISSN: 0022-0000
+  issue: '3'
+  issued:
+    - year: 1991
+      month: 12
+      day: 1
+  language: en
+  page: 441-466
+  source: ScienceDirect
+  title: Expressing combinatorial optimization problems by Linear Programs
+  type: article-journal
+  URL: https://www.sciencedirect.com/science/article/pii/002200009190024Y
+  volume: '43'
+
+- id: Yao83
+  author:
+    - family: Yao
+      given: Andrew C.
+  citation-key: Yao83
+  container-title: 24th Annual Symposium on Foundations of Computer Science (sfcs 1983)
+  DOI: 10.1109/SFCS.1983.30
+  event-title: 24th Annual Symposium on Foundations of Computer Science (sfcs 1983)
+  ISSN: 0272-5428
+  issued:
+    - year: 1983
+      month: 11
+  page: 420-428
+  source: IEEE Xplore
+  title: Lower bounds by probabilistic arguments
+  type: paper-conference
+
+- id: Zha14
+  accessed:
+    - year: 2022
+      month: 8
+      day: 10
+  author:
+    - family: Zhang
+      given: Shengyu
+  citation-key: Zha14
+  collection-title: SODA '14
+  container-title: >-
+    Proceedings of the twenty-fifth annual ACM-SIAM symposium on Discrete
+    algorithms
+  event-place: USA
+  ISBN: 978-1-61197-338-9
+  issued:
+    - year: 2014
+      month: 1
+      day: 5
+  page: 1878–1885
+  publisher: Society for Industrial and Applied Mathematics
+  publisher-place: USA
+  source: ACM Digital Library
+  title: Efficient quantum protocols for XOR functions
+  type: paper-conference
+...

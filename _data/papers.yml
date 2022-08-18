@@ -5,6 +5,7 @@
   select: yes
   arxiv: 2207.07158
   eccc: 2022/100
+  authors: Raghuvansh R. Saxena, Noah Singer, Madhu Sudan, and Santhoshini Velusamy
   abstract: |+
     We initiate a study of the streaming complexity of constraint satisfaction problems (CSPs) when the constraints arrive in a random order. We show that there exists a CSP, namely $\textsf{Max-DiCut}$, for which random ordering makes a provable difference. Whereas a $4/9 \approx 0.445$-approximation of $\textsf{DiCut}$ requires $\Omega(\sqrt n)$ space with adversarial ordering, we show that with random ordering of constraints there exists a $0.48$-approximation algorithm that only needs $O(\log n)$ space. We also give new algorithms for $\textsf{Max-DiCut}$ in variants of the adversarial ordering setting. Specifically, we give a two-pass $O(\log n)$ space $0.48$-approximation algorithm for general graphs and a single-pass $\tilde{O}(\sqrt n)$ space $0.48$-approximation algorithm for bounded degree graphs.
 
