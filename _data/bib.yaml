@@ -1,6 +1,10 @@
 ---
 references:
 - id: '84'
+  abstract: >-
+    We consider extremal problems ‘of Turán type’ for r-uniform ordered
+    hypergraphs, where multiple oriented edges are permitted up to multiplicity
+    q. Wit…
   accessed:
     - year: 2022
       month: 8
@@ -71,6 +75,29 @@ references:
   volume: '47'
 
 - id: AHM+08
+  abstract: >-
+    For circuit classes $R$, the fundamental computational problem Min-R asks
+    for the minimum $R$-size of a Boolean function presented as a truth table.
+    Prominent examples of this problem include Min-DNF, which asks whether a
+    given Boolean function presented as a truth table has a $k$-term disjunctive
+    normal form (DNF), and Min-Circuit (also called the minimum circuit size
+    problem (MCSP)), which asks whether a Boolean function presented as a truth
+    table has a size $k$ Boolean circuit. We present a new reduction proving
+    that Min-DNF is NP-complete. It is significantly simpler than the known
+    reduction of Masek Some NP-Complete Set Covering Problems, manuscript,
+    1979], which is from Circuit-SAT. We then give a more complex reduction,
+    yielding the result that Min-DNF cannot be approximated to within a factor
+    smaller than $(\log N)^{\gamma}$, for some constant $\gamma>0$, assuming
+    that NP is not contained in quasi-polynomial time. The standard greedy
+    algorithm for Set Cover is often used in practice to approximate Min-DNF.
+    The question of whether Min-DNF can be approximated to within a factor of
+    $o(\log N)$ remains open, but we construct an instance of Min-DNF on which
+    the solution produced by the greedy algorithm is $\Omega(\log N)$ larger
+    than optimal. Finally, we turn to the question of approximating circuit size
+    for slightly more general classes of circuits. DNF formulas are depth-two
+    circuits of AND and OR gates. Depth-$d$ circuits are denoted by $AC^0_d$. We
+    show that it is hard to approximate the size of $AC^0_d$ circuits (for large
+    enough $d$) under cryptographic assumptions.
   author:
     - family: Allender
       given: Eric
@@ -142,6 +169,12 @@ references:
   type: book
 
 - id: BC99
+  abstract: >-
+    Several problems in digital logic can be conveniently approached in the
+    spectral domain. In this paper we show that the Walsh spectrum of Boolean
+    functions can be analyzed by looking at algebraic properties of a class of
+    Cayley graphs associated with Boolean functions. We use this idea to
+    investigate the Walsh spectrum of certain special functions.
   author:
     - family: Bernasconi
       given: A.
@@ -161,7 +194,118 @@ references:
   type: article-journal
   volume: '48'
 
+- id: BHP+22
+  author:
+    - family: Boyland
+      given: Joanna
+    - family: Hwang
+      given: Michael
+    - family: Prasad
+      given: Tarun
+    - family: Singer
+      given: Noah
+    - family: Velusamy
+      given: Santhoshini
+  citation-key: BHP+22
+  collection-title: LIPIcs
+  container-title: >-
+    Approximation, Randomization, and Combinatorial Optimization. Algorithms and
+    Techniques
+  event-date:
+    - year: 2022
+      month: 9
+      day: 19
+    - year: 2022
+      month: 9
+      day: 21
+  event-place: virtual
+  event-title: APPROX 2022
+  issued:
+    - year: 2022
+      month: 7
+  license: All rights reserved
+  publisher: Schloss Dagstuhl — Leibniz-Zentrum für Informatik
+  title: On sketching approximations for symmetric Boolean CSPs
+  type: paper-conference
+
+- id: CGSV21-boolean
+  author:
+    - family: Chou
+      given: Chi-Ning
+    - family: Golovnev
+      given: Alexander
+    - family: Sudan
+      given: Madhu
+    - family: Velusamy
+      given: Santhoshini
+  citation-key: CGSV21-boolean
+  issued:
+    - year: 2021
+      month: 2
+      day: 24
+  title: Approximability of all Boolean CSPs with linear sketches
+  type: manuscript
+
+- id: CGSV21-finite
+  author:
+    - family: Chou
+      given: Chi-Ning
+    - family: Golovnev
+      given: Alexander
+    - family: Sudan
+      given: Madhu
+    - family: Velusamy
+      given: Santhoshini
+  citation-key: CGSV21-finite
+  container-title: >-
+    Proceedings of the 62nd Annual IEEE Symposium on Foundations of Computer
+    Science
+  DOI: 10.1109/FOCS52979.2021.00117
+  event-date:
+    - year: 2022
+      month: 2
+      day: 7
+    - year: 2022
+      month: 2
+      day: 10
+  event-place: Denver, CO, USA
+  event-title: FOCS 2021
+  issued:
+    - year: 2021
+  publisher: IEEE Computer Society
+  title: Approximability of all finite CSPs with linear sketches
+  type: paper-conference
+
+- id: CGV20
+  author:
+    - family: Chou
+      given: Chi-Ning
+    - family: Golovnev
+      given: Alexander
+    - family: Velusamy
+      given: Santhoshini
+  citation-key: CGV20
+  container-title: 2020 IEEE 61st Annual Symposium on Foundations of Computer Science
+  DOI: 10.1109/FOCS46700.2020.00039
+  event-date:
+    - year: 2020
+      month: 11
+      day: 16
+    - year: 2020
+      month: 11
+      day: 19
+  event-place: virtual
+  event-title: FOCS 2020
+  issued:
+    - year: 2020
+      month: 11
+  page: 330-341
+  publisher: IEEE Computer Society
+  title: Optimal Streaming Approximations for all Boolean Max-2CSPs and Max-\(k\)SAT
+  type: paper-conference
+
 - id: CMS20
+  abstract: "We construct a simple and total Boolean function\n              F\n              =\n              f\n              ○ XOR on 2\n              n\n              variables that has only\n              O\n              (√\n              n\n              ) spectral norm,\n              O\n              (\n              n\n              2\n              ) approximate rank, and\n              O\n              (\n              n\n              2.5\n              ) approximate nonnegative rank. We show it has polynomially large randomized bounded-error communication complexity of Ω(√\n              n\n              ). This yields the first exponential gap between the logarithm of the approximate rank and randomized communication complexity for total functions. Thus,\n              F\n              witnesses a refutation of the log-approximate-rank conjecture that was posed by Lee and Shraibman as a very natural analogue for randomized communication of the still unresolved log-rank conjecture for deterministic communication. The best known previous gap for any total function between the two measures is a recent 4th-power separation by Göös et al.\n            \n            \n              Additionally, our function\n              F\n              refutes Grolmusz’s conjecture\_and a variant of the log-approximate-nonnegative-rank conjecture suggested recently by Kol et\_al., both of which are implied by the log-approximate-rank conjecture. The complement of\n              F\n              has exponentially large approximate nonnegative rank. This answers a question of Lee [32], showing that approximate nonnegative rank can be exponentially larger than approximate rank. The inner function\n              F\n              also falsifies a conjecture about parity measures of Boolean functions made by Tsang et al. The latter conjecture implied the log-rank conjecture for XOR functions.\n            \n            \n              We are pleased to note that shortly after we published our results, two independent groups of researchers, Anshu et al. and Sinha and de Wolf, used our function\n              F\n              to prove that the quantum-log-rank conjecture is also false by showing that\n              F\n              has Ω(\n              n\n              1/6\n              ) quantum communication complexity."
   accessed:
     - year: 2022
       month: 7
@@ -192,6 +336,20 @@ references:
   volume: '67'
 
 - id: Fei07
+  abstract: >-
+    We introduce the following model for generating .semi-random 3CNF formulas.
+    First, an adversary is allowed to pick an arbitrary formula with n varialdes
+    and in clauses. Then, the formula is slightly perturbed at random. Namely,
+    the smoothing operation leaves the variables of the formula unchanged, but
+    flips the polarity of every variable occurrence in the formula independently
+    with probability a. If the density m/n of a 3CNF formula exceeds a certain
+    threshold value (say, 5epsiv-3) then the smoothing operation almost surely
+    results in a non-satisfiable formula. We present a randomized polynomial
+    time refutation algorithm that for every sufficiently dense 3CNF formula
+    manages to refute most of its smoothed instantiations. The density
+    requirement for our refutation algorithm is roughly epsiv-2 radic(n log log
+    n), which almost matches the density Omega( radicn) required bv known
+    algorithms for refuting 3CNF formulas that are completely random.
   author:
     - family: Feige
       given: Uriel
@@ -209,6 +367,14 @@ references:
   type: paper-conference
 
 - id: Fei08
+  abstract: >-
+    We show that every set of m cn√n log log n vectors in {0, 1}n in which every
+    vector has Hamming weight 3 contains a subset of O(log n) vectors that form
+    a linear dependency. Our proof is based on showing that in every graph of
+    average degree at least c log log n, every legal edge coloring produces a
+    cycle in which one of the colors appears either once or twice. (In both
+    results, c is some constant.) The results proved are used (in a companion
+    work) in refutation algorithms for semirandom 3CNF formulas.
   accessed:
     - year: 2022
       month: 8
@@ -256,6 +422,25 @@ references:
   type: chapter
   URL: http://link.springer.com/10.1007/978-3-540-85221-6_9
   volume: '19'
+
+- id: FJ15
+  author:
+    - family: Feige
+      given: Uriel
+    - family: Jozeph
+      given: Shlomo
+  citation-key: FJ15
+  container-title: Algorithmica
+  container-title-short: Algorithmica
+  DOI: 10.1007/s00453-013-9806-z
+  issue: '2'
+  issued:
+    - year: 2015
+      month: 2
+  page: 409-428
+  title: Oblivious Algorithms for the Maximum Directed Cut Problem
+  type: article-journal
+  volume: '71'
 
 - id: Fu20
   author:
@@ -336,6 +521,13 @@ references:
   volume: '132'
 
 - id: GL14
+  abstract: >-
+    We prove that several measures in communication complexity are equivalent,
+    up to polynomial factors in the logarithm of the rank of the associated
+    matrix: deterministic communication complexity, randomized communication
+    complexity, information cost and zero-communication cost. This shows that in
+    order to prove the log-rank conjecture, it suffices to show that low-rank
+    matrices have efficient protocols in any of the aforementioned measures.
   author:
     - family: Gavinsky
       given: Dmitry
@@ -369,7 +561,55 @@ references:
   title-short: En Route to the Log-Rank Conjecture
   type: paper-conference
 
+- id: GVV17
+  author:
+    - family: Guruswami
+      given: Venkatesan
+    - family: Velingker
+      given: Ameya
+    - family: Velusamy
+      given: Santhoshini
+  citation-key: GVV17
+  collection-title: LIPIcs
+  container-title: >-
+    Approximation, randomization, and combinatorial optimization. Algorithms and
+    techniques
+  DOI: 10.4230/LIPIcs.APPROX-RANDOM.2017.8
+  editor:
+    - family: Jansen
+      given: Klaus
+    - family: Rolim
+      given: José D. P.
+    - family: Williamson
+      given: David
+    - family: Vempala
+      given: Santosh S.
+  event-date:
+    - year: 2017
+      month: 8
+      day: 16
+    - year: 2017
+      month: 8
+      day: 18
+  event-place: Berkeley, CA, USA
+  event-title: APPROX 2017
+  issued:
+    - year: 2017
+      month: 8
+  page: 8:1–8:19
+  publisher: Schloss Dagstuhl — Leibniz-Zentrum für Informatik
+  title: Streaming Complexity of Approximating Max 2CSP and Max Acyclic Subgraph
+  type: paper-conference
+  volume: '81'
+
 - id: HHL18
+  abstract: >-
+    Let $f:\{0,1\}^n\to\{0,1\}$ be a boolean function. Its associated XOR
+    function is the two-party function $f_{\oplus}(x,y)=f(x\oplus y)$. We show
+    that, up to polynomial factors, the deterministic communication complexity
+    of $f_{\oplus}$ is equal to the parity decision tree complexity of $f$. This
+    relies on a novel technique of entropy reduction for protocols, combined
+    with existing techniques in Fourier analysis and additive combinatorics.
   accessed:
     - year: 2022
       month: 8
@@ -398,6 +638,21 @@ references:
   volume: '47'
 
 - id: HRST17
+  abstract: >-
+    We prove an average-case depth hierarchy theorem for Boolean circuits over
+    the standard basis of AND, OR, and NOT gates. Our hierarchy theorem says
+    that for every d ≥ 2, there is an explicit n-variable Boolean function f,
+    computed by a linear-size depth-d formula, which is such that any
+    depth-(d−1) circuit that agrees with f on (1/2 + on(1)) fraction of all
+    inputs must have size exp(nΩ (1/d)). This answers an open question posed by
+    Håstad in his Ph.D. thesis (Håstad 1986b).Our average-case depth hierarchy
+    theorem implies that the polynomial hierarchy is infinite relative to a
+    random oracle with probability 1, confirming a conjecture of Håstad (1986a),
+    Cai (1986), and Babai (1987). We also use our result to show that there is
+    no “approximate converse” to the results of Linial, Mansour, Nisan (Linial
+    et al. 1993) and (Boppana 1997) on the total influence of bounded-depth
+    circuits.A key ingredient in our proof is a notion of random projections
+    which generalize random restrictions.
   author:
     - family: Håstad
       given: Johan
@@ -443,7 +698,60 @@ references:
   title: Constant depth formula and partial function versions of MCSP are hard
   type: paper-conference
 
+- id: Ind06
+  abstract: >-
+    In this article, we show several results obtained by combining the use of
+    stable distributions with pseudorandom generators for bounded space. In
+    particular:—We show that, for any p ∈ (0, 2], one can maintain (using only
+    O(log n/ϵ2) words of storage) a sketch C(q) of a point q ∈ lnp under dynamic
+    updates of its coordinates. The sketch has the property that, given C(q) and
+    C(s), one can estimate ‖q − s‖p up to a factor of (1 + ϵ) with large
+    probability. This solves the main open problem of Feigenbaum et al.
+    [1999].—We show that the aforementioned sketching approach directly
+    translates into an approximate algorithm that, for a fixed linear mapping A,
+    and given x ∈ ℜn and y ∈ ℜm, estimates ‖Ax − y‖p in O(n + m) time, for any p
+    ∈ (0, 2]. This generalizes an earlier algorithm of Wasserman and Blum [1997]
+    which worked for the case p = 2.—We obtain another sketch function C′ which
+    probabilistically embeds ln1 into a normed space lm1. The embedding
+    guarantees that, if we set m = log(1/δ)O(1/ϵ), then for any pair of points
+    q, s ∈ ln1, the distance between q and s does not increase by more than (1 +
+    ϵ) with constant probability, and it does not decrease by more than (1 − ϵ)
+    with probability 1 − δ. This is the only known dimensionality reduction
+    theorem for the l1 norm. In fact, stronger theorems of this type (i.e., that
+    guarantee very low probability of expansion as well as of contraction)
+    cannot exist [Brinkman and Charikar 2003].—We give an explicit embedding of
+    ln2 into lnO(log n)1 with distortion (1 + 1/nΘ(1)).
+  author:
+    - family: Indyk
+      given: Piotr
+  citation-key: Ind06
+  container-title: Journal of the ACM
+  container-title-short: J. ACM
+  DOI: 10.1145/1147954.1147955
+  issue: '3'
+  issued:
+    - year: 2006
+      month: 5
+  note: Association for Computing Machinery
+  page: 307–323
+  title: >-
+    Stable distributions, pseudorandom generators, embeddings, and data stream
+    computation
+  type: article-journal
+  volume: '53'
+
 - id: Juk12
+  abstract: >-
+    Boolean circuit complexity is the combinatorics of computer science and
+    involves many intriguing problems that are easy to state and explain, even
+    for the layman. This book is a comprehensive description of basic lower
+    bound arguments, covering many of the gems of this complexity Waterloo that
+    have been discovered over the past several decades, right up to results from
+    the last year or two. Many open problems, marked as Research Problems, are
+    mentioned along the way. The problems are mainly of combinatorial flavor but
+    their solutions could have great consequences in circuit complexity and
+    computer science. The book will be of interest to graduate students and
+    researchers in the fields of computer science and discrete mathematics.
   author:
     - family: Jukna
       given: Stasys
@@ -458,6 +766,28 @@ references:
   volume: '27'
 
 - id: Kee11
+  abstract: >-
+    One of the earliest results in Combinatorics is Mantel's theorem from 1907
+    that the largest triangle-free graph on a given vertex set is complete
+    bipartite. However, a seemingly similar question posed by Turán in 1941 is
+    still open: what is the largest 3-uniform hypergraph on a given vertex set
+    with no tetrahedron? This question can be considered a test case for the
+    general hypergraph Turán problem, where given an r-uniform hypergraph F, we
+    want to determine the maximum number of edges in an r-uniform hypergraph on
+    n vertices that does not contain a copy of F. To date there are very few
+    results on this problem, even asymptotically. However, recent years have
+    seen a revitalisation of this field, via significant developments in the
+    available methods, notably the use of stability (approximate structure) and
+    flag algebras. This article surveys the known results and methods, and
+    discusses some open problems.AcknowledgementsResearch supported in part by
+    ERC grant 239696 and EPSRC grant EP/G056730/1. Thanks to Dan Hefetz, Dhruv
+    Mubayi, Richard Mycroft and Oleg Pikhurko for helpful comments and
+    corrections.IntroductionThe Turán number ex(n, F) is the maximum number of
+    edges in an F-free r-graph on n vertices. It is a long-standing open problem
+    in Extremal Combinatorics to develop some understanding of these numbers for
+    general r-graphs F. Ideally, one would like to compute them exactly, but
+    even asymptotic results are currently only known in certain cases. For
+    ordinary graphs (r = 2) the picture is fairly complete.
   author:
     - family: Keevash
       given: Peter
@@ -478,6 +808,25 @@ references:
   type: chapter
 
 - id: KLMY21
+  abstract: >-
+    Let f: {0, 1}n → {0, 1} be a boolean function, and let f∧(x, y) = f(x ∧ y)
+    denote the AND-function of f, where x ∧ y denotes bit-wise AND. We study the
+    deterministic communication complexity of f∧ and show that, up to a logn
+    factor, it is bounded by a polynomial in the logarithm of the real rank of
+    the communication matrix of f∧. This comes within a logn factor of
+    establishing the log-rank conjecture for AND-functions with no assumptions
+    on f. Our result stands in contrast with previous results on special cases
+    of the log-rank conjecture, which needed significant restrictions on f such
+    as monotonicity or low F2-degree. Our techniques can also be used to prove
+    (within a logn factor) a lifting theorem for AND-functions, stating that the
+    deterministic communication complexity of f∧ is polynomially related to the
+    AND-decision tree complexity of f. The results rely on a new structural
+    result regarding boolean functions f: {0, 1}n → {0, 1} with a sparse
+    polynomial representation, which may be of independent interest. We show
+    that if the polynomial computing f has few monomials then the set system of
+    the monomials has a small hitting set, of size poly-logarithmic in its
+    sparsity. We also establish extensions of this result to multi-linear
+    polynomials f: {0, 1}n → with a larger range.
   accessed:
     - year: 2022
       month: 8
@@ -509,6 +858,119 @@ references:
   URL: https://doi.org/10.1145/3406325.3450999
 
 - id: Kra96
+  abstract: >-
+    We consider the following norm ∥ƒ for Boolean functions
+
+    ƒ: {0, 1}
+
+    n × {0, 1}
+
+    n → {0, 1}: ∥ƒ|| = max{¦M(ƒ
+
+    ∗)v¦, v ϵ R
+
+    2
+
+    n
+
+    , ¦v¦ = 1}
+
+    . Here,
+
+    M(ƒ
+
+    ∗)
+
+    denotes the 2
+
+    n
+
+    × 2
+
+    n
+
+    -matrix obtained by setting
+
+    M(ƒ
+
+    ∗)
+
+    x,y=
+
+    1 if ƒ(x,y)=1
+
+    −1 if ƒ(x,y)=0.
+
+    Further, we refer to the usual product of real matrices and vectors and
+    denote by
+
+    ¦v¦ the Euclidean norm of real vectors
+
+    v. In this paper it will be shown by geometric arguments that for each
+    function
+
+    ƒ: {0,1}
+
+    n × {0,1}
+
+    n → {0,1}
+
+    the following is true.
+
+    - The length of each probabilistic communication protocol which computes ƒ
+    with error bounded by
+
+    1
+
+    2
+
+    −
+
+    1
+
+    s
+
+    ,
+
+    s
+
+    ϵ
+
+    N, can be estimated from below by
+
+    1
+
+    4
+
+    (n − log
+
+    2∥ƒ||−log
+
+    2 √s−2)
+
+    .
+
+    - The number of edges of any threshold circuit of depth two computing ƒ
+    cannot be smaller than
+
+    2
+
+    n−1
+
+    ‖ƒ‖
+
+    These results yield better lower bounds on probabilistic communication
+    complexity as well as on the complexity of threshold circuits of depth two.
+    Further, characterizing ∥ƒ∥ by the eigenvalues of
+
+    M(ƒ
+
+    ∗)
+
+    we obtain a method to construct iteratively functions which are hard to
+    compute in the above models. This implies lower bounds for decision problems
+    that previous probabilistic techniques from Yao (1983), Halstenberg and
+    Reischuk (1988) and Hajnal et al. (1987) cannot be applied to.
   author:
     - family: Krause
       given: Matthias
@@ -554,6 +1016,12 @@ references:
   type: paper-conference
 
 - id: Lov16
+  abstract: >-
+    We prove that any total boolean function of rank r can be computed by a
+    deterministic communication protocol of complexity O(√ undefined log(r)).
+    Equivalently, any graph whose adjacency matrix has rank r has chromatic
+    number at most 2O(√rundefinedlog(r)). This gives a nearly quadratic
+    improvement in the dependence on the rank over previous results.
   author:
     - family: Lovett
       given: Shachar
@@ -597,6 +1065,11 @@ references:
   volume: '3'
 
 - id: LS88
+  abstract: >-
+    A general framework for the study of a broad class of communication problems
+    is developed. It is based on a recent analysis of the communication
+    complexity of graph connectivity. The approach makes use of combinatorial
+    lattice theory.
   author:
     - family: Lovász
       given: László
@@ -621,6 +1094,17 @@ references:
   type: paper-conference
 
 - id: MS82
+  abstract: >-
+    In this paper we describe a new method for proving lower bounds on the
+    complexity of VLSI - computations and more generally distributed
+    computations. Lipton and Sedgewick observed that the crossing sequence
+    arguments used to prove lower bounds in VLSI (or TM or distributed
+    computing) apply to (accepting) nondeterministic computations as well as to
+    deterministic computations. Hence whenever a boolean function f is such that
+    f and f (the complement of f, f = 1 - f) have efficient nondeterministic
+    chips then the known techniques are of no help for proving lower bounds on
+    the complexity of deterministic chips.In this paper we describe a lower
+    bound technique (Thm 1) which only applies to deterministic computations
   author:
     - family: Mehlhorn
       given: Kurt
@@ -664,6 +1148,11 @@ references:
   volume: '13'
 
 - id: NW95
+  abstract: >-
+    This paper concerns the open problem of Lovász and Saks regarding the
+    relationship between the communication complexity of a boolean function and
+    the rank of the associated matrix. We first give an example exhibiting the
+    largest gap known. We then prove two related theorems.
   author:
     - family: Nisan
       given: Noam
@@ -684,6 +1173,15 @@ references:
   volume: '15'
 
 - id: Rot14
+  abstract: >-
+    The log-rank conjecture in communication complexity suggests that the
+    deterministic communication complexity of any Boolean rank-r function is
+    bounded by polylog(r). Recently, major progress was made by Lovett who
+    proved that the communication complexity is bounded by O(r^1/2 * log r).
+    Lovett's proof is based on known estimates on the discrepancy of low-rank
+    matrices. We give a simple, direct proof based on a hyperplane rounding
+    argument that in our opinion sheds more light on the reason why a root
+    factor suffices and what is necessary to improve on this factor.
   accessed:
     - year: 2022
       month: 8
@@ -735,6 +1233,23 @@ references:
   URL: https://link-springer-com.cmu.idm.oclc.org/article/10.1007/BF01158259
   volume: '41'
 
+- id: Sin22
+  author:
+    - family: Singer
+      given: Noah
+  citation-key: Sin22
+  event-place: Cambridge, MA
+  genre: Undergraduate thesis
+  issued:
+    - year: 2022
+      month: 3
+  number-of-pages: '140'
+  publisher: Harvard University
+  publisher-place: Cambridge, MA
+  title: On streaming approximation algorithms for constraint satisfaction problems
+  type: thesis
+  URL: https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37371750
+
 - id: SS22
   author:
     - family: Singer
@@ -752,6 +1267,23 @@ references:
   title: Point-hyperplane incidence geometry and the log-rank conjecture
   type: article-journal
   volume: '14'
+
+- id: SSSV22
+  author:
+    - family: Saxena
+      given: Raghuvansh R.
+    - family: Singer
+      given: Noah
+    - family: Sudan
+      given: Madhu
+    - family: Velusamy
+      given: Santhoshini
+  citation-key: SSSV22
+  issued:
+    - year: 2022
+      month: 7
+  title: Streaming complexity of CSPs with randomly ordered constraints
+  type: manuscript
 
 - id: SV10
   author:
@@ -772,6 +1304,35 @@ references:
   volume: '39'
 
 - id: TWXZ13
+  abstract: >-
+    We study Boolean functions with sparse Fourier spectrum or small spectral
+    norm, and show their applications to the Log-rank Conjecture for XOR
+    functions f(x ⊕ y) - a fairly large class of functions including well
+    studied ones such as Equality and Hamming Distance. The rank of the
+    communication matrix Mf for such functions is exactly the Fourier sparsity
+    of f. Let d = deg2(f) be the F2-degree of f and DCC(f · ⊕) stand for the
+    deterministic communication complexity for f(x ⊕ y). We show that 1) DCC(f ·
+    ⊕) = O(2d2/2 logd-2 ∥f̂∥1). In particular, the Log-rank conjecture holds for
+    XOR functions with constant F2-degree. 2) DCC(f · ⊕) = O(d∥f̂∥1) =
+    O(√(rank(Mf))). This improves the (trivial) linear bound by nearly a
+    quadratic factor. We obtain our results through a degree-reduction protocol
+    based on a variant of polynomial rank, and actually conjecture that the
+    communication cost of our protocol is at most logO(1) rank(Mf). The above
+    bounds are obtained from different analysis for the number of parity queries
+    required to reduce f's F2-degree. Our bounds also hold for the parity
+    decision tree complexity of f, a measure that is no less than the
+    communication complexity. Along the way we also prove several structural
+    results about Boolean functions with small Fourier sparsity ∥f̂∥0 or
+    spectral norm ∥f̂∥1, which could be of independent interest. For functions f
+    with constant F2-degree, we show that: 1) f can be written as the summation
+    of quasi-polynomially many indicator functions of subspaces with ±-signs,
+    improving the previous doubly exponential upper bound by Green and Sanders;
+    2) being sparse in Fourier domain is polynomially equivalent to having a
+    small parity decision tree complexity; and 3) f depends only on polylog∥f̂∥1
+    linear functions of input variables. For functions f with small spectral
+    norm, we show that: 1) there is an affine subspace of co dimension ∥f̂∥1 on
+    which f(x) is a constant, and 2) there is a parity decision ∥f̂∥1log∥f̂∥0
+    for computing f.
   author:
     - family: Tsang
       given: Hing Yin
@@ -807,6 +1368,16 @@ references:
   type: book
 
 - id: Yan91
+  abstract: >-
+    Many combinatorial optimization problems call for the optimization of a
+    linear function over a certain polytope. Typically, these polytopes have an
+    exponential number of facets. We explore the problem of finding small linear
+    programming formulations when one may use any new variables and constraints.
+    We show that expressing the matching and the Traveling Salesman Problem by a
+    symmetric linear program requires exponential size. We relate the minimum
+    size needed by a LP to express a polytope to a combinatorial parameter,
+    point out some connections with communication complexity theory, and examine
+    the vertex packing polytope for some classes of graphs.
   accessed:
     - year: 2022
       month: 8
@@ -833,6 +1404,22 @@ references:
   volume: '43'
 
 - id: Yao83
+  abstract: >-
+    The purpose of this paper is to resolve several open problems in the current
+    literature on Boolean circuits, communication complexity, and hashing
+    functions. These lower bound results share the common feature that their
+    proofs utilize probabilistic arguments in an essential way. Specifically, we
+    prove that, to compute the majority function of n Boolean variables, the
+    size of any depth-3 monotone circuit must be greater than 2nε, and the size
+    of any width-2 branching program must have super-polynomial growth. We also
+    show that, for the problem of deciding whether i ≤ j for two n-bit integers
+    i and j, the probabilistic ε-error one-way communication complexity is of
+    order θ(n), while the two-way ε-error complexity is O((log n)2). We will
+    also prove that, to compute i · j mod p for an n-bit prime p, the
+    probabilistic ε-error two-way communication complexity is of order θ(n).
+    Finally, we prove a conjecture of Ullman that uniform hashing is
+    asymptotically optimal in its expected retrieval cost among open address
+    hashing schemes.
   author:
     - family: Yao
       given: Andrew C.
@@ -850,6 +1437,17 @@ references:
   type: paper-conference
 
 - id: Zha14
+  abstract: >-
+    We show that for any Boolean function f: {0, 1}n → {0, 1}, the bounded-error
+    quantum communication complexity Qε(f (f o ⊕) of XOR functions f(x ⊕ y)
+    satisfies that [EQUATION] where d = deg2(f) is the F2-degree of f, and
+    [EQUATION]. This implies that the previous lower bound [EQUATION] by Lee and
+    Shraibman [LS09] is tight for f with low F2-degree. The result also confirms
+    the quantum version of the Log-rank Conjecture for low-degree XOR functions.
+    In addition, we show that the exact quantum communication complexity
+    satisfies [EQUATION] where ||f||0 is the number of nonzero Fourier
+    coefficients of f. This matches the previous lower bound QE(f(x, y)) = Ω(log
+    rank(Mf)) by Buhrman and de Wolf [BdW01] for low-degree XOR functions.
   accessed:
     - year: 2022
       month: 8
