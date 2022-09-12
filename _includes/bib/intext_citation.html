@@ -1,5 +1,7 @@
+{% comment %}
 {% capture tooltip %}
 {% include bib/title.html ref=include.ref %}
 ({% include bib/authorlist.html ref=include.ref %},
 {% if include.ref.type == "paper-conference" %}{{ include.ref["event-title"] }}{% elsif include.ref.type == "article-journal" %}{{ include.ref["container-title-short"] }}{% endif %} {{ include.ref.issued[0].year }})
 {% endcapture %}<a href="#cite-{{ include.key }}" data-bs-toggle="tooltip" data-bs-html="true" data-bs-original-title="{{ tooltip }}">[{{ include.key }}]</a>
+{% endcomment %}<a href="#cite-{{ include.key }}">[{{ include.key }}]</a>

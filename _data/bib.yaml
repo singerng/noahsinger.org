@@ -245,6 +245,7 @@ references:
       day: 24
   title: Approximability of all Boolean CSPs with linear sketches
   type: manuscript
+  URL: https://arxiv.org/abs/2102.12351
 
 - id: CGSV21-finite
   author:
@@ -1284,6 +1285,7 @@ references:
       month: 7
   title: Streaming complexity of CSPs with randomly ordered constraints
   type: manuscript
+  URL: https://arxiv.org/abs/2207.07158
 
 - id: SV10
   author:

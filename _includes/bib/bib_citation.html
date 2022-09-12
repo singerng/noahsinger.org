@@ -9,8 +9,8 @@
 	{{ include.ref.publisher }}, {{ include.ref.issued[0].year }}.
 	{% elsif include.ref.type == "article-journal" %}
 	In: <em>{{ include.ref["container-title"] }}</em> {{ include.ref.volume }}{% if include.ref.issue %}.{{ include.ref.issue }}{% endif %} ({{ include.ref.issued[0].year }}), pp. {{ include.ref.page }}.
-	{% elsif include.ref.type == "manuscript" %}
-	In: <em>{{ include.ref.genre }}</em>. URL: <a href="{{ include.ref.URL }}">{{ include.ref.URL }}</a>.
+	{% elsif include.ref.URL %}
+	URL: <a href="{{ include.ref.URL }}">{{ include.ref.URL }}</a>.
 	{% endif %}
 	{% if include.ref.DOI %}
 	DOI: <a href="https://doi.org/{{ include.ref.DOI }}">{{ include.ref.DOI }}</a>.
