@@ -5,7 +5,6 @@
     {% if include.paper.venue %}<em>{{ include.paper.venue }}</em><br/>{% endif %}
 
     {% unless include.short %}
-
     {% if include.paper.award %}
     <i class="fas fa-award"></i> {{ include.paper.award }}<br/>
     {% endif %}
@@ -13,7 +12,7 @@
     {% if include.paper.arxiv or include.paper.eccc or include.paper.conference or include.paper.journal or include.paper.pdf or include.paper.url %}
     <div class="btn-group">
         <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink-{{ forloop.index }}" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="btn btn-light dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink-{{ forloop.index }}" data-bs-toggle="dropdown" aria-expanded="false">
             Versions
           </a>
 
@@ -48,7 +47,7 @@
 
     {% if include.paper.abstract %}
     <div class="btn-group">
-    <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ forloop.index }}"><i class="fas fa-file-alt"></i> Abstract</button>
+    <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ forloop.index }}"><i class="fas fa-file-alt"></i> Abstract</button>
     </div>
 
     <div class="modal fade" id="modal-{{ forloop.index }}" tabindex="-1" aria-labelledby="modalLabel-{{ forloop.index }}" aria-hidden="true">
@@ -67,7 +66,7 @@
     {% endif %}
 
     {% if include.paper.talk %}
-    <a role="button" class="btn btn-secondary btn-sm" href="{{ include.paper.talk }}" target="_blank"><i class="fas fa-play-circle"></i> Talk</a>
+    <a role="button" class="btn btn-light btn-sm" href="{{ include.paper.talk }}" target="_blank"><i class="fas fa-play-circle"></i> Talk</a>
     {% endif %}
     {% endunless %}
 </li>
