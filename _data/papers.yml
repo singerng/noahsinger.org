@@ -1,41 +1,20 @@
-- title: "Streaming beyond sketching for Maximum Directed Cut"
-  venue: In submission
+- title: "Borges and the aesthetics of complexity theory"
+  authors: Noah Singer
+  venue: Manuscript
+  type: misc
+
+- title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
+  venue: Manuscript
   select: yes
   authors: Raghuvansh R. Saxena, Noah Singer, Madhu Sudan, and Santhoshini Velusamy
-  type: research
+  type: research-pre
   arxiv: 2211.03916
   eccc: 2022/144
-  abstract: |+
-    We give an $\widetilde{O}(\sqrt{n})$-space single-pass $0.483$-approximation
-      streaming algorithm for estimating the maximum directed cut size
-      ($\textsf{Max-DICUT}$) in a directed graph on $n$ vertices. This improves over
-      an $O(\log n)$-space $4/9 < 0.45$ approximation algorithm due to Chou,
-      Golovnev, Velusamy (FOCS 2020), which was known to be optimal for
-      $o(\sqrt{n})$-space algorithms.
-
-    $\textsf{Max-DICUT}$ is a special case of a constraint satisfaction problem
-      (CSP). In this broader context, our work gives the first CSP for which
-      algorithms with $\widetilde{O}(\sqrt{n})$ space can provably outperform
-      $o(\sqrt{n})$-space algorithms on general instances. Previously, this was shown
-      in the restricted case of bounded-degree graphs in a previous work of the
-      authors (SODA 2023). Prior to that work, the only algorithms for any CSP were
-      based on generalizations of the $O(\log n)$-space algorithm for
-      $\textsf{Max-DICUT}$, and were in particular so-called "sketching" algorithms.
-      In this work, we demonstrate that more sophisticated streaming algorithms can
-      outperform these algorithms even on general instances.
-
-    Our algorithm constructs a "snapshot" of the graph and then applies a result
-      of Feige and Jozeph (Algorithmica, 2015) to approximately estimate the
-      $\textsf{Max-DICUT}$ value from this snapshot. Constructing this snapshot is
-      easy for bounded-degree graphs and the main contribution of our work is to
-      construct this snapshot in the general setting. This involves some delicate
-      sampling methods as well as a host of "continuity" results on the
-      $\textsf{Max-DICUT}$ behaviour in graphs.
   
 - title: Streaming complexity of CSPs with randomly ordered constraints
   date: 2022-04-10
   venue: SODA 2023
-  type: research
+  type: research-pub
   select: yes
   arxiv: 2207.07158
   eccc: 2022/100
@@ -64,7 +43,7 @@
 - title: "On sketching approximations for symmetric Boolean CSPs"
   date: 2022-05-04
   authors: Joanna Boyland, Michael Hwang, Tarun Prasad, Noah Singer, and Santhoshini Velusamy
-  type: research
+  type: research-pub
   venue: APPROX 2022
   arxiv: 2112.06319
   eccc: 2022/066
@@ -81,7 +60,7 @@
 - title: "Streaming approximation resistance of every ordering CSP"
   date: 2021-05-04
   authors: Noah Singer, Madhu Sudan, and Santhoshini Velusamy
-  type: research
+  type: research-pub
   venue: APPROX 2021
   arxiv: 2105.01782
   eccc: 2021/064
@@ -99,8 +78,8 @@
   date: 2021-04-30
   authors: Noah Singer and Madhu Sudan
   arxiv: 2101.09592
-  type: research
-  venue: <i>ACM Transactions on Computation Theory</i>
+  type: research-pub
+  venue: <i>ACM Transactions on Computation Theory</i> 14.2 (2022)
   journal: https://dl.acm.org/doi/10.1145/3543684
   select: yes
   abstract: |+
