@@ -50,7 +50,10 @@ I also listen to a lot of podcasts, and some of my favorites are:
 * [Cautionary Tales](https://timharford.com/articles/cautionarytales/)
 * [One Year](https://slate.com/podcasts/one-year/)
 * [Radiolab](https://radiolab.org)
+* [Fall of Civilizations](https://fallofcivilizationspodcast.com)
+
 
 ## TV Shows
 
-Some of the best TV shows I've seen are *Battlestar Galactica* and *Breaking Bad*/*Better Call Saul*. I also have an unfortunate soft spot for reality shows like *Love Island*.
+Some of the best TV shows I've seen are *Battlestar Galactica*, *Breaking Bad*/*Better Call Saul*, *Fargo*, and *Lost*.
+I also have an unfortunate soft spot for reality shows like *Love Island*.
