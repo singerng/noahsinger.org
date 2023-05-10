@@ -8,6 +8,7 @@
   select: yes
   authors: Noah G. Singer
   type: research-pre
+  arxiv: 2305.04438
 
 - title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
   venue: Manuscript
