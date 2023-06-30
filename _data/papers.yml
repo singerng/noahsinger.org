@@ -1,22 +1,22 @@
-- title: "Borges and the aesthetics of complexity theory"
+- title: "Borges and the aesthetics of computation"
   authors: Noah G. Singer
   venue: Manuscript
   type: misc
 
-- title: "Oblivious algorithms for the Max-\\(k\\)AND Problem"
-  venue: Manuscript
-  select: yes
-  authors: Noah G. Singer
-  type: research-pre
-  arxiv: 2305.04438
-
 - title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
-  venue: Manuscript
   select: yes
   authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
-  type: research-pre
+  venue: FOCS 2023
+  type: research-pub
   arxiv: 2211.03916
   eccc: 2022/144
+
+- title: "Oblivious algorithms for the Max-\\(k\\)AND Problem"
+  venue: APPROX 2023
+  select: yes
+  authors: Noah G. Singer
+  type: research-pub
+  arxiv: 2305.04438
   
 - title: Streaming complexity of CSPs with randomly ordered constraints
   date: 2022-04-10
