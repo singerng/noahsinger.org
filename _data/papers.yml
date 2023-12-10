@@ -1,7 +1,8 @@
 - title: "Borges and the aesthetics of computation"
   authors: Noah G. Singer
-  venue: Manuscript
+  venue: Variaciones Borges 56
   type: misc
+  journal: https://www.borges.pitt.edu/index.php/journal/variaciones-borges-56
 
 - title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
   select: yes
