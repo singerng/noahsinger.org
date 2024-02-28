@@ -21,7 +21,7 @@ Other authors I've been reading in the past few years include Jorge Luis Borges,
 
 ## Music
 
-I listen to a lot of music, including indie rock, electronica, new wave, and hip hop; some of my favorite artists are:
+I listen to a lot of music, including indie rock, electronica, new wave, reguetón, and hip hop; some of my favorite artists are:
 
 * Bad Bunny
 * The Strokes
@@ -31,11 +31,16 @@ I listen to a lot of music, including indie rock, electronica, new wave, and hip
 * Pixies
 * Rosalía
 * The Smiths
+* Olivia Rodrigo
 * Travis Scott
 * Kendrick Lamar
 * MF DOOM
 * Radiohead
 * Arctic Monkeys
+* Joy Division / New Order
+* Bloc Party
+* Paramore
+* Wu-Tang Clan
 
 ## Podcasts
 
@@ -53,7 +58,9 @@ I also listen to a lot of podcasts, and some of my favorites are:
 * [Ologies](https://www.alieward.com/ologies)
 
 
-## TV Shows
+## TV Shows & Movies
 
-Some of the best TV shows I've seen are *Battlestar Galactica*, *Breaking Bad*/ *Better Call Saul*, *Fargo*, *American Horror Story*, and *Lost*.
+Some of the best TV shows I've seen are *Battlestar Galactica*, *Breaking Bad*/*Better Call Saul*, *Fargo*, *True Detective*, *American Horror Story*, and *Lost*.
 I also have an unfortunate soft spot for reality shows like *Love Island*.
+
+Some of my favorite movies are *Get Out*, *The Dark Knight*, *Ex Machina*, *The Shining*, *Fargo*, *Parasite*, and *Kill Bill*. See my [https://letterboxd.com/singerng](Letterboxd) for more.
