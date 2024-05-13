@@ -1,0 +1,56 @@
+- title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
+  authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
+  venues:
+    - type: conference
+      title: FOCS 2023
+      doi: 10.1109/FOCS57990.2023.00055
+  arxiv: 2211.03916
+  eccc: 2022/144
+
+- title: "Oblivious algorithms for the Max-\\(k\\)AND Problem"
+  venues:
+    - type: conference
+      title: APPROX 2023
+      doi: 10.4230/LIPIcs.APPROX/RANDOM.2023.15
+  authors: Noah G. Singer
+  arxiv: 2305.04438
+
+- title: Streaming complexity of CSPs with randomly ordered constraints
+  venues:
+    - type: conference
+      title: SODA 2023
+      doi: 10.1137/1.9781611977554.ch156
+      arxiv: 2207.07158
+  eccc: 2022/100
+  authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
+
+- title: "On sketching approximations for symmetric Boolean CSPs"
+  authors: Joanna Boyland, Michael Hwang, Tarun Prasad, Noah G. Singer, and Santhoshini Velusamy
+  venues:
+    - type: conference
+      title: APPROX 2022
+      doi: 10.4230/LIPIcs.APPROX/RANDOM.2022.38
+  arxiv: 2112.06319
+  eccc: 2022/066
+  talk: https://www.youtube.com/watch?v=NbtWBRPsiIs
+
+- title: "Streaming approximation resistance of every ordering CSP"
+  authors: Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
+  arxiv: 2105.01782
+  eccc: 2021/064
+  venues:
+    - type: conference
+      title: APPROX 2021
+      doi: 10.4230/LIPIcs.APPROX/RANDOM.2021.17
+    - type: journal
+      title: Computational Complexity
+  talk: https://www.youtube.com/watch?v=QAHM1dCuJyQ
+  
+- title: "Point-hyperplane incidence geometry and the log-rank conjecture"
+  authors: Noah G. Singer and Madhu Sudan
+  arxiv: 2101.09592
+  venues:
+    - type: journal
+      title: ACM Transactions on Computation Theory
+      volume: 14.2 (2022)
+      doi: 10.1145/3543684

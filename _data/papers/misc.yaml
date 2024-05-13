@@ -1,0 +1,19 @@
+- title: Better streaming algorithms for Maximum Directed Cut via 'snapshots'
+  authors: Noah G. Singer
+  desc: "CMU CSD PhD 'Writing Skills' blog post"
+  url: https://www.cs.cmu.edu/~csd-phd-blog/2024/streaming-csps/
+
+- title: "Borges and the aesthetics of computation"
+  authors: Noah G. Singer
+  venues:
+    - type: journal
+      title: Variaciones Borges
+      volume: 56
+      url: https://www.borges.pitt.edu/index.php/journal/variaciones-borges-56
+
+- title: On streaming approximation algorithms for constraint satisfaction problems
+  date: 2022-03-25
+  desc: Harvard College Senior Thesis
+  url: "https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37371750"
+  award: Hoopes Prize (Harvard College)
+  authors: Noah G. Singer
