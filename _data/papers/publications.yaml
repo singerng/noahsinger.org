@@ -44,6 +44,8 @@
       doi: 10.4230/LIPIcs.APPROX/RANDOM.2021.17
     - type: journal
       title: Computational Complexity
+      doi: 10.1007/s00037-024-00252-5
+      volume: 33
   talk: https://www.youtube.com/watch?v=QAHM1dCuJyQ
   
 - title: "Point-hyperplane incidence geometry and the log-rank conjecture"
@@ -52,5 +54,5 @@
   venues:
     - type: journal
       title: ACM Transactions on Computation Theory
-      volume: 14.2 (2022)
+      volume: 14.2
       doi: 10.1145/3543684
