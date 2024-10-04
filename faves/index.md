@@ -63,4 +63,4 @@ I also listen to a lot of podcasts, and some of my favorites are:
 Some of the best TV shows I've seen are *Battlestar Galactica*, *Breaking Bad*/*Better Call Saul*, *Fargo*, *True Detective*, *American Horror Story*, and *Lost*.
 I also have an unfortunate soft spot for reality shows like *Love Island*.
 
-Some of my favorite movies are *Get Out*, *The Dark Knight*, *Ex Machina*, *The Shining*, *Fargo*, *Parasite*, and *Kill Bill*. See my [https://letterboxd.com/singerng](Letterboxd) for more.
+Some of my favorite movies are *Get Out*, *The Dark Knight*, *Ex Machina*, *The Shining*, *Fargo*, *Parasite*, and *Kill Bill*. See my [Letterboxd](https://letterboxd.com/singerng) for more.
