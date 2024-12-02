@@ -3,6 +3,7 @@
   venues:
     - type: conference
       title: SODA 2025
+  arxiv: 2411.18829
 
 - title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
   authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
