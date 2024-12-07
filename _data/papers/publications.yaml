@@ -1,3 +1,9 @@
+- title: "Latency Guarantees for Caching with Delayed Hits"
+  authors: Keerthana Gurushankar, Noah G. Singer, Bernardo Subercaseaux
+  venues:
+    - type: conference
+      title: INFOCOM 2025
+
 - title: "Streaming algorithms via local algorithms for Maximum Directed Cut"
   authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
   venues:
