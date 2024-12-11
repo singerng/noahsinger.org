@@ -5,7 +5,7 @@ layout: default
 ---
 
 The following papers are roughly organized (reverse) chronologically. You can also find my work on
-[DBLP](https://dblp.org/pid/284/0977) and [Google Scholar](https://scholar.google.com/citations?hl=en&user=sJB6rcgAAAAJ). My ORCID is [``0000-0002-0076-521X``](https://orcid.org/0000-0002-0076-521X). See also this [YouTube playlist](https://youtube.com/playlist?list=PLUhFhv9En0UGP13PyAsYwNmq0_xfgZaUX) of my research talks.
+[DBLP](https://dblp.org/pid/284/0977) and [Google Scholar](https://scholar.google.com/citations?hl=en&user=sJB6rcgAAAAJ). My ORCID is [``0000-0002-0076-521X``](https://orcid.org/0000-0002-0076-521X). See also this [YouTube playlist](https://youtube.com/playlist?list=PLUhFhv9En0UGP13PyAsYwNmq0_xfgZaUX) of my research talks. Authors are ordered alphabetically (as is the convention in mathematics and theoretical computer science), unless noted otherwise.
 
 {% if site.data.papers.manuscripts.size != 0 %}
 
