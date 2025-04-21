@@ -27,21 +27,16 @@
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-{{ forloop.index }}">
             {% for venue in include.paper.venues %}
             <li>
-            {% if venue.doi %}
-            <a class="dropdown-item" href="https://doi.org/{{ venue.doi }}" target="_blank">
-            {% endif %}
-            {% if venue.url %}
-            <a class="dropdown-item" href="{{ venue.url }}" target="_blank">
-            {% endif %}
+            <a class="dropdown-item"
+              {% if venue.doi %}href="https://doi.org/{{ venue.doi }}" target="_blank"{% endif %}
+              {% if venue.url %}href="{{ venue.url }}" target="_blank"{% endif %}>
             {% if venue.type == "journal" %}
             <i class="fas fa-book"></i> Journal Version
             {% endif %}
             {% if venue.type == "conference" %}
             <i class="fas fa-users"></i> Conference Version
             {% endif %}
-            {% if venue.doi or venue.url %}
             </a>
-            {% endif %}
             </li>
             {% endfor %}
 

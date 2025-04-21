@@ -9,6 +9,7 @@
   venues:
     - type: conference
       title: SODA 2025
+      doi: 10.1137/1.9781611978322.111
   arxiv: 2411.18829
 
 - title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
