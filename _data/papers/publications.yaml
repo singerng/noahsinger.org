@@ -1,5 +1,11 @@
+- title: "Algebra is half the battle: Verifying presentations for graded unipotent Chevalley groups"
+  authors: Eric Wang, Arohee Bhoja, Cayden Codel, and Noah G. Singer
+  venues:
+    - type: conference
+      title: ITP 2025
+
 - title: "Latency guarantees for caching with delayed hits"
-  authors: Keerthana Gurushankar, Noah G. Singer, Bernardo Subercaseaux
+  authors: Keerthana Gurushankar, Noah G. Singer, and Bernardo Subercaseaux
   venues:
     - type: conference
       title: INFOCOM 2025
