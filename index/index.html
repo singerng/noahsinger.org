@@ -22,48 +22,45 @@ layout: default
 
   <div class="col-md-9 mb-4">
     <h1>About Me</h1>
-    <p>I'm a third-year Ph.D. student in the Computer Science Department at Carnegie Mellon University. My research interests are in theoretical
-      computer science, and I'm lucky to be advised by <a href="http://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a> and
-      <a href="https://sites.google.com/view/aayushjain/home">Aayush Jain</a>. I'm supported by an <a href="https://www.nsfgrfp.org">NSF GRFP</a>
-      fellowship. For my CV, see <a href="/index/cv.pdf">here</a>, and for a list of my papers, see <a href="/papers">here</a>.</p>
+    <p>I'm a third-year Ph.D. student in the Computer Science Department at Carnegie Mellon University,
+      where I work on theoretical computer science
+      advised by <a href="http://www.cs.cmu.edu/~odonnell/">Ryan O'Donnell</a> and
+      <a href="https://sites.google.com/view/aayushjain/home">Aayush Jain</a>
+      and supported by an <a href="https://www.nsfgrfp.org">NSF GRFP</a> fellowship.
+      For my CV, see <a href="/index/cv.pdf">here</a>.
 
-    <p>In Spring 2022, I graduated magna cum laude from Harvard with an A.B. in Computer Science and Math. At Harvard, I was fortunate to
-      be mentored by <a href="https://madhu.seas.harvard.edu">Madhu Sudan</a>, and I was a proud resident of <a href="https://pfoho.harvard.edu">Pforzheimer House</a>.</p>
+    <p>In Spring 2022, I graduated magna cum laude from Harvard with an A.B. in Computer Science and Math.
+      At Harvard, I worked with <a href="https://madhu.seas.harvard.edu">Madhu Sudan</a>.</p>
 
-    <div class="p-3">
+
       <div class="row section pt-3">
-        <div class="col">
-          <h3>Research Overview</h3>
+        <h3>Research interests</h3>
 
-          <p>I have broad interests throughout algorithms, complexity theory, and combinatorics.</p>
+        <p>My work spans several areas, including high-dimensional expanders and streaming algorithms.</p>
+      </div>
 
-          <h4>Expansion of coset complexes</h4>
+      <div class="row section pt-3">
+        <h3>Research publications</h3>
 
-          <p>Recently, I have been interested in studying the <em>high-dimensional expansion</em> (HDX) properties of <em>coset complexes</em>.
-            A coset complex is a simplicial complex built from a group together with designated subgroups. These complexes are nice because
-            they are highly symmetric and explicit, and their expansion properties can often be analyzed elementarily. I want to study
-            the various known instantiations of the coset complex construction, find new instantiations, study their expansion properties, and think about
-            downstream applications. In a recent <a href="https://arxiv.org/abs/2411.05916">preprint</a>, Ryan O'Donnell and I show that
-            the "\(B_3\)-type" complex constructed by <a href="https://arxiv.org/abs/2203.03705">O'Donnell and Pratt</a> satisfies
-            a notion of HDX called <em>cosystolic expansion.</em></p>
-  
-          <h4>Streaming CSPs</h4>
+        <p>Here are my published research papers; for manuscripts and other writing, see <a href="/papers">here</a>.</p>
 
-          <p>A longtime project of mine is characterizing the <em>approximability</em> of <em>constraint satisfaction problems</em> in
-            <em>streaming</em> and <em>sublinear models</em>. I was introduced to these questions during my undergrad by
-            <a href="https://sites.google.com/view/santhoshinivelusamy">Santhoshini Velusamy</a> and Madhu Sudan, and with them
-            and other wonderful collaborators we have several papers, appearing in APPROX 2021, 2022, and 2023, SODA 2023 and 2025, and FOCS 2023.
-            The first few of these works were the subject of my <a href="https://dash.harvard.edu/handle/1/37371750">undergraduate thesis</a>,
-            which was awarded a <a href="https://prizes.fas.harvard.edu/hoopes-prize">Hoopes Prize</a> at Harvard. See also my talk on
-            <a href="https://youtu.be/pOXRMNNBO3c">streaming DICUT algorithms</a> at CMU Theory Lunch.</p>
-        </div>
+        <ul class="paper-list">
+        {% for paper in site.data.papers.publications %}
+        {% include paper.html paper=paper short=true %}
+        {% endfor %}
+        </ul>
       </div>
 
       <div class="row section pt-3">
         <div class="col">
           <h3>Teaching</h3>
 
-          <p>In Fall 2023, I was a teaching assistant for <em>15-459: Undergraduate Quantum Computation</em> at CMU, taught by Ryan O'Donnell.</p>
+          <p>At CMU, I have been a teaching assistant for the following courses:
+            <ul>
+              <li><em>15-459: Undergraduate Quantum Computation</em> (Fall 2023)</li>
+              <li><em>15-754: Spectral Graph Theory</em> (Fall 2025)</li>
+            </ul>
+          </p>
 
           <p>
             At Harvard, I was a teaching assistant for the following courses:
