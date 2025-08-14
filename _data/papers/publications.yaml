@@ -35,13 +35,14 @@
   authors: Noah G. Singer
   arxiv: 2305.04438
 
-- title: Streaming complexity of CSPs with randomly ordered constraints
+- title: "Streaming complexity of CSPs with randomly ordered constraints"
   venues:
     - type: conference
       title: SODA 2023
       doi: 10.1137/1.9781611977554.ch156
       arxiv: 2207.07158
   eccc: 2022/100
+  select: yes
   authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
 
 - title: "On sketching approximations for symmetric Boolean CSPs"

@@ -40,13 +40,20 @@ layout: default
       </div>
 
       <div class="row section pt-3">
-        <h3>Research publications</h3>
+        <h3>Selected publications</h3>
 
-        <p>Here are my published research papers; for manuscripts and other writing, see <a href="/papers">here</a>.</p>
+        <p>Here are a few selected research papers; for a full list of my writings, see <a href="/papers">here</a>.</p>
 
         <ul class="paper-list">
-        {% for paper in site.data.papers.publications %}
+        {% for paper in site.data.papers.manuscripts %}
+        {% if paper.select %}
         {% include paper.html paper=paper short=true %}
+        {% endif %}
+        {% endfor %}
+        {% for paper in site.data.papers.publications %}
+        {% if paper.select %}
+        {% include paper.html paper=paper short=true %}
+        {% endif %}
         {% endfor %}
         </ul>
       </div>
