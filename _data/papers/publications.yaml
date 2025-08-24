@@ -9,6 +9,8 @@
   venues:
     - type: conference
       title: INFOCOM 2025
+      doi: 10.1109/INFOCOM55648.2025.11044511
+  arxiv: 2501.16535
 
 - title: "Streaming algorithms via local algorithms for Maximum Directed Cut"
   authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy
@@ -40,7 +42,7 @@
     - type: conference
       title: SODA 2023
       doi: 10.1137/1.9781611977554.ch156
-      arxiv: 2207.07158
+  arxiv: 2207.07158
   eccc: 2022/100
   select: yes
   authors: Raghuvansh R. Saxena, Noah G. Singer, Madhu Sudan, and Santhoshini Velusamy

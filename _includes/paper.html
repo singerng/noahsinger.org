@@ -2,67 +2,45 @@
     <strong>{{ include.paper.title }}</strong><br/>
     {% if include.paper.authors %}{{ include.paper.authors }}<br/>{% endif %}
     {% if include.paper.desc %}{{ include.paper.desc }}<br/>{% endif %}
+    {% if include.paper.award %}
+    <i class="fas fa-award"></i> {{ include.paper.award }}<br/>
+    {% endif %}
+
+    {% if include.paper.venue %}<em>{{ include.paper.venue }}</em><br/>{% endif %}
 
     {% for venue in include.paper.venues %}
-    {% if venue.type == "conference" %}
-    <i class="fas fa-users"></i> <em>{{ venue.title }}</em><br/>
-    {% endif %}
-    {% if venue.type == "journal" %}
-    <em><i class="fas fa-book"></i> {{ venue.title }}</em> {{ venue.volume }}<br/>
-    {% endif %}
+      {% if venue.doi or venue.url %}
+      <a class="link-dark" 
+        {% if venue.doi %}href="https://doi.org/{{ venue.doi }}"{% endif %}
+        {% if venue.url %}href="{{ venue.url }}"{% endif %} target="_blank">
+      {% endif %}
+      {% if venue.type == "journal" %}
+      <em><i class="fas fa-book"></i> {{ venue.title }}</em> {{ venue.volume }}<br/>
+      {% endif %}
+      {% if venue.type == "conference" %}
+      <i class="fas fa-users"></i> <em>{{ venue.title }}</em><br/>
+      {% endif %}
+      {% if venue.doi or venue.url %}</a>{% endif %}
     {% endfor %}
 
-    {% unless include.short %}
-      {% if include.paper.venue %}<em>{{ include.paper.venue }}</em><br/>{% endif %}
+    {% if include.paper.pdf %}
+    <a class="link-dark" href="{{ include.paper.pdf }}" target="_blank"
+      ><i class="fas fa-file-pdf"></i> PDF</a>
+    {% endif %}
 
-      {% if include.paper.award %}
-      <i class="fas fa-award"></i> {{ include.paper.award }}<br/>
-      {% endif %}
+    {% if include.paper.arxiv %}
+    <a class="link-dark" href="https://arxiv.org/abs/{{ include.paper.arxiv }}" target="_blank"
+      ><i class="fas fa-hdd"></i> arXiv</a>
+    {% endif %}
 
-      <div class="btn-group">
-          <div class="dropdown">
-            <a class="btn btn-light dropdown-toggle btn-sm" href="#" role="button" id="dropdownMenuLink-{{ forloop.index }}" data-bs-toggle="dropdown" aria-expanded="false">
-              Links
-            </a>
+    {% if include.paper.url %}
+    <a class="link-dark" href="{{ include.paper.url }}" target="_blank"
+      ><i class="fas fa-link"></i> External PDF</a>
+    {% endif %}
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-{{ forloop.index }}">
-              {% for venue in include.paper.venues %}
-              <li>
-              <a class="dropdown-item"
-                {% if venue.doi %}href="https://doi.org/{{ venue.doi }}" target="_blank"{% endif %}
-                {% if venue.url %}href="{{ venue.url }}" target="_blank"{% endif %}>
-              {% if venue.type == "journal" %}
-              <i class="fas fa-book"></i> Journal Version
-              {% endif %}
-              {% if venue.type == "conference" %}
-              <i class="fas fa-users"></i> Conference Version
-              {% endif %}
-              </a>
-              </li>
-              {% endfor %}
-
-              {% if include.paper.pdf %}
-              <li><a class="dropdown-item" href="/static/pdfs/{{ include.paper.pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> Local</a></li>
-              {% endif %}
-
-              {% if include.paper.arxiv %}
-              <li><a class="dropdown-item" href="https://arxiv.org/abs/{{ include.paper.arxiv }}" target="_blank"><i class="fas fa-hdd"></i> arXiv</a></li>
-              {% endif %}
-
-              {% if include.paper.eccc %}
-              <li><a class="dropdown-item" href="https://eccc.weizmann.ac.il/report/{{ include.paper.eccc }}" target="_blank"><i class="fas fa-hdd"></i> ECCC</a></li>
-              {% endif %}
-
-              {% if include.paper.url %}
-              <li><a class="dropdown-item" href="{{ include.paper.url }}" target="_blank"><i class="fas fa-link"></i> Site</a></li>
-              {% endif %}
-            </ul>
-          </div>
-      </div>
-
-      {% if include.paper.talk %}
-      <a role="button" class="btn btn-light btn-sm" href="{{ include.paper.talk }}" target="_blank"><i class="fas fa-play-circle"></i> Talk</a>
-      {% endif %}
-    {% endunless %}
+    {% if include.paper.talk %}
+    <a class="link-dark" href="{{ include.paper.talk }}" target="_blank"
+      ><i class="fas fa-play-circle"></i> Talk</a>
+    {% endif %}
 </li>
 
