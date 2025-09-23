@@ -3,6 +3,7 @@
   venues:
     - type: conference
       title: ITP 2025
+      doi: 10.4230/LIPICS.ITP.2025.9
 
 - title: "Latency guarantees for caching with delayed hits"
   authors: Keerthana Gurushankar, Noah G. Singer, and Bernardo Subercaseaux
