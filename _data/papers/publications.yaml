@@ -1,3 +1,11 @@
+- title: "A classical quadratic speedup for planted \\(k\\)XOR"
+  authors: Meghal Gupta, William He, Ryan O'Donnell, Noah G. Singer
+  venues:
+    - type: conference
+      title: SODA 2026
+  arxiv: 2508.09422
+  select: yes
+
 - title: "Algebra is half the battle: Verifying presentations for graded unipotent Chevalley groups"
   authors: Eric Wang, Arohee Bhoja, Cayden Codel, and Noah G. Singer
   venues:
