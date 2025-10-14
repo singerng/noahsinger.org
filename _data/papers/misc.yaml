@@ -1,3 +1,10 @@
+- title: Nine lower bound conjectures on streaming approximation algorithms for CSPs
+  authors: Noah G. Singer
+  arxiv: 2510.10714
+  venues:
+    - type: journal
+      title: SIGACT News Open Problems
+
 - title: Better streaming algorithms for Maximum Directed Cut via 'snapshots'
   authors: Noah G. Singer
   desc: "CMU CSD PhD 'Writing Skills' blog post"
