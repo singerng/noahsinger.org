@@ -2,8 +2,9 @@
   authors: Noah G. Singer, Madhur Tulsiani, Santhoshini Velusamy
   arxiv: 2509.17926
 
-- title: "Coboundary expansion inside Chevalley coset complex HDXs"
+- title: "The relative Dehn method for coboundary expansion"
   authors: Ryan O'Donnell and Noah G. Singer
   desc: In submission
-  arxiv: 2411.05916
+  # arxiv: 2411.05916
+  url: "/static/pdfs/relative dehn.pdf"
   select: yes
