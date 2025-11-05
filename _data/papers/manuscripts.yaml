@@ -1,6 +1,8 @@
-- title: "Sketching approximations and LP approximations for finite CSPs are related"
-  authors: Noah G. Singer, Madhur Tulsiani, Santhoshini Velusamy
-  arxiv: 2509.17926
+- title: "Low-soundness direct product testers and PCPs from Kaufman-Oppenheim complexes"
+  authors: Ryan O'Donnell and Noah G. Singer
+  desc: In submission
+  select: yes
+
 
 - title: "The relative Dehn method for coboundary expansion"
   authors: Ryan O'Donnell and Noah G. Singer
@@ -8,3 +10,7 @@
   # arxiv: 2411.05916
   url: "/static/pdfs/relative dehn.pdf"
   select: yes
+
+- title: "Sketching approximations and LP approximations for finite CSPs are related"
+  authors: Noah G. Singer, Madhur Tulsiani, Santhoshini Velusamy
+  arxiv: 2509.17926
