@@ -4,6 +4,7 @@
   venues:
     - type: journal
       title: SIGACT News Open Problems
+      doi: 10.1145/3785512.3785516
 
 - title: Better streaming algorithms for Maximum Directed Cut via 'snapshots'
   authors: Noah G. Singer
