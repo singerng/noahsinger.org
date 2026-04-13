@@ -1,6 +1,11 @@
 <li class="mb-3">
     <strong>{{ include.paper.title }}</strong><br/>
-    {% if include.paper.authors %}{{ include.paper.authors }}<br/>{% endif %}
+    {% if include.paper.authors %}
+    {% for author in include.paper.authors %}
+      {% if author.url %}<a class="link-dark" href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+    <br/>
+    {% endif %}
     {% if include.paper.desc %}{{ include.paper.desc }}<br/>{% endif %}
     {% if include.paper.award %}
     <i class="fas fa-award"></i> {{ include.paper.award }}<br/>

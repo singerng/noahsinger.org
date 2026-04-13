@@ -13,7 +13,7 @@ The following papers are roughly organized (reverse) chronologically. You can al
 
 <ul class="paper-list">
 {% for paper in site.data.papers.manuscripts %}
-{% include paper.html paper=paper %}
+{% include paper.html paper=paper hideman=true %}
 {% endfor %}
 </ul>
 

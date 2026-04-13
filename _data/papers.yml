@@ -1,6 +1,223 @@
-- title: CS 121.5 Notes, Fall 2019
-  pdf: cs_121_5_2019.pdf
-  date: 2019-12-19
-  desc: "Notes from advanced section in <em>CS 121: Introduction to Theoretical Computer Science</em> (Fall 2019)"
-  type: misc
-  authors: Noah G. Singer
+
+coauthors:
+  - &me
+    name: Noah G. Singer
+  - &madhur
+    name: Madhur Tulsiani
+    url: https://home.ttic.edu/~madhurt/
+  - &santhoshini
+    name: Santhoshini Velusamy
+    url: https://sites.google.com/view/santhoshinivelusamy
+  - &ryan
+    name: Ryan O'Donnell
+    url: https://www.cs.cmu.edu/~odonnell/
+  - &meghal
+    name: Meghal Gupta
+    url: https://www.meghalgupta.com
+  - &william
+    name: William R. He
+    url: https://wrhe.github.io
+  - &eric
+    name: Eric Wang
+  - &arohee
+    name: Arohee Bhoja
+  - &cayden
+    name: Cayden Codel
+    url: https://crcodel.com
+  - &keerthana
+    name: Keerthana Gurushankar
+    url: https://www.keerthanagurushankar.com
+  - &bernardo
+    name: Bernardo Subercaseaux
+    url: https://bsubercaseaux.github.io
+  - &madhu
+    name: Madhu Sudan
+    url: https://madhu.seas.harvard.edu
+  - &raghuvansh
+    name: Raghuvansh R. Saxena
+    url: https://main.tifr.res.in/raghuvansh.saxena/
+  - &joanna
+    name: Joanna Boyland
+  - &tarun
+    name: Tarun Prasad
+  - &michael
+    name: Michael Hwang
+  - &hoaian
+    name: Hoaian Nguyen
+    url: https://hoaiannguyen.com
+  - &david
+    name: David P. Woodruff
+    url: https://www.cs.cmu.edu/~dwoodruf/
+  - &yang
+    name: Yang P. Liu
+    url: https://yangpliu.github.io
+
+
+manuscripts:
+  - title: "Optimal single-pass streaming lower bounds for approximating CSPs"
+    authors:
+      - *me
+      - *madhur
+      - *santhoshini
+    arxiv: 2604.08731
+    select: yes
+    draft: yes
+
+  - title: "Agreement testers and PCPs from coset complexes"
+    authors:
+      - *ryan
+      - *me
+    arxiv: 2511.10514
+    select: yes
+    draft: yes
+
+  - title: "The relative Dehn method for coboundary expansion"
+    authors: 
+      - *ryan
+      - *me
+    # arxiv: 2411.05916
+    url: "/static/pdfs/relative dehn.pdf"
+    draft: yes
+
+  - title: "Sketching approximations and LP approximations for finite CSPs are related"
+    authors:
+      - *me
+      - *madhur
+      - *santhoshini
+    arxiv: 2509.17926
+    draft: yes
+
+publications:
+  - title: "A classical quadratic speedup for planted \\(k\\)XOR"
+    authors:
+      - *meghal
+      - *william
+      - *ryan
+      - *me
+    venues:
+      - type: conference
+        title: SODA 2026
+    arxiv: 2508.09422
+    select: yes
+
+  - title: "Algebra is half the battle: Verifying presentations for graded unipotent Chevalley groups"
+    authors: 
+      - *eric
+      - *arohee
+      - *cayden
+      - *me
+    venues:
+      - type: conference
+        title: ITP 2025
+        doi: 10.4230/LIPICS.ITP.2025.9
+
+  - title: "Latency guarantees for caching with delayed hits"
+    authors:
+      - *keerthana
+      - *me
+      - *bernardo
+    venues:
+      - type: conference
+        title: INFOCOM 2025
+        doi: 10.1109/INFOCOM55648.2025.11044511
+    arxiv: 2501.16535
+
+  - title: "Streaming algorithms via local algorithms for Maximum Directed Cut"
+    authors:
+      - *raghuvansh
+      - *me
+      - *madhu
+      - *santhoshini
+    venues:
+      - type: conference
+        title: SODA 2025
+        doi: 10.1137/1.9781611978322.111
+    arxiv: 2411.18829
+
+  - title: "Improved streaming algorithms for Maximum Directed Cut via smoothed snapshots"
+    authors:
+      - *raghuvansh
+      - *me
+      - *madhu
+      - *santhoshini
+    venues:
+      - type: conference
+        title: FOCS 2023
+        doi: 10.1109/FOCS57990.2023.00055
+    arxiv: 2211.03916
+    eccc: 2022/144
+
+  - title: "Oblivious algorithms for the Max-\\(k\\)AND Problem"
+    authors:
+      - *me
+    venues:
+      - type: conference
+        title: APPROX 2023
+        doi: 10.4230/LIPIcs.APPROX/RANDOM.2023.15
+    arxiv: 2305.04438
+
+  - title: "Streaming complexity of CSPs with randomly ordered constraints"
+    authors:
+      - *raghuvansh
+      - *me
+      - *madhu
+      - *santhoshini
+    venues:
+      - type: conference
+        title: SODA 2023
+        doi: 10.1137/1.9781611977554.ch156
+    arxiv: 2207.07158
+    eccc: 2022/100
+    select: yes
+
+  - title: "On sketching approximations for symmetric Boolean CSPs"
+    authors:
+      - *joanna
+      - *michael
+      - *tarun
+      - *me
+      - *santhoshini
+    venues:
+      - type: conference
+        title: APPROX 2022
+        doi: 10.4230/LIPIcs.APPROX/RANDOM.2022.38
+    arxiv: 2112.06319
+    eccc: 2022/066
+    talk: https://www.youtube.com/watch?v=NbtWBRPsiIs
+
+  - title: "Streaming approximation resistance of every ordering CSP"
+    authors:
+      - *me
+      - *madhu
+      - *santhoshini
+    arxiv: 2105.01782
+    eccc: 2021/064
+    venues:
+      - type: conference
+        title: APPROX 2021
+        doi: 10.4230/LIPIcs.APPROX/RANDOM.2021.17
+      - type: journal
+        title: Computational Complexity
+        doi: 10.1007/s00037-024-00252-5
+        volume: 33
+    talk: https://www.youtube.com/watch?v=QAHM1dCuJyQ
+    
+  - title: "Point-hyperplane incidence geometry and the log-rank conjecture"
+    authors:
+      - *me
+      - *madhu
+    arxiv: 2101.09592
+    venues:
+      - type: journal
+        title: ACM Transactions on Computation Theory
+        volume: 14.2
+        doi: 10.1145/3543684
+
+papers:
+  - title: CS 121.5 Notes, Fall 2019
+    pdf: cs_121_5_2019.pdf
+    date: 2019-12-19
+    desc: "Notes from advanced section in <em>CS 121: Introduction to Theoretical Computer Science</em> (Fall 2019)"
+    type: misc
+    authors:
+      - name: Noah G. Singer
