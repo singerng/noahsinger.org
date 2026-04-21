@@ -71,14 +71,6 @@ manuscripts:
     select: yes
     draft: yes
 
-  - title: "The relative Dehn method for coboundary expansion"
-    authors: 
-      - *ryan
-      - *me
-    # arxiv: 2411.05916
-    url: "/static/pdfs/relative dehn.pdf"
-    draft: yes
-
   - title: "Sketching approximations and LP approximations for finite CSPs are related"
     authors:
       - *me
@@ -87,7 +79,25 @@ manuscripts:
     arxiv: 2509.17926
     draft: yes
 
+  - title: "The relative Dehn method for coboundary expansion"
+    authors: 
+      - *ryan
+      - *me
+    # arxiv: 2411.05916
+    url: "/static/pdfs/relative dehn.pdf"
+    draft: yes
+
 publications:
+  - title: "Streaming complexity separations for dense and sparse graphs"
+    authors:
+      - *yang
+      - *hoaian
+      - *me
+      - *david
+    venues:
+      - type: conference
+        title: ICALP 2026
+
   - title: "A classical quadratic speedup for planted \\(k\\)XOR"
     authors:
       - *meghal
@@ -213,11 +223,34 @@ publications:
         volume: 14.2
         doi: 10.1145/3543684
 
-papers:
-  - title: CS 121.5 Notes, Fall 2019
-    pdf: cs_121_5_2019.pdf
-    date: 2019-12-19
-    desc: "Notes from advanced section in <em>CS 121: Introduction to Theoretical Computer Science</em> (Fall 2019)"
-    type: misc
+misc:
+  - title: Nine lower bound conjectures on streaming approximation algorithms for CSPs
     authors:
-      - name: Noah G. Singer
+      - *me
+    arxiv: 2510.10714
+    venues:
+      - type: journal
+        title: SIGACT News Open Problems
+        doi: 10.1145/3785512.3785516
+
+  - title: Better streaming algorithms for Maximum Directed Cut via 'snapshots'
+    authors:
+      - *me
+    desc: "CMU CSD PhD 'Writing Skills' blog post"
+    url: https://www.cs.cmu.edu/~csd-phd-blog/2024/streaming-csps/
+
+  - title: "Borges and the aesthetics of computation"
+    authors:
+      - *me
+    venues:
+      - type: journal
+        title: Variaciones Borges
+        volume: 56
+        url: https://www.jstor.org/stable/27305845
+
+  - title: On streaming approximation algorithms for constraint satisfaction problems
+    authors:
+      - *me
+    desc: Harvard College Senior Thesis
+    url: "https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37371750"
+    award: Hoopes Prize (Harvard College)
