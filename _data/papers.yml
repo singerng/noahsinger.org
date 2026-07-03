@@ -54,23 +54,6 @@ coauthors:
 
 
 manuscripts:
-  - title: "Optimal single-pass streaming lower bounds for approximating CSPs"
-    authors:
-      - *me
-      - *madhur
-      - *santhoshini
-    arxiv: 2604.08731
-    select: yes
-    draft: yes
-
-  - title: "Agreement testers and PCPs from coset complexes"
-    authors:
-      - *ryan
-      - *me
-    arxiv: 2511.10514
-    select: yes
-    draft: yes
-
   - title: "Sketching approximations and LP approximations for finite CSPs are related"
     authors:
       - *me
@@ -88,6 +71,27 @@ manuscripts:
     draft: yes
 
 publications:
+  - title: "Optimal single-pass streaming lower bounds for approximating CSPs"
+    authors:
+      - *me
+      - *madhur
+      - *santhoshini
+    arxiv: 2604.08731
+    select: yes
+    venues:
+      - type: conference
+        title: FOCS 2026
+
+  - title: "Agreement testers and PCPs from coset complexes"
+    authors:
+      - *ryan
+      - *me
+    arxiv: 2511.10514
+    select: yes
+    venues:
+      - type: conference
+        title: FOCS 2026
+
   - title: "Streaming complexity separations for dense and sparse graphs"
     authors:
       - *yang
@@ -107,6 +111,7 @@ publications:
     venues:
       - type: conference
         title: SODA 2026
+        doi: 10.1137/1.9781611978971.88
     arxiv: 2508.09422
     select: yes
 
